@@ -7,6 +7,7 @@
   import Base from "../lib/Base.svelte";
   import PastillaAzul from "../lib/PastillaAzul.svelte";
   import Scroller from "@sveltejs/svelte-scroller";
+  import Cables from "../lib/Cables.svelte";
   import Log from "../lib/Log.svelte";
 
   let index, offset, progress;
@@ -40,7 +41,7 @@
 <section>
   <div class="grid grid-cols-2">
     <div class="lg:order-first lg:row-span-2">
-      <Placeolder />
+      <Cables step={index} />
       <div class="grid grid-cols-2">
         <div class="lg:order-first lg:row-span-2">
           <Bloqueverde
