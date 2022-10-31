@@ -5,6 +5,11 @@
   import BloqueBordeLateral from "../lib/BloqueBordeLateral.svelte";
   import Bloqueverde from "../lib/Bloqueverde.svelte";
   import Base from "../lib/Base.svelte";
+  import PastillaAzul from "../lib/PastillaAzul.svelte";
+  import Scroller from "@sveltejs/svelte-scroller";
+  import Log from "../lib/Log.svelte";
+
+  let index, offset, progress;
 </script>
 
 <svelte:head>
@@ -52,20 +57,61 @@
     </div>
 
     <div class="lg">
-      <BloqueBordeLateral
-        text="¿Cómo de crítico es que la conformidad se deba a uno u otro de estos motivos?"
-        mayusculas="true"
-      />
-      <BloqueBordeLateral
-        text="Bueno, podríamos pensar que todo depende de cuánto acierte el sistema, 
+      <Scroller
+        top={0.5}
+        bottom={0.5}
+        threshold={0.5}
+        bind:index
+        bind:offset
+        bind:progress
+      >
+        <div slot="background">
+          <Log index={index + 1} />
+        </div>
+        <div slot="foreground">
+          <section>
+            <BloqueBordeLateral
+              text="¿Cómo de crítico es que la conformidad se deba a uno u otro de estos motivos?"
+              mayusculas="true"
+            />
+          </section>
+          <section>
+            <BloqueBordeLateral
+              text="Bueno, podríamos pensar que todo depende de cuánto acierte el sistema, 
       ¿no? Si el sistema acierta mucho, una alta conformidad supondría tomar buenas decisiones, 
       independientemente de a qué se deba esa conformidad."
-        mayusculas="false"
-      />
-      <BloqueBordeLateral
-        text="Bien, entonces parece que lo que hace falta conocer es hasta qué punto estos sistemas aciertan o no. 
+              mayusculas="false"
+            />
+          </section>
+          <section>
+            <BloqueBordeLateral
+              text="Bien, entonces parece que lo que hace falta conocer es hasta qué punto estos sistemas aciertan o no. 
       Pero claro, esto que podría parecer una pregunta de lo más sencilla, tiene algo más de miga de lo que parece."
-        mayusculas="false"
+              mayusculas="false"
+            />
+          </section>
+        </div>
+      </Scroller>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="grid grid-cols-2">
+    <div class="lg:order-first lg:row-span-2">
+      <Header
+        text="Esta conformidad puede significar dos cosas bastante distintas:"
+      />
+      <Base
+        text="Son varias las medidas que habitualmente se proporcionan para juzgar el desempeño de este tipo de sistemas.
+        Las más habituales son:"
+      />
+      <PastillaAzul title="Exactitud" />
+      <PastillaAzul title="Sensibilidad" />
+      <PastillaAzul title="Especificidad" />
+      <PastillaAzul title="Valor de predcción" />
+      <Base
+        text="Para ello, vamos a definirlas y a usar un ejemplo que nos ayude a comprenderlas: una prueba diagnóstica de cáncer."
       />
     </div>
   </div>
@@ -80,6 +126,33 @@
       <Base
         text="Son varias las medidas que habitualmente se proporcionan para juzgar el desempeño de este tipo de sistemas.
         Las más habituales son:"
+      />
+      <PastillaAzul title="Exactitud" />
+      <PastillaAzul title="Sensibilidad" />
+      <PastillaAzul title="Especificidad" />
+      <PastillaAzul title="Valor de predcción" />
+      <Base
+        text="Para ello, vamos a definirlas y a usar un ejemplo que nos ayude a comprenderlas: una prueba diagnóstica de cáncer."
+      />
+    </div>
+  </div>
+</section>
+<section>
+  <div class="grid grid-cols-2">
+    <div class="lg:order-first lg:row-span-2">
+      <Header
+        text="Esta conformidad puede significar dos cosas bastante distintas:"
+      />
+      <Base
+        text="Son varias las medidas que habitualmente se proporcionan para juzgar el desempeño de este tipo de sistemas.
+        Las más habituales son:"
+      />
+      <PastillaAzul title="Exactitud" />
+      <PastillaAzul title="Sensibilidad" />
+      <PastillaAzul title="Especificidad" />
+      <PastillaAzul title="Valor de predcción" />
+      <Base
+        text="Para ello, vamos a definirlas y a usar un ejemplo que nos ayude a comprenderlas: una prueba diagnóstica de cáncer."
       />
     </div>
   </div>

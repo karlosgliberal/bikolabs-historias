@@ -1,6 +1,5 @@
 <script>
   import "../app.css";
-
   function getCurrentDate() {
     const today = new Date();
     const dd = String(today.getDate()).padStart(2, "0");
