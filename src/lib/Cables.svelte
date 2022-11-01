@@ -49,10 +49,10 @@
 </script>
 
 <svelte:head>
-  <script src="personas/patch.js" on:load={initializeRemarkable}></script>
+  <script src="patch.js" on:load={initializeRemarkable}></script>
 </svelte:head>
 
-<div>
+<div class="mb-4">
   <canvas
     id="glcanvas"
     width="600"

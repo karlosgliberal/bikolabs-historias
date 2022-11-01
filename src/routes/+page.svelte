@@ -19,8 +19,8 @@
 </svelte:head>
 
 <section>
-  <div class="grid grid-cols-2">
-    <div class="lg:order-first lg:row-span-2">
+  <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2">
+    <div class="lg:order-first lg:row-span-2 ">
       <Entradilla
         text="Cada vez se automatizan más procesos de decisión (o se usan más sistemas
       automatizados en procesos de decisión) en campos de lo más diversos, desde
@@ -39,10 +39,10 @@
 </section>
 
 <section>
-  <div class="grid grid-cols-2">
+  <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2">
     <div class="lg:order-first lg:row-span-2">
       <Cables step={index} />
-      <div class="grid grid-cols-2">
+      <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
         <div class="lg:order-first lg:row-span-2">
           <Bloqueverde
             text="Que los sistemas y los operadores humanos están muy alineados"
@@ -98,7 +98,7 @@
 </section>
 
 <section>
-  <div class="grid grid-cols-2">
+  <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2">
     <div class="lg:order-first lg:row-span-2">
       <Header
         text="Esta conformidad puede significar dos cosas bastante distintas:"
