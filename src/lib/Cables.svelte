@@ -14,7 +14,7 @@
     console.log("movida d");
     CABLES.patch = new CABLES.Patch({
       patch: CABLES.exportedPatch,
-      prefixAssetPath: "cables/",
+      prefixAssetPath: "personas/",
       glCanvasId: "glcanvas",
       glCanvasResizeToWindow: false,
       onError: showError,
@@ -49,14 +49,14 @@
 </script>
 
 <svelte:head>
-  <script src="patch.js" on:load={initializeRemarkable}></script>
+  <script src="personas/patch.js" on:load={initializeRemarkable}></script>
 </svelte:head>
 
 <div>
   <canvas
     id="glcanvas"
-    width="800"
-    height="400"
-    style="width: 600px; height: 400px;"
+    width="600"
+    height="300"
+    style="width: 600px; height: 300px;"
   />
 </div>
