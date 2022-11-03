@@ -41,7 +41,7 @@
 <section>
   <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2">
     <div class="lg:order-first lg:row-span-2">
-      <Cables step={index} />
+      <!-- <Cables step={index} patch="automatiza" /> -->
       <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
         <div class="lg:order-first lg:row-span-2">
           <Bloqueverde
@@ -99,47 +99,6 @@
 
 <section>
   <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2">
-    <div class="lg:order-first lg:row-span-2">
-      <Header
-        text="Esta conformidad puede significar dos cosas bastante distintas:"
-      />
-      <Base
-        text="Son varias las medidas que habitualmente se proporcionan para juzgar el desempeño de este tipo de sistemas.
-        Las más habituales son:"
-      />
-      <PastillaAzul title="Exactitud" />
-      <PastillaAzul title="Sensibilidad" />
-      <PastillaAzul title="Especificidad" />
-      <PastillaAzul title="Valor de predcción" />
-      <Base
-        text="Para ello, vamos a definirlas y a usar un ejemplo que nos ayude a comprenderlas: una prueba diagnóstica de cáncer."
-      />
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="grid grid-cols-2">
-    <div class="lg:order-first lg:row-span-2">
-      <Header
-        text="Esta conformidad puede significar dos cosas bastante distintas:"
-      />
-      <Base
-        text="Son varias las medidas que habitualmente se proporcionan para juzgar el desempeño de este tipo de sistemas.
-        Las más habituales son:"
-      />
-      <PastillaAzul title="Exactitud" />
-      <PastillaAzul title="Sensibilidad" />
-      <PastillaAzul title="Especificidad" />
-      <PastillaAzul title="Valor de predcción" />
-      <Base
-        text="Para ello, vamos a definirlas y a usar un ejemplo que nos ayude a comprenderlas: una prueba diagnóstica de cáncer."
-      />
-    </div>
-  </div>
-</section>
-<section>
-  <div class="grid grid-cols-2">
     <div class="lg:order-first lg:row-span-2">
       <Header
         text="Esta conformidad puede significar dos cosas bastante distintas:"

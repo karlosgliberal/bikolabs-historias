@@ -2,6 +2,9 @@
   import { onMount } from "svelte";
 
   export let step;
+  export let patch;
+
+  let pathPatch = `${patch}/patch.js`;
 
   $: {
     if (step == 1) {
@@ -14,7 +17,7 @@
     console.log("movida d");
     CABLES.patch = new CABLES.Patch({
       patch: CABLES.exportedPatch,
-      prefixAssetPath: "personas/",
+      prefixAssetPath: `${patch}/`,
       glCanvasId: "glcanvas",
       glCanvasResizeToWindow: false,
       onError: showError,
@@ -49,10 +52,10 @@
 </script>
 
 <svelte:head>
-  <script src="patch.js" on:load={initializeRemarkable}></script>
+  <script src={pathPatch} on:load={initializeRemarkable}></script>
 </svelte:head>
 
-<div class="mb-4">
+<div class="mb-4 ">
   <canvas
     id="glcanvas"
     width="600"

@@ -3,6 +3,7 @@
 </script>
 
 <!-- Pastilla borde lateral fondo verde -->
+
 <div
   class="relative bg-teal-700 px-6 py-6 border-l border-teal-100 sm:w-4/4  sm:max-w-lg rounded-sm"
 >
