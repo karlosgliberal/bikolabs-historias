@@ -13,12 +13,11 @@
     }
   }
   let canvas;
-  const initializeRemarkable = () => {
-    console.log("movida d");
+  const initializeCables = () => {
     CABLES.patch = new CABLES.Patch({
       patch: CABLES.exportedPatch,
       prefixAssetPath: `${patch}/`,
-      glCanvasId: "glcanvas",
+      glCanvasId: `cables_${patch}`,
       glCanvasResizeToWindow: false,
       onError: showError,
       onPatchLoaded: patchInitialized,
@@ -29,7 +28,7 @@
     });
   };
   onMount(() => {
-    initializeRemarkable();
+    initializeCables();
   });
 
   function showError(errId, errMsg) {
@@ -52,12 +51,12 @@
 </script>
 
 <svelte:head>
-  <script src={pathPatch} on:load={initializeRemarkable}></script>
+  <script src={pathPatch} on:load={initializeCables}></script>
 </svelte:head>
 
 <div class="mb-4 ">
   <canvas
-    id="glcanvas"
+    id="cables_{patch}"
     width="600"
     height="300"
     style="width: 600px; height: 300px;"

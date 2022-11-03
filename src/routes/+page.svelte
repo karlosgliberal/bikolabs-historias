@@ -41,7 +41,7 @@
 <section>
   <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2">
     <div class="lg:order-first lg:row-span-2">
-      <!-- <Cables step={index} patch="automatiza" /> -->
+      <Cables step={index} patch="automatiza" />
       <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
         <div class="lg:order-first lg:row-span-2">
           <Bloqueverde
