@@ -10,6 +10,9 @@
     if (step == 1) {
       console.log("movida");
       handleClick();
+    } else if (step == 2) {
+      console.log("full");
+      full();
     }
   }
   let canvas;
@@ -45,6 +48,11 @@
   function handleClick() {
     CABLES.patch.config.patchFunctiontrigger();
   }
+
+  function full() {
+    CABLES.patch.config.patchFunctionFulltrigger();
+  }
+
   function myFunction() {
     alert("function called!");
   }
