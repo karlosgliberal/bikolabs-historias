@@ -64,7 +64,7 @@
 
 <div class="mb-4 h-screen">
   <canvas
-    class="h-fit"
+    class="z-0 absolute"
     id="cables_{patch}"
     width="100%"
     height="100%"
