@@ -30,7 +30,7 @@
 </div>
 {:else}
 <div class="absolute z-20 flex justify-around h-screen w-screen items-center">  
-<div class="py-40 bg-green-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray px-10 " 
+<div class="py-40 bg-green-800 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-70 border border-gray px-10 " 
   style="width: {ancho}px;"
 >
   <div class="flex flex-col justify-center items-center">
