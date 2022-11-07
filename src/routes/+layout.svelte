@@ -57,11 +57,5 @@
   </header>
 </div>
 <main>
-  <div class="mt-16 sm:mt-32 sm:px-8">
-    <div class="mx-auto lg:px-8">
-      <div class="mx-auto max-w-full lg:max-w-7xl">
-        <slot />
-      </div>
-    </div>
-  </div>
+  <slot />
 </main>
