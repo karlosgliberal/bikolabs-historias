@@ -5,7 +5,7 @@ import * as path from "path";
 const dirname = path.resolve(fileURLToPath(import.meta.url), "../");
 
 const config = defineConfig({
-  extensions: [".md", ".svx", ".svelte"],
+  extensions: [".md", ".svx"],
   smartypants: { dashes: "oldschool" },
   layout: {
     pasos: path.join(dirname, "./src/routes/pasos/layout.svelte"),

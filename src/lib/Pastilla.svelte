@@ -1,12 +1,12 @@
 <script>
   export const titulo = true;
-  export const tituloDestacado = false;
-  export const boton = false;
+  export const tituloDestacado = true;
+  export const boton = true;
 </script>
 
 <!--card container-->
 <div
-  class="z-20 col-span-4 md:col-span-9 lg:col-span-5 row-start-1 sm:row-start-2 lg:col-start-3 self-start h-fit rounded  bg-stone-200 text-zinc-800 text-center shadow-xl mt-24 sm:-mt-24 pb-12 mb-8"
+  class="z-20 col-span-4 md:col-span-9 lg:col-span-5 row-start-2 sm:row-start-3 lg:col-start-3 self-start h-fit rounded  bg-stone-200 text-zinc-800 text-center shadow-xl mt-24 sm:-mt-24 pb-12 mb-8"
 >
   {#if titulo}
     <!--título-->

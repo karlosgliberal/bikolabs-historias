@@ -1,12 +1,8 @@
 <script>
   import "../app.css";
-  function getCurrentDate() {
-    const today = new Date();
-    const dd = String(today.getDate()).padStart(2, "0");
-    const mm = String(today.getMonth() + 1).padStart(2, "0");
-    const yyyy = today.getFullYear();
-    return yyyy + "-" + mm + "-" + dd;
-  }
+  import { page } from "$app/stores";
+  let currentPAge = $page.url.pathname;
+  import { fade } from "svelte/transition";
 </script>
 
 <svelte:head>

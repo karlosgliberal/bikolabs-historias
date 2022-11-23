@@ -5,8 +5,11 @@
   // import Log from "../../lib/Log.svelte";
   // import Aitor from "../../lib/Aitor.svelte";
   import Footer from "../lib/Footer.svelte";
-  let uno = false;
-  let dos = true;
+
+  let uno = true;
+  let dos = false;
+  export let data;
+  console.log(data);
   let index, offset, progress;
   function handleMessage(event) {
     index = !index;
@@ -17,11 +20,6 @@
   <title>Riscanvi</title>
   <meta name="description" content="Riscanvi " />
 </svelte:head>
-
-<!--atributos body y contenedor del grid -->
-
-<!--portada-->
-<!--atributos body y contenedor del grid -->
 
 <!--portada-->
 <section id="cover">
