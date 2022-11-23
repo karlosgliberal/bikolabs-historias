@@ -1,0 +1,26 @@
+[
+  {
+    "paso": {
+      "position": 1,
+      "title": "1 Este es el titulo",
+      "boton": true,
+      "time": 0
+    }
+  },
+  {
+    "paso": {
+      "position": 2,
+      "title": "2 Este es el titulo",
+      "boton": true,
+      "time": 0
+    }
+  },
+  {
+    "paso": {
+      "position": 3,
+      "title": "3 Este es el titulo",
+      "boton": true,
+      "time": 0
+    }
+  }
+]

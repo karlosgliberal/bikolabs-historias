@@ -36,7 +36,7 @@
 </div>
 
 <style>
-  /* .bordeA {
+  .bordeA {
     border-top-left-radius: 255px 15px;
     border-top-right-radius: 15px 225px;
     border-bottom-right-radius: 225px 15px;
@@ -45,7 +45,7 @@
 
   .bordeA.lined.thick {
     border: solid 3px #e7e5e4;
-  } */
+  }
 
   .bordeB {
     border-top-left-radius: 255px 15px;

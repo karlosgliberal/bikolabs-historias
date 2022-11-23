@@ -1,16 +1,16 @@
 <script>
   import Cables from "../lib/Cables.svelte";
-  import Pastilla from "../lib/Pastilla.svelte";
-  import Pastilla_Complet from "../lib/Pastilla_completa.svelte";
-  // import Log from "../../lib/Log.svelte";
-  // import Aitor from "../../lib/Aitor.svelte";
+  import pasos from "$lib/data/pasos.json";
+  import Cover from "../lib/components/Cover.svelte";
+  import TituloBoton from "../lib/components/TituloBoton.svelte";
+  import PastillaBoton from "../lib/components/PastillaBoton.svelte";
   import Footer from "../lib/Footer.svelte";
 
+  console.log(pasos[2].paso);
   let uno = true;
   let dos = false;
-  export let data;
-  console.log(data);
   let index, offset, progress;
+
   function handleMessage(event) {
     index = !index;
   }
@@ -30,18 +30,12 @@
     <div class="w-full h-screen absolute z-10">
       <Cables step={index} patch="presos" />
     </div>
+
+    <h1 class="z-30 text-white">{pasos[2].paso.title}</h1>
+
     <!--COMPONENTE-->
     {#if uno}
-      <Pastilla titulo="movida" tituloDestacado="movids" paso="1" />
-    {/if}
-
-    {#if dos}
-      <Pastilla_Complet
-        titulo="movida"
-        tituloDestacado="movids"
-        paso="1"
-        text="Hola que tal estas es es el texto "
-      />
+      <Cover />
     {/if}
 
     <Footer />
