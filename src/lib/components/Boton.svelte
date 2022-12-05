@@ -17,17 +17,6 @@
 >
 
 <style>
-  .bordeA {
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
-    border-bottom-right-radius: 225px 15px;
-    border-bottom-left-radius: 15px 255px;
-  }
-
-  .bordeA.lined.thick {
-    border: solid 3px #e7e5e4;
-  }
-
   .bordeB {
     border-top-left-radius: 255px 15px;
     border-top-right-radius: 15px 225px;

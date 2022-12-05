@@ -6,7 +6,7 @@
   import PastillaBoton from "../lib/components/PastillaBoton.svelte";
   import Footer from "../lib/Footer.svelte";
   import Aitor from "../lib/Aitor.svelte";
-  import Comple from "../lib/Pastilla_completa.svelte";
+  import Pastilla from "../lib/Pastilla_completa.svelte";
   import Wrapper from "../lib/components/Wrapper.svelte";
 
   console.log(pasos[2]);
@@ -40,7 +40,7 @@
     <!--COMPONENTE-->
     {#if uno}
       <Wrapper>
-        <Comple on:message={handleMessage} />
+        <Pastilla on:message={handleMessage} step={index} />
       </Wrapper>
       <!-- <Aitor ancho="900" visible="movid" on:message={handleMessage} /> -->
     {/if}
