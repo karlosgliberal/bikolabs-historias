@@ -1,1 +1,1 @@
-<slot on:message />
+<slot />
