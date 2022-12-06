@@ -3,28 +3,28 @@
   import pasos from "$lib/data/pasos.json";
   import Cover from "../lib/components/Cover.svelte";
   import Footer from "../lib/Footer.svelte";
-  import Pastilla from "../lib/components/PastillaCompleta.svelte";
-  import Wrapper from "../lib/components/Wrapper.svelte";
   import { onMount } from "svelte";
+  import { vis } from "$lib/store.js";
 
-  let index, timer;
+  let index;
   let visible = true;
   let titulo = "una gran movida";
   let Chatbox;
 
   onMount(async () => {
     await loadChatbox();
+    vis.verdadero();
   });
 
   function handleMessage(event) {
-    console.log("movdia");
+    console.log("movdiaddddd", $vis);
     index = !index;
-    visible = false;
+    vis.falso();
     titulo = "no es una gran movida";
+    loadChatbox();
   }
 
   function loadChatbox() {
-    visible != visible;
     import("../lib/components/PastillaCompleta.svelte").then(
       (res) => (Chatbox = res.default)
     );
@@ -49,9 +49,8 @@
     <svelte:component
       this={Chatbox}
       on:message={handleMessage}
-      step={index}
       {titulo}
-      {visible}
+      visible={$vis}
       row="3"
       col="3"
     />

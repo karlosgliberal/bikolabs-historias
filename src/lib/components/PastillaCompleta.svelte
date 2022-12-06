@@ -3,12 +3,12 @@
   import Titulo from "./Titulo.svelte";
   import Boton from "./Boton.svelte";
   import { fade, fly } from "svelte/transition";
+  import { vis } from "$lib/store.js";
 
-  export let visible = true;
+  export let visible;
   export let titulo = ";";
   export const tituloDestacado = false;
   export const boton = true;
-  export let step;
   export let row = 2;
   export let col = 3;
 
@@ -18,16 +18,9 @@
 
   function finDesaparecer() {
     timer = setTimeout(() => {
-      visible = true;
+      vis.verdadero();
+      console.log("finn");
     }, 2000);
-  }
-
-  $: {
-    if (step == 1) {
-      console.log("pastilla");
-    } else if (step == 2) {
-      console.log("full");
-    }
   }
 </script>
 
