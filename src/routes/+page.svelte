@@ -2,21 +2,26 @@
   import Cables from "../lib/Cables.svelte";
   import pasos from "$lib/data/pasos.json";
   import Cover from "../lib/components/Cover.svelte";
-  import TituloBoton from "../lib/components/TituloBoton.svelte";
-  import PastillaBoton from "../lib/components/PastillaBoton.svelte";
   import Footer from "../lib/Footer.svelte";
-  import Aitor from "../lib/Aitor.svelte";
-  import Pastilla from "../lib/Pastilla_completa.svelte";
+  import Pastilla from "../lib/components/PastillaCompleta.svelte";
   import Wrapper from "../lib/components/Wrapper.svelte";
 
   console.log(pasos[2]);
-  let uno = true;
-  let dos = false;
-  let index, offset, progress;
+  let index, visible;
 
   function handleMessage(event) {
     console.log("movdia");
     index = !index;
+    visible = false;
+  }
+
+  let Chatbox;
+
+  function loadChatbox() {
+    visible != visible;
+    import("../lib/components/Cover.svelte").then(
+      (res) => (Chatbox = res.default)
+    );
   }
 </script>
 
@@ -34,20 +39,11 @@
     <div class="w-full h-screen absolute z-10">
       <Cables step={index} patch="casas" />
     </div>
-    <!--COMPONENTE-->
-    {#if uno}
-      <Wrapper>
-        <Pastilla on:message={handleMessage} step={index} />
-      </Wrapper>
-      <!-- <Aitor ancho="900" visible="movid" on:message={handleMessage} /> -->
-    {/if}
+    <button class="z-40" on:click={loadChatbox}>Load chatbox</button>
 
+    <svelte:component this={Chatbox} texto="Acierto en las decccc" {visible} />
+
+    <Pastilla on:message={handleMessage} step={index} row="3" col="3" />
     <Footer />
   </div>
 </section>
-
-<!-- 
-<section>
-  <Aitor ancho="900" visible="movid" on:message={handleMessage} />
-
-</section> -->
