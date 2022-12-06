@@ -5,9 +5,13 @@
   import Footer from "../lib/Footer.svelte";
   import Pastilla from "../lib/components/PastillaCompleta.svelte";
   import Wrapper from "../lib/components/Wrapper.svelte";
+  import { onMount } from "svelte";
 
-  console.log(pasos[2]);
   let index, visible;
+
+  onMount(async () => {
+    await loadChatbox();
+  });
 
   function handleMessage(event) {
     console.log("movdia");
@@ -19,7 +23,7 @@
 
   function loadChatbox() {
     visible != visible;
-    import("../lib/components/Cover.svelte").then(
+    import("../lib/components/PastillaCompleta.svelte").then(
       (res) => (Chatbox = res.default)
     );
   }
@@ -41,9 +45,15 @@
     </div>
     <button class="z-40" on:click={loadChatbox}>Load chatbox</button>
 
-    <svelte:component this={Chatbox} texto="Acierto en las decccc" {visible} />
+    <svelte:component
+      this={Chatbox}
+      on:message={handleMessage}
+      step={index}
+      row="3"
+      col="3"
+    />
 
-    <Pastilla on:message={handleMessage} step={index} row="3" col="3" />
+    <!-- <Pastilla /> -->
     <Footer />
   </div>
 </section>
