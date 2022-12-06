@@ -7,7 +7,10 @@
   import Wrapper from "../lib/components/Wrapper.svelte";
   import { onMount } from "svelte";
 
-  let index, visible;
+  let index, timer;
+  let visible = true;
+  let titulo = "una gran movida";
+  let Chatbox;
 
   onMount(async () => {
     await loadChatbox();
@@ -17,9 +20,8 @@
     console.log("movdia");
     index = !index;
     visible = false;
+    titulo = "no es una gran movida";
   }
-
-  let Chatbox;
 
   function loadChatbox() {
     visible != visible;
@@ -43,12 +45,13 @@
     <div class="w-full h-screen absolute z-10">
       <Cables step={index} patch="casas" />
     </div>
-    <button class="z-40" on:click={loadChatbox}>Load chatbox</button>
 
     <svelte:component
       this={Chatbox}
       on:message={handleMessage}
       step={index}
+      {titulo}
+      {visible}
       row="3"
       col="3"
     />
