@@ -34,9 +34,6 @@
     <div class="w-full h-screen absolute z-10">
       <Cables step={index} patch="casas" />
     </div>
-
-    <h1 class="z-30 text-white">{pasos[2].title}</h1>
-
     <!--COMPONENTE-->
     {#if uno}
       <Wrapper>

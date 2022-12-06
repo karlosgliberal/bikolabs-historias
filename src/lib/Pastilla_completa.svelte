@@ -7,6 +7,11 @@
   export const boton = true;
   export let step;
   export let text = "movidas esto es unte xto";
+  export let row = 2;
+  export let col = 3;
+
+  let classRow = `row-start-${row} sm:row-start-${row}`;
+  let classCol = `lg:col-start-${col}`;
 
   $: {
     if (step == 1) {
@@ -25,7 +30,7 @@
 {#if step != 1}
   <div
     transition:fade={{ duration: 1000 }}
-    class="z-20 col-span-4 md:col-span-9 lg:col-span-5 row-start-1 sm:row-start-2 lg:col-start-3 self-start h-fit rounded  bg-stone-200 text-zinc-800 text-center shadow-xl mt-24 sm:-mt-24 pb-12 mb-8"
+    class="z-20 col-span-4 md:col-span-9 lg:col-span-5 {classRow} {classCol} self-start h-fit rounded  bg-stone-200 text-zinc-800 text-center shadow-xl mt-24 sm:-mt-24 pb-12 mb-8"
   >
     {#if titulo}
       <!--título-->
