@@ -9,26 +9,27 @@
   let index;
   let visible = true;
   let titulo = "una gran movida";
-  let Chatbox;
+  let Pastilla;
+  let paso;
 
   onMount(async () => {
-    await loadChatbox();
     vis.verdadero();
+    loadPastilla();
   });
 
   function handleMessage(event) {
-    console.log("movdiaddddd", $vis);
     index = !index;
     vis.falso();
     titulo = "no es una gran movida";
-    loadChatbox();
+    loadPastilla();
   }
 
-  function loadChatbox() {
+  function loadPastilla() {
     import("../lib/components/PastillaCompleta.svelte").then(
-      (res) => (Chatbox = res.default)
+      (res) => (Pastilla = res.default)
     );
   }
+  paso = pasos[$vis].title;
 </script>
 
 <svelte:head>
@@ -47,9 +48,9 @@
     </div>
 
     <svelte:component
-      this={Chatbox}
+      this={Pastilla}
       on:message={handleMessage}
-      {titulo}
+      titulo={pasos[$vis].title}
       visible={$vis}
       row="3"
       col="3"
