@@ -1,10 +1,10 @@
 <script>
+  import { vis, historyPosition } from "$lib/store.js";
   import Cables from "../lib/Cables.svelte";
   import pasos from "$lib/data/pasos.json";
   import Cover from "../lib/components/Cover.svelte";
   import Footer from "../lib/Footer.svelte";
   import { onMount } from "svelte";
-  import { vis } from "$lib/store.js";
 
   let index;
   let visible = true;
@@ -20,7 +20,6 @@
   function handleMessage(event) {
     index = !index;
     vis.falso();
-    titulo = "no es una gran movida";
     loadPastilla();
   }
 
@@ -29,6 +28,7 @@
       (res) => (Pastilla = res.default)
     );
   }
+  console.log($vis);
   paso = pasos[$vis].title;
 </script>
 

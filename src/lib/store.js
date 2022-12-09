@@ -11,3 +11,15 @@ function createVisibility() {
 }
 
 export const vis = createVisibility();
+
+function createHistoryPosition() {
+  const { subscribe, set, update } = writable(0);
+
+  return {
+    subscribe,
+    sumar: () => update((n) => n + 1),
+    restar: () => update((n) => n - 1),
+  };
+}
+
+export const historyPosition = createHistoryPosition();
