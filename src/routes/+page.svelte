@@ -1,25 +1,24 @@
 <script>
   import { vis, historyPosition } from "$lib/store.js";
-  import Cables from "../lib/Cables.svelte";
-  import pasos from "$lib/data/pasos.json";
+  import Cables from "../lib/components/Cables.svelte";
   import Cover from "../lib/components/Cover.svelte";
-  import Footer from "../lib/Footer.svelte";
+  import pasos from "$lib/data/pasos.json";
+  import Footer from "../lib/components/Footer.svelte";
   import { onMount } from "svelte";
 
   let index;
-  let visible = true;
-  let titulo = "una gran movida";
   let Pastilla;
   let paso;
+  let title;
 
   onMount(async () => {
-    vis.verdadero();
     loadPastilla();
   });
 
   function handleMessage(event) {
     index = !index;
     vis.falso();
+    historyPosition.sumar();
     loadPastilla();
   }
 
@@ -28,8 +27,8 @@
       (res) => (Pastilla = res.default)
     );
   }
-  console.log($vis);
-  paso = pasos[$vis].title;
+  console.log("indice", index);
+  paso = pasos[$historyPosition].title;
 </script>
 
 <svelte:head>
@@ -46,15 +45,18 @@
     <div class="w-full h-screen absolute z-10">
       <Cables step={index} patch="casas" />
     </div>
-
-    <svelte:component
-      this={Pastilla}
-      on:message={handleMessage}
-      titulo={pasos[$vis].title}
-      visible={$vis}
-      row="3"
-      col="3"
-    />
+    {#if $historyPosition == 0}
+      <Cover />
+    {:else}
+      <svelte:component
+        this={Pastilla}
+        on:message={handleMessage}
+        titulo={pasos[$historyPosition].title}
+        visible={$vis}
+        row="2"
+        col="3"
+      />
+    {/if}
 
     <!-- <Pastilla /> -->
     <Footer />

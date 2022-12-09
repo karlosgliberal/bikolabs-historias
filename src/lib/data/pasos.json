@@ -2,7 +2,7 @@
   {
     "id": 1,
     "position": 1,
-    "title": "1 Este es el titulo",
+    "title": "primero",
     "col": 2,
     "row": 3,
     "boton": true,
@@ -11,14 +11,14 @@
   {
     "id": 2,
     "position": 2,
-    "title": "2 Este es el titulo",
+    "title": "segundo",
     "boton": true,
     "time": 0
   },
   {
     "id": 3,
     "position": 3,
-    "title": "3 Este es el titulo",
+    "title": "tercero",
     "boton": true,
     "time": 0
   }

@@ -1,6 +1,9 @@
 <script>
   import { createEventDispatcher } from "svelte";
+  import Titulo from "./Titulo.svelte";
   const dispatch = createEventDispatcher();
+
+  export let nombreBoton = "Comenzars";
 
   function sayHello() {
     dispatch("message", {
@@ -13,7 +16,7 @@
   on:click={sayHello}
   type="button"
   class="bordeB lined thick  w-11/12 md:w-4/12 text-base font-mono font-bold tracking-widest text-zinc-800 bg-stone-200 hover:bg-stone-100 shadow-xl mt-12  py-4 "
-  >Comenzar</button
+  >{nombreBoton}</button
 >
 
 <style>

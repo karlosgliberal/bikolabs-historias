@@ -1,7 +1,7 @@
 import { writable } from "svelte/store";
 
 function createVisibility() {
-  const { subscribe, set, update } = writable(0);
+  const { subscribe, set, update } = writable(1);
 
   return {
     subscribe,
@@ -19,6 +19,7 @@ function createHistoryPosition() {
     subscribe,
     sumar: () => update((n) => n + 1),
     restar: () => update((n) => n - 1),
+    reset: () => set(0),
   };
 }
 

@@ -19,8 +19,6 @@
   function finDesaparecer() {
     timer = setTimeout(() => {
       vis.verdadero();
-      console.log($vis);
-      console.log("finn");
     }, 2000);
   }
 </script>

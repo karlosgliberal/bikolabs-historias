@@ -1,3 +1,7 @@
+<script>
+  import Incrementar from "../components/Incrementar.svelte";
+</script>
+
 <!--footer-->
 <div
   class="z-30 col-span-4 md:col-span-9 row-start-2 sm:row-start-3 lg:col-start-2 self-center sm:self-end rounded text-zinc-600 px-8 sm:py-8 sm:mb-4 "
@@ -27,9 +31,7 @@
     </div>
     <div class="flex flex-col w-full  hover:text-zinc-400 ">
       <div class="text-xs text-transparent mb-3">_</div>
-      <a href="movida" class="hover:text-zinc-200 hover:font-semibold"
-        >© 2022
-      </a>
+      <Incrementar />
     </div>
   </div>
 </div>
