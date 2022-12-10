@@ -1,6 +1,5 @@
 <script>
   import { createEventDispatcher } from "svelte";
-  import Titulo from "./Titulo.svelte";
   const dispatch = createEventDispatcher();
 
   export let nombreBoton = "Comenzars";

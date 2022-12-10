@@ -11,7 +11,7 @@
   {
     "id": 2,
     "position": 2,
-    "title": "segundo",
+    "title": "Miren guapa ",
     "boton": true,
     "time": 0
   },
@@ -19,6 +19,13 @@
     "id": 3,
     "position": 3,
     "title": "tercero",
+    "boton": true,
+    "time": 0
+  },
+  {
+    "id": 4,
+    "position": 3,
+    "title": "Cuarto",
     "boton": true,
     "time": 0
   }

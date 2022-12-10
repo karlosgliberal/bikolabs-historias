@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import { historyPosition } from "$lib/store.js";
 
   export let step;
   export let patch;
@@ -9,12 +10,14 @@
   $: {
     if (step == 1) {
       console.log("movida");
-      handleClick();
+      handleClick($historyPosition);
     } else if (step == 2) {
+      handleClick($historyPosition);
       console.log("full");
       full();
     }
   }
+
   let canvas;
   const initializeCables = () => {
     CABLES.patch = new CABLES.Patch({
@@ -45,8 +48,9 @@
   function patchFinishedLoading() {
     // The patch is ready now, all assets have been loaded
   }
-  function handleClick() {
-    CABLES.patch.config.patchFunctiontrigger();
+  function handleClick(paso) {
+    console.log("numerofunction", paso);
+    CABLES.patch.config.patchFunctiontrigger(paso);
   }
 
   function full() {

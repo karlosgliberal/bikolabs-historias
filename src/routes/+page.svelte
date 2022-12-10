@@ -1,9 +1,9 @@
 <script>
   import { vis, historyPosition } from "$lib/store.js";
-  import Cables from "../lib/components/Cables.svelte";
-  import Cover from "../lib/components/Cover.svelte";
+  import Cables from "../components/Cables.svelte";
+  import Cover from "../components/Cover.svelte";
   import pasos from "$lib/data/pasos.json";
-  import Footer from "../lib/components/Footer.svelte";
+  import Footer from "../components/Footer.svelte";
   import { onMount } from "svelte";
 
   let index;
@@ -16,6 +16,7 @@
   });
 
   function handleMessage(event) {
+    console.log(event);
     index = !index;
     vis.falso();
     historyPosition.sumar();
@@ -23,7 +24,7 @@
   }
 
   function loadPastilla() {
-    import("../lib/components/PastillaCompleta.svelte").then(
+    import("../components/PastillaCompleta.svelte").then(
       (res) => (Pastilla = res.default)
     );
   }
@@ -45,18 +46,15 @@
     <div class="w-full h-screen absolute z-10">
       <Cables step={index} patch="casas" />
     </div>
-    {#if $historyPosition == 0}
-      <Cover />
-    {:else}
-      <svelte:component
-        this={Pastilla}
-        on:message={handleMessage}
-        titulo={pasos[$historyPosition].title}
-        visible={$vis}
-        row="2"
-        col="3"
-      />
-    {/if}
+
+    <svelte:component
+      this={Pastilla}
+      on:message={handleMessage}
+      titulo={pasos[$historyPosition].title}
+      visible={$vis}
+      row="2"
+      col="3"
+    />
 
     <!-- <Pastilla /> -->
     <Footer />

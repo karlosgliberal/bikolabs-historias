@@ -1,5 +1,6 @@
 <script>
-  import Incrementar from "../components/Incrementar.svelte";
+  import Incrementar from "./Incrementar.svelte";
+  import Decrementar from "./Decrementar.svelte";
 </script>
 
 <!--footer-->
@@ -32,6 +33,7 @@
     <div class="flex flex-col w-full  hover:text-zinc-400 ">
       <div class="text-xs text-transparent mb-3">_</div>
       <Incrementar />
+      <Decrementar />
     </div>
   </div>
 </div>

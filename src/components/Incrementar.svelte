@@ -1,7 +1,8 @@
 <script>
-  import { historyPosition } from "$lib/store.js";
+  import { historyPosition, vis } from "$lib/store.js";
 
   function increment() {
+    vis.falso();
     historyPosition.sumar((n) => n + 1);
     console.log($historyPosition);
   }
