@@ -6,7 +6,7 @@
   import Footer from "../components/Footer.svelte";
   import { onMount } from "svelte";
 
-  let index;
+  let index = 0;
   let Pastilla;
   let paso;
   let title;
@@ -44,7 +44,7 @@
     class="z-20 min-h-screen grid grid-rows-3 grid-cols-4 lg:grid-cols-9 gap-3 px-3 sm:px-4"
   >
     <div class="w-full h-screen absolute z-10">
-      <Cables step={index} patch="casas" />
+      <Cables step={$historyPosition} patch="casas" />
     </div>
 
     <svelte:component

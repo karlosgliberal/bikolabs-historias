@@ -4,17 +4,14 @@
 
   export let step;
   export let patch;
-
+  let paso;
   let pathPatch = `${patch}/patch.js`;
 
   $: {
-    if (step == 1) {
-      console.log("movida");
+    if (step != 0) {
       handleClick($historyPosition);
-    } else if (step == 2) {
-      handleClick($historyPosition);
-      console.log("full");
-      full();
+    } else {
+      console.log("init Step 0");
     }
   }
 
@@ -51,10 +48,6 @@
   function handleClick(paso) {
     console.log("numerofunction", paso);
     CABLES.patch.config.patchFunctiontrigger(paso);
-  }
-
-  function full() {
-    CABLES.patch.config.patchFunctionFulltrigger();
   }
 
   function myFunction() {
