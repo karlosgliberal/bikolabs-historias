@@ -6,6 +6,7 @@
   import pasos from "$lib/data/pasos.json";
   import Footer from "../components/Footer.svelte";
   import Loading from "../components/Loading.svelte";
+  import Timeline from "../components/Timeline.svelte";
 
   let Pastilla;
   let paso;
@@ -43,6 +44,8 @@
     <div class="w-full h-screen absolute z-10">
       <Cables step={$historyPosition} patch="casas" />
     </div>
+
+    <Timeline />
 
     {#if $historyPosition == 0}
       <Loading />
