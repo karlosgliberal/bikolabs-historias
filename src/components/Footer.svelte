@@ -1,6 +1,7 @@
 <script>
   import Incrementar from "./Incrementar.svelte";
   import Decrementar from "./Decrementar.svelte";
+  import Reset from "./Reset.svelte";
 </script>
 
 <!--footer-->
@@ -34,6 +35,7 @@
       <div class="text-xs text-transparent mb-3">_</div>
       <Incrementar />
       <Decrementar />
+      <Reset />
     </div>
   </div>
 </div>

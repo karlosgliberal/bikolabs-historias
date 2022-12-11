@@ -1,5 +1,14 @@
 [
   {
+    "id": 0,
+    "position": 1,
+    "title": "Loading",
+    "col": 2,
+    "row": 3,
+    "boton": true,
+    "time": 0
+  },
+  {
     "id": 1,
     "position": 1,
     "title": "primero",
@@ -26,6 +35,15 @@
     "id": 4,
     "position": 3,
     "title": "Cuarto",
+    "boton": true,
+    "time": 0
+  },
+  {
+    "id": 5,
+    "position": 1,
+    "title": "Cinco",
+    "col": 2,
+    "row": 3,
     "boton": true,
     "time": 0
   }

@@ -5,6 +5,7 @@
   import pasos from "$lib/data/pasos.json";
   import Footer from "../components/Footer.svelte";
   import { onMount } from "svelte";
+  import Loading from "../components/Loading.svelte";
 
   let index = 0;
   let Pastilla;
@@ -16,8 +17,7 @@
   });
 
   function handleMessage(event) {
-    console.log(event);
-    index = !index;
+    // index = !index;
     vis.falso();
     historyPosition.sumar();
     loadPastilla();
@@ -28,7 +28,6 @@
       (res) => (Pastilla = res.default)
     );
   }
-  console.log("indice", index);
   paso = pasos[$historyPosition].title;
 </script>
 
@@ -46,17 +45,22 @@
     <div class="w-full h-screen absolute z-10">
       <Cables step={$historyPosition} patch="casas" />
     </div>
+    {#if $historyPosition == 0}
+      <Loading />
+    {:else if $historyPosition == 1}
+      <Cover />
+    {:else}
+      <!-- <Pastilla /> -->
+      <svelte:component
+        this={Pastilla}
+        on:message={handleMessage}
+        titulo={pasos[$historyPosition].title}
+        visible={$vis}
+        row="2"
+        col="3"
+      />
+    {/if}
 
-    <svelte:component
-      this={Pastilla}
-      on:message={handleMessage}
-      titulo={pasos[$historyPosition].title}
-      visible={$vis}
-      row="2"
-      col="3"
-    />
-
-    <!-- <Pastilla /> -->
     <Footer />
   </div>
 </section>
