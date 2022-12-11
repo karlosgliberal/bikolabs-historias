@@ -1,16 +1,14 @@
 <script>
   import { vis, historyPosition } from "$lib/store.js";
+  import { onMount } from "svelte";
   import Cables from "../components/Cables.svelte";
   import Cover from "../components/Cover.svelte";
   import pasos from "$lib/data/pasos.json";
   import Footer from "../components/Footer.svelte";
-  import { onMount } from "svelte";
   import Loading from "../components/Loading.svelte";
 
-  let index = 0;
   let Pastilla;
   let paso;
-  let title;
 
   onMount(async () => {
     loadPastilla();
@@ -45,10 +43,11 @@
     <div class="w-full h-screen absolute z-10">
       <Cables step={$historyPosition} patch="casas" />
     </div>
+
     {#if $historyPosition == 0}
       <Loading />
     {:else if $historyPosition == 1}
-      <Cover />
+      <Cover on:message={handleMessage} visible={$vis} />
     {:else}
       <!-- <Pastilla /> -->
       <svelte:component
