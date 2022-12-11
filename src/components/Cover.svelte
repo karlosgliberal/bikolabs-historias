@@ -2,6 +2,8 @@
   import { fade, fly } from "svelte/transition";
   import Boton from "./Boton.svelte";
   import { vis } from "$lib/store.js";
+  import SvelteMarkdown from "svelte-markdown";
+
   export let texto = "";
   export let visible;
   let timer;
@@ -25,12 +27,12 @@
     <h1 class="text-base leading-6 tracking-widest md:px-4 pt-24">
       {texto}
     </h1>
-
+    <!-- <SvelteMarkdown {source} /> -->
     <!--parte título destacado-->
     <h1
       class="text-xl sm:text-3xl font-mono font-semibold tracking-wider mt-3 "
     >
-      sistemas automatizadosss
+      ¿Empezamos?
     </h1>
 
     <!--botón con borde tipo trazo tiene css personalizado-->
