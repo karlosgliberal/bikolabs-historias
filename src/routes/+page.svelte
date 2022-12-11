@@ -57,16 +57,6 @@
         {...pasos[$historyPosition]}
         visible={$vis}
       />
-      <!-- <svelte:component
-        this={Pastilla}
-        on:message={handleMessage}
-        titulo={pasos[$historyPosition].title}
-        tituloDestacado="Destacado"
-        visible={$vis}
-        row="2"
-        col="3"
-        tituloBoton="siguiente"
-      /> -->
     {/if}
 
     <Footer />
