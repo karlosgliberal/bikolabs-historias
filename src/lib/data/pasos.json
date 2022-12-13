@@ -9,7 +9,7 @@
     "col": 3,
     "row": 2,
     "boton": true,
-    "time": 0
+    "time": 10
   },
   {
     "id": 1,
@@ -26,12 +26,12 @@
   {
     "id": 2,
     "tituloDestacado": "destacado2",
-    "tituloBoton": "Siguiente",
+    "tituloBoton": "",
     "texto": "",
     "pregunta": "",
     "titulo": "Miren guapa ",
-    "col": 5,
-    "row": 1,
+    "col": 3,
+    "row": 2,
     "boton": true,
     "time": 0
   },
@@ -50,12 +50,12 @@
   {
     "id": 4,
     "tituloDestacado": "",
-    "tituloBoton": "Siguiente",
+    "tituloBoton": "",
     "texto": "Cuando se utilizan sistemas automatizados para tomar decisiones, se suelan dar a conocer algunos datos sobre el sistema para transmitir que su uso es beneficioso.",
     "pregunta": "",
     "titulo": "",
     "col": 3,
-    "row": 3,
+    "row": 2,
     "boton": true,
     "time": 0
   },

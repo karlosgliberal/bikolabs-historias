@@ -57,4 +57,26 @@
       <Boton on:message {tituloBoton} />
     {/if}
   </div>
+  <div
+    class="z-20 col-span-4 md:col-span-9 row-start-3 self-end text-right my-12"
+  >
+    <button
+      type="button"
+      class="bordeA lined thick w-full lg:w-fit text-base font-mono font-bold tracking-widest text-zinc-100 hover:text-zinc-800 bg-zinc-800 hover:bg-stone-50 shadow-xl py-4 px-8 lg:mr-6 "
+      >Continuar</button
+    >
+  </div>
 {/if}
+
+<style>
+  .bordeA {
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius: 15px 255px;
+  }
+
+  .bordeA.lined.thick {
+    border: solid 3px #e7e5e4;
+  }
+</style>
