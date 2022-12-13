@@ -1,7 +1,6 @@
 [
   {
     "id": 0,
-    "position": 1,
     "tituloDestacado": "destacado",
     "tituloBoton": "Siguiente",
     "texto": "",
@@ -14,7 +13,6 @@
   },
   {
     "id": 1,
-    "position": 1,
     "tituloDestacado": "destacado",
     "tituloBoton": "Siguiente",
     "texto": "",
@@ -27,20 +25,18 @@
   },
   {
     "id": 2,
-    "position": 2,
     "tituloDestacado": "destacado2",
-    "tituloBoton": "",
+    "tituloBoton": "Siguiente",
     "texto": "",
     "pregunta": "",
     "titulo": "Miren guapa ",
-    "col": 3,
-    "row": 2,
+    "col": 5,
+    "row": 1,
     "boton": true,
     "time": 0
   },
   {
     "id": 3,
-    "position": 3,
     "tituloDestacado": "destacado",
     "tituloBoton": "Siguiente",
     "texto": "",
@@ -53,7 +49,6 @@
   },
   {
     "id": 4,
-    "position": 3,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
     "texto": "Cuando se utilizan sistemas automatizados para tomar decisiones, se suelan dar a conocer algunos datos sobre el sistema para transmitir que su uso es beneficioso.",
@@ -66,7 +61,6 @@
   },
   {
     "id": 5,
-    "position": 1,
     "tituloDestacado": "destacado",
     "tituloBoton": "Siguiente",
     "texto": "",

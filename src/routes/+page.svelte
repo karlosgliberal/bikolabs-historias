@@ -11,6 +11,8 @@
   let Pastilla;
   let paso;
 
+  let datos = [{ id: 1, titulo: "uno" }];
+
   onMount(async () => {
     loadPastilla();
   });
@@ -19,7 +21,13 @@
     // index = !index;
     vis.falso();
     historyPosition.sumar();
+    add();
     loadPastilla();
+  }
+
+  function add() {
+    console.log("datos", datos);
+    datos = datos.concat({ numero: 1, text: "" });
   }
 
   function loadPastilla() {
@@ -28,6 +36,7 @@
     );
   }
   paso = pasos[$historyPosition].title;
+  console.log(datos);
 </script>
 
 <svelte:head>
@@ -45,7 +54,7 @@
       <Cables step={$historyPosition} patch="casas" />
     </div>
 
-    <Timeline />
+    <Timeline {datos} visible={$vis} />
 
     {#if $historyPosition == 0}
       <Loading />

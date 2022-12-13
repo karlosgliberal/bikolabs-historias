@@ -19,7 +19,9 @@
   export let boton;
   export let time;
 
+  let movida = 5;
   console.log("valores", row, col, id, boton, time);
+  console.log("col", col);
   let timer;
 
   function finDesaparecer() {

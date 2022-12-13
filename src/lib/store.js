@@ -19,8 +19,11 @@ function createHistoryPosition() {
     subscribe,
     sumar: () => update((n) => n + 1),
     restar: () => update((n) => n - 1),
-    reset: () => set(2),
+    reset: 1,
   };
 }
-
 export const historyPosition = createHistoryPosition();
+
+export const posicion = writable({
+  pos: 1,
+});
