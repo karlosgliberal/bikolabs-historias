@@ -51,7 +51,7 @@
     class="z-20 min-h-screen grid grid-rows-3 grid-cols-4 lg:grid-cols-9 gap-3 px-3 sm:px-4"
   >
     <div class="w-full h-screen absolute z-10">
-      <Cables step={$historyPosition} patch="casas" />
+      <Cables step={$historyPosition} patch="bool" />
     </div>
 
     <Timeline {datos} visible={$vis} />
