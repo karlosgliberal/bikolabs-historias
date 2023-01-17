@@ -9,7 +9,7 @@
     "col": 3,
     "row": 2,
     "boton": false,
-    "time": 10
+    "time": 0
   },
   {
     "id": 1,
@@ -31,7 +31,7 @@
     "pregunta": "",
     "titulo": "",
     "col": 3,
-    "row": 3,
+    "row": 2,
     "boton": true,
     "time": 0
   },
@@ -57,7 +57,7 @@
     "col": 3,
     "row": 2,
     "boton": true,
-    "time": 10
+    "time": 8000
   },
   {
     "id": 5,
@@ -153,7 +153,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
-    "time": 10
+    "time": 10000
   },
   {
     "id": 13,
@@ -165,7 +165,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
-    "time": 15
+    "time": 15000
   },
   {
     "id": 14,
@@ -225,7 +225,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
-    "time": 20
+    "time": 20000
   },
   {
     "id": 19,
@@ -309,7 +309,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
-    "time": 20
+    "time": 20000
   },
   {
     "id": 26,
@@ -345,7 +345,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
-    "time": 15
+    "time": 15000
   },
   {
     "id": 29,

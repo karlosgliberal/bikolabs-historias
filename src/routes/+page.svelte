@@ -10,6 +10,7 @@
 
   let Pastilla;
   let paso;
+  let timer;
 
   let datos = [{ id: 1, titulo: "uno" }];
 
@@ -28,6 +29,12 @@
   function add() {
     console.log("datos", datos);
     datos = datos.concat({ numero: 1, text: "" });
+    console.log("tiemp", pasos[$historyPosition].time);
+    if (pasos[$historyPosition].time != 0) {
+      timer = setTimeout(() => {
+        handleMessage();
+      }, pasos[$historyPosition].time);
+    }
   }
 
   function loadPastilla() {
@@ -36,7 +43,6 @@
     );
   }
   paso = pasos[$historyPosition].title;
-  console.log(datos);
 </script>
 
 <svelte:head>
