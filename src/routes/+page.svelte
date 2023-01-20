@@ -29,8 +29,11 @@
   function add() {
     console.log("datos", datos);
     datos = datos.concat({ numero: 1, text: "" });
+
     console.log("tiemp", pasos[$historyPosition].time);
+
     if (pasos[$historyPosition].time != 0) {
+      vis.verdadero();
       timer = setTimeout(() => {
         handleMessage();
       }, pasos[$historyPosition].time);
