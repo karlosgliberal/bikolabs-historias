@@ -27,11 +27,7 @@
   }
 
   function add() {
-    console.log("datos", datos);
     datos = datos.concat({ numero: 1, text: "" });
-
-    console.log("tiemp", pasos[$historyPosition].time);
-
     if (pasos[$historyPosition].time != 0) {
       vis.verdadero();
       timer = setTimeout(() => {
@@ -60,7 +56,11 @@
     class="z-20 min-h-screen grid grid-rows-3 grid-cols-4 lg:grid-cols-9 gap-3 px-3 sm:px-4"
   >
     <div class="w-full h-screen absolute z-10">
-      <Cables step={$historyPosition} patch="bool" />
+      <Cables
+        step={$historyPosition}
+        patch="bool"
+        escena={pasos[$historyPosition].cables_escena}
+      />
     </div>
 
     <Timeline {datos} visible={$vis} />

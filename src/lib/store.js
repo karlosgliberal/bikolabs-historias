@@ -25,5 +25,5 @@ function createHistoryPosition() {
 export const historyPosition = createHistoryPosition();
 
 export const posicion = writable({
-  pos: 1,
+  pos: 0,
 });

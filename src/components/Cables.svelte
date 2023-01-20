@@ -5,12 +5,15 @@
 
   export let step;
   export let patch;
+  export let escena;
+
   let paso;
   let init = "hidden";
   let pathPatch = `${patch}/patch.js`;
 
   $: {
     if (step != 0) {
+      console.log("escena:", escena);
       handleClick($historyPosition);
     } else {
       console.log("init Step 0");
@@ -50,8 +53,9 @@
     // The patch is ready now, all assets have been loaded
   }
   function handleClick(paso) {
-    console.log(paso);
-    CABLES.patch.config.patchFunctiontrigger(paso);
+    if (escena != false) {
+      CABLES.patch.config.patchFunctiontrigger(escena);
+    }
   }
 
   function myFunction() {

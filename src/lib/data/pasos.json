@@ -9,6 +9,7 @@
     "col": 3,
     "row": 2,
     "boton": false,
+    "cables_escena": false,
     "time": 0
   },
   {
@@ -21,6 +22,7 @@
     "col": 3,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 0
   },
   {
@@ -33,6 +35,7 @@
     "col": 3,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 0
   },
   {
@@ -45,6 +48,7 @@
     "col": 3,
     "row": 2,
     "boton": true,
+    "cables_escena": 1,
     "time": 0
   },
   {
@@ -57,6 +61,7 @@
     "col": 3,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 8000
   },
   {
@@ -69,6 +74,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 0
   },
   {
@@ -81,6 +87,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 20
   },
   {
@@ -93,6 +100,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 0
   },
   {
@@ -105,6 +113,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 0
   },
   {
@@ -117,6 +126,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 0
   },
   {
@@ -129,6 +139,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 0
   },
   {
@@ -141,6 +152,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 0
   },
   {
@@ -153,6 +165,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 10000
   },
   {
@@ -165,6 +178,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": 1,
     "time": 15000
   },
   {
@@ -177,6 +191,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": 2,
     "time": 0
   },
   {
@@ -189,6 +204,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": 3,
     "time": 0
   },
   {
@@ -201,6 +217,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 0
   },
   {
@@ -213,6 +230,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": 4,
     "time": 0
   },
   {
@@ -225,6 +243,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": 5,
     "time": 20000
   },
   {
@@ -237,6 +256,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": 6,
     "time": 0
   },
   {
@@ -249,6 +269,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": 7,
     "time": 0
   },
   {
@@ -261,6 +282,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 0
   },
   {
@@ -273,6 +295,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 0
   },
   {
@@ -285,6 +308,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 0
   },
   {
@@ -297,6 +321,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 0
   },
   {
@@ -309,6 +334,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 20000
   },
   {
@@ -321,6 +347,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 0
   },
   {
@@ -333,6 +360,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 0
   },
   {
@@ -345,6 +373,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 15000
   },
   {
@@ -357,6 +386,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 0
   },
   {
@@ -369,6 +399,7 @@
     "col": 1,
     "row": 2,
     "boton": true,
+    "cables_escena": false,
     "time": 0
   }
 ]
