@@ -1,22 +1,18 @@
 <script>
   import { onMount } from "svelte";
   import { historyPosition } from "$lib/store.js";
-  import Loading from "./Loading.svelte";
 
   export let step;
   export let patch;
   export let escena;
+  export let scroll;
 
-  let paso;
   let init = "hidden";
   let pathPatch = `${patch}/patch.js`;
 
   $: {
-    if (step != 0) {
-      console.log("escena:", escena);
-      handleClick($historyPosition);
-    } else {
-      console.log("init Step 0");
+    if (step) {
+      cambioEscenaCables($historyPosition);
     }
   }
 
@@ -52,11 +48,14 @@
     historyPosition.sumar();
     // The patch is ready now, all assets have been loaded
   }
-  function handleClick(paso) {
+  const cambioEscenaCables = () => {
     if (escena != false) {
       CABLES.patch.config.patchFunctiontrigger(escena);
     }
-  }
+    if (scroll != 0) {
+      CABLES.patch.config.patchFunctionScroll(scroll);
+    }
+  };
 
   function myFunction() {
     alert("function called!");

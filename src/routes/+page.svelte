@@ -9,17 +9,15 @@
   import Timeline from "../components/Timeline.svelte";
 
   let Pastilla;
-  let paso;
   let timer;
-
   let datos = [{ id: 1, titulo: "uno" }];
+  let movida = false;
 
   onMount(async () => {
     loadPastilla();
   });
 
   function handleMessage(event) {
-    // index = !index;
     vis.falso();
     historyPosition.sumar();
     add();
@@ -29,10 +27,10 @@
   function add() {
     datos = datos.concat({ numero: 1, text: "" });
     if (pasos[$historyPosition].time != 0) {
-      vis.verdadero();
-      timer = setTimeout(() => {
-        handleMessage();
-      }, pasos[$historyPosition].time);
+      // vis.verdadero();
+      // timer = setTimeout(() => {
+      //   handleMessage();
+      // }, pasos[$historyPosition].time);
     }
   }
 
@@ -41,7 +39,6 @@
       (res) => (Pastilla = res.default)
     );
   }
-  paso = pasos[$historyPosition].title;
 </script>
 
 <svelte:head>
@@ -60,6 +57,7 @@
         step={$historyPosition}
         patch="bool"
         escena={pasos[$historyPosition].cables_escena}
+        scroll={pasos[$historyPosition].time}
       />
     </div>
 
@@ -67,11 +65,10 @@
 
     {#if $historyPosition == 0}
       <Loading />
-    {:else if $historyPosition == 1}
-      <Cover on:message={handleMessage} visible={$vis} />
+      <!-- {:else if $historyPosition == 1}
+      <Cover on:message={handleMessage} visible={$vis} /> -->
     {:else}
       <!-- <Pastilla /> -->
-
       <svelte:component
         this={Pastilla}
         on:message={handleMessage}
