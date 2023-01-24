@@ -9,9 +9,7 @@
   import Timeline from "../components/Timeline.svelte";
 
   let Pastilla;
-  let timer;
   let datos = [{ id: 1, titulo: "uno" }];
-  let movida = false;
 
   onMount(async () => {
     loadPastilla();

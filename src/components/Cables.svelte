@@ -50,6 +50,7 @@
   const cambioEscenaCables = () => {
     if (escena != false) {
       CABLES.patch.config.patchFunctiontrigger(escena);
+      //patchFunctionInicio
     }
   };
 

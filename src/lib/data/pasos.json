@@ -20,7 +20,6 @@
     "titulo": "El acierto en las decisiones de",
     "col": 3,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
@@ -32,7 +31,6 @@
     "titulo": "",
     "col": 3,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
@@ -44,19 +42,17 @@
     "titulo": "",
     "col": 3,
     "row": 2,
-    "boton": true,
     "cables_escena": 1
   },
   {
     "id": 4,
     "tituloDestacado": "El caso RisCanvi",
-    "tituloBoton": "",
+    "tituloBoton": "Siguiente",
     "texto": "Según se ha publicado<sup>1</sup>, los funcionarios que utilizan el sistema de riesgo de reincidencia RisCanvi están conformes con la decisión que toma el algoritmo en el <strong>96,8% de las ocasiones</strong>.",
     "pregunta": "",
     "titulo": "",
     "col": 3,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
@@ -68,19 +64,17 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
     "id": 6,
     "tituloDestacado": "",
-    "tituloBoton": "",
+    "tituloBoton": "Siguiente",
     "texto": "¿Este porcentaje de cumplimiento por parte de los funcionarios es un indicador de éxito o es motivo de preocupación?<br />Bueno, si el sistema acierta mucho, que los funcionarios estén de acuerdo con él supone que tomarán buenas decisiones.",
     "pregunta": "",
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
@@ -92,7 +86,6 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
@@ -104,7 +97,6 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
@@ -116,7 +108,6 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
@@ -128,7 +119,6 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
@@ -140,31 +130,28 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
     "id": 12,
     "tituloDestacado": "Sensibilidad y Especificidad",
-    "tituloBoton": "",
+    "tituloBoton": "Siguiente",
     "texto": "Empecemos con la sensibilidad y la especificidad, que son medidas que nos hablan de la capacidad del sistema.",
     "pregunta": "",
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
     "id": 13,
     "tituloDestacado": "",
-    "tituloBoton": "",
+    "tituloBoton": "Siguiente",
     "texto": "Imaginemos que partimos de una muestra de 648 presos. Entre ellos, hay presos violentos que sabemos que han reincidido cuando han salido de la cárcel, y presos que no lo han hecho.",
     "pregunta": "",
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": 1
   },
   {
@@ -176,7 +163,6 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": 2
   },
   {
@@ -188,7 +174,6 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": 3
   },
   {
@@ -200,7 +185,6 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
@@ -212,19 +196,17 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": 4
   },
   {
     "id": 18,
     "tituloDestacado": "",
-    "tituloBoton": "",
+    "tituloBoton": "Siguiente",
     "texto": "¿Y qué pasa con los presos que no reinciden? ¿Es capaz la herramienta de identificarlos adecuadamente?<br />Para responder a esto, se utiliza la medida de <strong>Especificidad</strong>, que se calcula dividiendo el número de presos etiquetados como de bajo riesgo entre el total de los que no reinciden.",
     "pregunta": "",
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": 5
   },
   {
@@ -236,7 +218,6 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": 6
   },
   {
@@ -248,7 +229,6 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": 7
   },
   {
@@ -260,7 +240,6 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
@@ -272,7 +251,6 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
@@ -284,7 +262,6 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
@@ -296,19 +273,17 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
     "id": 25,
     "tituloDestacado": "",
-    "tituloBoton": "",
+    "tituloBoton": "Siguiente",
     "texto": "Como decíamos, para predecir si un preso etiquetado de alto riesgo reincidirá, utilizamos la medida de <strong>Valor predictivo positivo</strong>, que se calcula dividiendo el número de reclusos reincidentes etiquetados de alto riesgo, entre el total de presos de alto riesgo.",
     "pregunta": "",
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
@@ -320,7 +295,6 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
@@ -332,19 +306,17 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
     "id": 28,
     "tituloDestacado": "",
-    "tituloBoton": "",
+    "tituloBoton": "Siguiente",
     "texto": "Más allá del ejemplo concreto de RisCanvi, parece claro que evaluar la capacidad y el potencial predictivo de un sistema automatizado no resulta sencillo.",
     "pregunta": "",
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
@@ -356,7 +328,6 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   },
   {
@@ -368,7 +339,6 @@
     "titulo": "",
     "col": 1,
     "row": 2,
-    "boton": true,
     "cables_escena": false
   }
 ]
