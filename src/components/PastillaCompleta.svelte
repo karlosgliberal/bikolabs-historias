@@ -48,21 +48,15 @@
     {#if pregunta != ""}
       <Pregunta {pregunta} />
     {/if}
-
-    {#if tituloBoton != ""}
-      <Boton on:message {tituloBoton} />
-    {/if}
   </div>
 
-  <!-- <div
-    class="z-20 col-span-4 md:col-span-9 row-start-3 self-end text-right my-12"
-  >
-    <button
-      type="button"
-      class="bordeA lined thick w-full lg:w-fit text-base font-mono font-bold tracking-widest text-zinc-100 hover:text-zinc-800 bg-zinc-800 hover:bg-stone-50 shadow-xl py-4 px-8 lg:mr-6 "
-      >Continuar</button
+  {#if tituloBoton != ""}
+    <div
+      class="z-20 col-span-4 md:col-span-9 row-start-3 self-end text-right my-12"
     >
-  </div> -->
+      <Boton on:message {tituloBoton} />
+    </div>
+  {/if}
 {/if}
 
 <style>
