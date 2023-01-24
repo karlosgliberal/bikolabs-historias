@@ -5,7 +5,6 @@
   export let step;
   export let patch;
   export let escena;
-  export let scroll;
 
   let init = "hidden";
   let pathPatch = `${patch}/patch.js`;
@@ -51,9 +50,6 @@
   const cambioEscenaCables = () => {
     if (escena != false) {
       CABLES.patch.config.patchFunctiontrigger(escena);
-    }
-    if (scroll != 0) {
-      CABLES.patch.config.patchFunctionScroll(scroll);
     }
   };
 

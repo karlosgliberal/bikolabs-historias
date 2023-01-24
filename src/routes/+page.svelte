@@ -57,7 +57,6 @@
         step={$historyPosition}
         patch="bool"
         escena={pasos[$historyPosition].cables_escena}
-        scroll={pasos[$historyPosition].time}
       />
     </div>
 
