@@ -3,7 +3,6 @@
 
   let canvas;
   const initializeRemarkable = () => {
-    console.log("movida d");
     CABLES.patch = new CABLES.Patch({
       patch: CABLES.exportedPatch,
       prefixAssetPath: "../../patch/",
