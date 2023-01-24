@@ -10,7 +10,7 @@
   function finDesaparecer() {
     timer = setTimeout(() => {
       vis.verdadero();
-    }, 2000);
+    }, 1000);
   }
 
   function sayHello() {
@@ -23,7 +23,7 @@
 {#if visible}
   <!--card container-->
   <div
-    in:fly={{ y: 200, duration: 2000 }}
+    in:fly={{ y: 200, duration: 1000 }}
     out:fly={{ y: -200, duration: 1000 }}
     on:outroend={finDesaparecer}
     class="z-20 col-span-4 md:col-span-9 lg:col-span-5 row-start-2 sm:row-start-2 lg:col-start-3 self-start h-fit rounded  bg-stone-200 text-zinc-800 text-center shadow-xl mt-24 sm:-mt-24 pb-12 mb-8"

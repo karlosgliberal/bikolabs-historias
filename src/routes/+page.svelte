@@ -58,7 +58,7 @@
       />
     </div>
 
-    <Timeline {datos} visible={$vis} />
+    <!-- <Timeline {datos} visible={$vis} /> -->
 
     {#if $historyPosition == 0}
       <Loading />
