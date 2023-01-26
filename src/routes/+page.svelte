@@ -62,8 +62,8 @@
 
     {#if $historyPosition == 0}
       <Loading />
-    {:else if $historyPosition == 1}
-      <Cover on:message={handleMessage} visible={$vis} />
+      <!-- {:else if $historyPosition == 1}
+      <Cover on:message={handleMessage} visible={$vis} /> -->
     {:else}
       <!-- <Pastilla /> -->
       <svelte:component

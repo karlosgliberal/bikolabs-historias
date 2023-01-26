@@ -1,11 +1,11 @@
 [
   {
     "id": 0,
-    "tituloDestacado": "Cargando",
+    "tituloDestacado": "Cargando...",
     "tituloBoton": "",
     "texto": "",
     "pregunta": "",
-    "titulo": "Cargando story",
+    "titulo": "Loading",
     "col": 3,
     "row": 2,
     "boton": false,
@@ -13,28 +13,39 @@
   },
   {
     "id": 1,
-    "tituloDestacado": "¿Cómo medir si un algoritmo acierta?",
+    "tituloDestacado": "los sistemas automatizados",
     "tituloBoton": "Comenzar",
     "texto": "",
     "pregunta": "",
-    "titulo": "Algoritmos para presos: el caso RisCanvi",
+    "titulo": "El acierto en las decisiones de",
     "col": 3,
     "row": 2,
-    "cables_escena": 0
+    "cables_escena": false
   },
   {
     "id": 2,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "Cada vez <strong>se automatizan más procesos de decisión</strong> o se usan más sistemas automatizados en decisiones. Algunos incluso se utilizan para decisiones de <strong>calado social</strong>.<br /><br />Por ejemplo, en España existe un sistema automatizado de ayuda a la decisión, <strong>RisCanvi</strong>, que estima el riesgo de que los reclusos de las cárceles de Cataluña puedan reincidir.",
+    "texto": "Cada vez <strong>se automatizan más procesos de decisión</strong> o se usan más sistemas automatizados en decisiones. Algunos incluso se utilizan para decisiones de <strong>calado social</strong>.",
     "pregunta": "",
     "titulo": "",
     "col": 4,
-    "row": 1,
-    "cables_escena": 1
+    "row": 4,
+    "cables_escena": 0
   },
   {
     "id": 3,
+    "tituloDestacado": "",
+    "tituloBoton": "Siguiente",
+    "texto": "Por ejemplo, en España existe un sistema automatizado de ayuda a la decisión, RisCanvi, que estima el riesgo de que los reclusos de las cárceles de Cataluña puedan reincidir.",
+    "pregunta": "¿Lo sabías?",
+    "titulo": "",
+    "col": 3,
+    "row": 2,
+    "cables_escena": 1
+  },
+  {
+    "id": 4,
     "tituloDestacado": "El caso RisCanvi",
     "tituloBoton": "Siguiente",
     "texto": "Según se ha publicado<sup>1</sup>, los funcionarios que utilizan el sistema de riesgo de reincidencia RisCanvi están conformes con la decisión que toma el algoritmo en el <strong>96,8% de las ocasiones</strong>.",
@@ -42,118 +53,161 @@
     "titulo": "",
     "col": 3,
     "row": 2,
-    "cables_escena": 2
-  },
-  {
-    "id": 4,
-    "tituloDestacado": "",
-    "tituloBoton": "Siguiente",
-    "texto": "Es decir, que <strong>en más de 9 casos de cada 10</strong> los funcionarios <strong>aceptan</strong> el nivel de riesgo que el sistema ha asignado al preso.<br /><br />¿Este porcentaje de cumplimiento por parte de los funcionarios es un <strong>indicador de éxito o es motivo de preocupación</strong>?",
-    "pregunta": "",
-    "titulo": "",
-    "col": 4,
-    "row": 1,
-    "cables_escena": 3
+    "cables_escena": false
   },
   {
     "id": 5,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "Bueno, si el sistema acierta mucho, que los funcionarios estén de acuerdo con él supone que tomarán buenas decisiones.<br /><br />Eso sí, si el acierto del sistema no es muy alto, este porcentaje de cumplimiento por encima del 95% es <strong>claramente preocupante</strong>.",
+    "texto": "Es decir, que en más de 9 casos de cada 10 los funcionarios confirman el nivel de riesgo que el sistema asigna a los presos de las cárceles de Cataluña.",
     "pregunta": "",
     "titulo": "",
-    "col": 4,
-    "row": 1,
-    "cables_escena": 4
+    "col": 1,
+    "row": 2,
+    "cables_escena": false
   },
- 
   {
     "id": 6,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "Por ello, parece necesario comprender hasta qué punto los sistemas automatizados de ayuda a la decisión aciertan o no.<br /><br />¿Parece sencillo, verdad? <strong>Pues no lo es</strong>.",
+    "texto": "¿Este porcentaje de cumplimiento por parte de los funcionarios es un indicador de éxito o es motivo de preocupación?<br />Bueno, si el sistema acierta mucho, que los funcionarios estén de acuerdo con él supone que tomarán buenas decisiones.",
     "pregunta": "",
     "titulo": "",
-    "col": 4,
-    "row": 1,
-    "cables_escena": 5
+    "col": 1,
+    "row": 2,
+    "cables_escena": false
   },
   {
     "id": 7,
-    "tituloDestacado": "Medidas de acierto",
+    "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "¿Cómo saber si un sistema automatizado es acertado?<br />Son varias las medidas que habitualmente se usan para evaluar el acierto de este tipo de sistemas. Algunas de las más habituales son <strong>sensibilidad, especificidad y valor predictivo</strong>.",
+    "texto": "Eso sí, si el acierto del sistema no es muy alto, este porcentaje de cumplimiento por encima del 95% claramente no es un indicador de éxito.",
     "pregunta": "",
     "titulo": "",
-    "col": 3,
+    "col": 1,
     "row": 2,
-    "cables_escena": 6
+    "cables_escena": false
   },
   {
     "id": 8,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "Pero, ¿qué nos dicen cada una de ellas?<br />Para comprenderlas, usaremos los datos del mencionado sistema RisCanvi como ejemplo<sup>2</sup>.<br /><br /> Y empezaremos con <strong>la sensibilidad y la especificidad</strong>, que son medidas que nos hablan de la capacidad del sistema.",
+    "texto": "Por ello, parece necesario comprender hasta qué punto los sistemas automatizados de ayuda a la decisión aciertan o no. Pero esto no es tan sencillo como parece.",
     "pregunta": "",
     "titulo": "",
-    "col": 4,
-    "row": 1,
+    "col": 1,
+    "row": 2,
     "cables_escena": false
   },
   {
     "id": 9,
-    "tituloDestacado": "",
+    "tituloDestacado": "Medidas de acierto",
     "tituloBoton": "Siguiente",
-    "texto": "Imaginemos que partimos de nuestra muestra de <strong>648 presos</strong> y entre ellos hay presos violentos que sabemos que han reincidido cuando han salido de la cárcel, y presos que no.<br /><br />Así que los separamos en esos dos grupos: <strong>reincidentes</strong> y <strong>no reincidentes</strong>.",
+    "texto": "¿Cómo saber si un sistema automatizado es acertado?<br />Son varias las medidas que habitualmente se usan para evaluar el acierto de este tipo de sistemas. Algunas de las más habituales son las medidas de <strong>sensibilidad, especificidad y valor predictivo</strong>.",
     "pregunta": "",
     "titulo": "",
-    "col": 4,
-    "row": 1,
-    "cables_escena": 7
+    "col": 1,
+    "row": 2,
+    "cables_escena": false
   },
   {
     "id": 10,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "Querremos saber cuál es la capacidad del algoritmo para <strong>detectar a los presos reincidentes</strong> y etiquetarlos de alto riesgo. <br /><br />Este dato se calcula dividiendo el número de presos etiquetados de alto riesgo, entre el total de presos reincidentes, y se conoce como <strong>Sensibilidad</strong> del sistema.",
+    "texto": "¿Cómo saber si un sistema automatizado es acertado?<br />Son varias las medidas que habitualmente se usan para evaluar el acierto de este tipo de sistemas.",
     "pregunta": "",
     "titulo": "",
-    "col": 4,
-    "row": 1,
-    "cables_escena": 8
+    "col": 1,
+    "row": 2,
+    "cables_escena": false
   },
   {
     "id": 11,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "En el caso de RisCanvi, la <strong>sensibilidad del algoritmo es de un 77%</strong>, es decir, que el sistema es capaz de identificar como reincidentes a casi 8 presos de cada 10 que reinciden.",
+    "texto": "Pero, ¿qué nos dicen cada una de ellas?<br />Para comprenderlas, usaremos los datos del mencionado sistema RisCanvi como ejemplo<sup>2</sup>.",
     "pregunta": "",
     "titulo": "",
-    "col": 4,
-    "row": 1,
-    "cables_escena": 9
+    "col": 1,
+    "row": 2,
+    "cables_escena": false
   },
   {
     "id": 12,
-    "tituloDestacado": "",
+    "tituloDestacado": "Sensibilidad y Especificidad",
     "tituloBoton": "Siguiente",
-    "texto": "Los otros <strong>2 presos de cada 10</strong> que el sistema no detecta serían <strong>falsos negativos</strong>, es decir, presos reincidentes que el sistema no llega a identificar.",
+    "texto": "Empecemos con la sensibilidad y la especificidad, que son medidas que nos hablan de la capacidad del sistema.",
     "pregunta": "",
     "titulo": "",
-    "col": 4,
-    "row": 1,
+    "col": 1,
+    "row": 2,
     "cables_escena": false
   },
   {
     "id": 13,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "¿Y qué pasa con los presos que no reinciden? ¿Es capaz el algoritmo de identificarlos adecuadamente?<br /><br />Para responder a esto, se utiliza la medida de <strong>Especificidad</strong>, que se calcula dividiendo el número de presos etiquetados como de bajo riesgo entre el total de los no reincidentes.",
+    "texto": "Imaginemos que partimos de una muestra de 648 presos. Entre ellos, hay presos violentos que sabemos que han reincidido cuando han salido de la cárcel, y presos que no lo han hecho.",
     "pregunta": "",
     "titulo": "",
-    "col": 4,
-    "row": 1,
-    "cables_escena": 10
+    "col": 1,
+    "row": 2,
+    "cables_escena": 1
+  },
+  {
+    "id": 14,
+    "tituloDestacado": "",
+    "tituloBoton": "Siguiente",
+    "texto": "Así que los separamos en esos dos grupos: <strong>reincidentes</strong> y <strong>no reincidentes</strong>.",
+    "pregunta": "",
+    "titulo": "",
+    "col": 1,
+    "row": 2,
+    "cables_escena": 2
+  },
+  {
+    "id": 15,
+    "tituloDestacado": "",
+    "tituloBoton": "Siguiente",
+    "texto": "Empecemos analizando la capacidad del sistema para detectar a los presos que reinciden y etiquetarlos como de riesgo alto. <br />Esta medida es conocida como <strong>Sensibilidad</strong> y se calcula dividiendo el número de presos etiquetados por el sistema como de alto riesgo, entre el total de presos reincidentes.",
+    "pregunta": "",
+    "titulo": "",
+    "col": 1,
+    "row": 2,
+    "cables_escena": 3
+  },
+  {
+    "id": 16,
+    "tituloDestacado": "",
+    "tituloBoton": "Siguiente",
+    "texto": "En el caso de RisCanvi, la sensibilidad es de un <strong>77%</strong>, es decir, que el sistema es capaz de identificar como reincidentes a casi 8 presos de cada 10 que reinciden.",
+    "pregunta": "",
+    "titulo": "",
+    "col": 1,
+    "row": 2,
+    "cables_escena": false
+  },
+  {
+    "id": 17,
+    "tituloDestacado": "",
+    "tituloBoton": "Siguiente",
+    "texto": "Los otros 2 presos de cada 10 que el sistema no detecta serían <strong>falsos negativos</strong>, es decir, presos reincidentes que el sistema no llega a identificar.",
+    "pregunta": "",
+    "titulo": "",
+    "col": 1,
+    "row": 2,
+    "cables_escena": 4
+  },
+  {
+    "id": 18,
+    "tituloDestacado": "",
+    "tituloBoton": "Siguiente",
+    "texto": "¿Y qué pasa con los presos que no reinciden? ¿Es capaz la herramienta de identificarlos adecuadamente?<br />Para responder a esto, se utiliza la medida de <strong>Especificidad</strong>, que se calcula dividiendo el número de presos etiquetados como de bajo riesgo entre el total de los que no reinciden.",
+    "pregunta": "",
+    "titulo": "",
+    "col": 1,
+    "row": 2,
+    "cables_escena": 5
   },
   {
     "id": 19,
