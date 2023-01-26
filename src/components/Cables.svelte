@@ -48,8 +48,10 @@
     // The patch is ready now, all assets have been loaded
   }
   const cambioEscenaCables = () => {
-    console.log("dentro cambiosescena", escena);
-    CABLES.patch.config.patchFunctiontrigger(escena);
+    if (escena != false) {
+      console.log("dentro cambiosescena", escena);
+      CABLES.patch.config.patchFunctiontrigger(escena);
+    }
     //patchFunctionInicio
   };
 
