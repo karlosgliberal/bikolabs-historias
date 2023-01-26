@@ -15,7 +15,9 @@
   on:click={sayHello}
   type="button"
   class="bordeA lined thick w-full lg:w-fit text-base font-mono font-bold tracking-widest text-zinc-100 hover:text-zinc-800 bg-zinc-800 hover:bg-stone-50 shadow-xl py-4 px-8 lg:mr-6 "
-  >{tituloBoton}</button
+  >
+  {tituloBoton}
+  </button
 >
 
 <!-- <style>
