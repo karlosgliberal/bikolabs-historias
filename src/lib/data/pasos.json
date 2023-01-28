@@ -29,8 +29,8 @@
     "texto": "Cada vez <strong>se automatizan más procesos de decisión</strong> o se usan más sistemas automatizados en decisiones. Algunos incluso se utilizan para decisiones de <strong>calado social</strong>.<br /><br />Por ejemplo, en España existe un sistema automatizado de ayuda a la decisión, <strong>RisCanvi</strong>, que estima el riesgo de que los reclusos de las cárceles de Cataluña puedan reincidir.",
     "pregunta": "",
     "titulo": "",
-    "col": 4,
-    "row": 1,
+    "col": 3,
+    "row": 2,
     "cables_escena": 1
   },
   {
@@ -51,8 +51,8 @@
     "texto": "Es decir, que <strong>en más de 9 casos de cada 10</strong> los funcionarios <strong>aceptan</strong> el nivel de riesgo que el sistema ha asignado al preso.<br /><br />¿Este porcentaje de cumplimiento por parte de los funcionarios es un <strong>indicador de éxito o es motivo de preocupación</strong>?",
     "pregunta": "",
     "titulo": "",
-    "col": 4,
-    "row": 1,
+    "col": 3,
+    "row": 2,
     "cables_escena": 3
   },
   {
@@ -66,7 +66,7 @@
     "row": 1,
     "cables_escena": 4
   },
- 
+
   {
     "id": 6,
     "tituloDestacado": "",
@@ -82,7 +82,7 @@
     "id": 7,
     "tituloDestacado": "Medidas de acierto",
     "tituloBoton": "Siguiente",
-    "texto": "¿Cómo saber si un sistema automatizado es acertado?<br />Son varias las medidas que habitualmente se usan para evaluar el acierto de este tipo de sistemas. Algunas de las más habituales son <strong>sensibilidad, especificidad y valor predictivo</strong>.",
+    "texto": "¿Cómo saber si un sistema automatizado es acertado?<br />Son varias las medidas que habitualmente se usan para evaluar el acierto de este tipo de sistemas. Algunas de las más habituales son <strong>accuracy, sensibilidad, especificidad y valor predictivo</strong>.",
     "pregunta": "",
     "titulo": "",
     "col": 3,
@@ -115,7 +115,7 @@
     "id": 10,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "Querremos saber cuál es la capacidad del algoritmo para <strong>detectar a los presos reincidentes</strong> y etiquetarlos de alto riesgo. <br /><br />Este dato se calcula dividiendo el número de presos etiquetados de alto riesgo, entre el total de presos reincidentes, y se conoce como <strong>Sensibilidad</strong> del sistema.",
+    "texto": "Queremos saber cuál es la capacidad del algoritmo para <strong>detectar a los presos reincidentes</strong> y etiquetarlos de alto riesgo. <br /><br />Este dato se calcula dividiendo el número de presos etiquetados de alto riesgo, entre el total de presos reincidentes, y se conoce como <strong>Sensibilidad</strong> del sistema.",
     "pregunta": "",
     "titulo": "",
     "col": 4,
@@ -148,7 +148,7 @@
     "id": 13,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "¿Y qué pasa con los presos que no reinciden? ¿Es capaz el algoritmo de identificarlos adecuadamente?<br /><br />Para responder a esto, se utiliza la medida de <strong>Especificidad</strong>, que se calcula dividiendo el número de presos etiquetados como de bajo riesgo entre el total de los no reincidentes.",
+    "texto": "¿Y qué pasa con los presos que no reinciden? ¿Es capaz el algoritmo de identificarlos adecuadamente?<br /><br />Para responder a esto, se utiliza la medida de <strong>Especificidad</strong>.",
     "pregunta": "",
     "titulo": "",
     "col": 4,
@@ -156,135 +156,146 @@
     "cables_escena": 10
   },
   {
-    "id": 19,
+    "id": 14,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "En RisCanvi, la especificidad es de un <strong>57%</strong>, es decir, que el sistema es capaz de identificar a casi 6 presos no reincidentes de cada 10 que no reinciden.",
+    "texto": "La <strong>Especificidad</strong> se calcula dividiendo el número de presos etiquetados de bajo riesgo entre el total de los presos no reincidentes.",
     "pregunta": "",
     "titulo": "",
-    "col": 1,
-    "row": 2,
-    "cables_escena": 6
+    "col": 4,
+    "row": 1,
+    "cables_escena": 11
   },
   {
-    "id": 20,
+    "id": 15,
+    "tituloDestacado": "",
+    "tituloBoton": "Siguiente",
+    "texto": "En RisCanvi, <strong>la especificidad es de un 57%</strong>, es decir, que el sistema es capaz de identificar a casi 6 presos no reincidentes de cada 10 que no reinciden.",
+    "pregunta": "",
+    "titulo": "",
+    "col": 4,
+    "row": 1,
+    "cables_escena": 12
+  },
+  {
+    "id": 16,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
     "texto": "El resto, 4 de cada 10 presos, serían <strong>falsos positivos</strong>, es decir, reclusos no reincidentes que el sistema etiqueta incorrectamente como de alto riesgo.",
     "pregunta": "",
     "titulo": "",
-    "col": 1,
-    "row": 2,
-    "cables_escena": 7
+    "col": 4,
+    "row": 1,
+    "cables_escena": false
   },
   {
-    "id": 21,
+    "id": 17,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
     "texto": "Si bien las medidas de sensibilidad y especificidad nos hablan, como decíamos, de la capacidad del sistema, no lo hacen sobre <strong>su poder predictivo</strong>.",
     "pregunta": "",
     "titulo": "",
-    "col": 1,
-    "row": 2,
+    "col": 4,
+    "row": 1,
+    "cables_escena": 13
+  },
+  {
+    "id": 18,
+    "tituloDestacado": "",
+    "tituloBoton": "Siguiente",
+    "texto": "Para conocer cuál es la probabilidad de que un nuevo preso, etiquetado como de alto riesgo, reincida en el futuro, necesitamos conocer la medida <strong>Valor predictivo positivo</strong>.",
+    "pregunta": "",
+    "titulo": "",
+    "col": 4,
+    "row": 1,
     "cables_escena": false
   },
   {
-    "id": 22,
-    "tituloDestacado": "Valor Predictivo Positivo",
+    "id": 19,
+    "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "El Valor predictivo positivo de un sistema nos permite responder a la siguiente pregunta: si un nuevo preso es etiquetado como de alto riesgo, ¿cuál es la probabilidad de que reincida?",
+    "texto": "Para hacer esta predicción de futuro, no nos sirven las medidas de sensibilidad y especificidad porque el punto de partida es diferente.",
     "pregunta": "",
     "titulo": "",
-    "col": 1,
+    "col": 4,
+    "row": 1,
+    "cables_escena": 14
+  },
+  {
+    "id": 20,
+    "tituloDestacado": "",
+    "tituloBoton": "Siguiente",
+    "texto": "Si antes partíamos de la muestra de reclusos reincidentes y no reincidentes, ahora el punto de partida es el etiquetado, es decir, nos fijamos en cuántos presos de la muestra han sido <strong>etiquetados de alto riesgo</strong> y cuántos de <strong>bajo riesgo</strong>.",
+    "pregunta": "",
+    "titulo": "",
+    "col": 4,
+    "row": 1,
+    "cables_escena": 15
+  },
+  {
+    "id": 21,
+    "tituloDestacado": "",
+    "tituloBoton": "Siguiente",
+    "texto": "En RisCanvi, <strong>el valor predictivo positivo es de un 18%</strong>, es decir, que casi 2 presos de cada 10 terminarían confirmando el pronóstico y reincidiendo tras haber sido etiquetados de alto riesgo.",
+    "pregunta": "",
+    "titulo": "",
+    "col": 4,
+    "row": 1,
+    "cables_escena": 16
+  },
+  {
+    "id": 21,
+    "tituloDestacado": "",
+    "tituloBoton": "Siguiente",
+    "texto": "Solo nos quedaría comentar la medida más conocida y publicitada para medir el acierto de los algoritmos: <strong>la exactitud o accuracy</strong>.<br /><br />Esta medida se calcula dividiendo los presos correctamente etiquetados entre el total de la muestra. En el caso RisCanvi, <strong>el accuracy es del 59%</strong>.",
+    "pregunta": "",
+    "titulo": "",
+    "col": 4,
+    "row": 1,
+    "cables_escena": 17
+  },
+  {
+    "id": 22,
+    "tituloDestacado": "Rebobinando",
+    "tituloBoton": "Siguiente",
+    "texto": "Revisadas algunas de las medidas de acierto de los sistemas automatizados, recordamos que el cumplimiento en el sistema RisCanvi es del 96,8%.<br /><br />Es decir, que <strong>en más de 9 de cada 10 casos</strong> se da por bueno el nivel de riesgo asignado por el sistema.",
+    "pregunta": "",
+    "titulo": "",
+    "col": 3,
     "row": 2,
-    "cables_escena": false
+    "cables_escena": 18
   },
   {
     "id": 23,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "Podríamos pensar que con las medidas vistas de sensibilidad y especificidad se puede responder a esta pregunta, pero no es así. Porque el punto de partida es diferente.",
+    "texto": "Más allá del ejemplo concreto de RisCanvi, parece claro que evaluar la capacidad y el potencial predictivo de un algoritmo <strong>no resulta sencillo</strong>.",
     "pregunta": "",
     "titulo": "",
-    "col": 1,
-    "row": 2,
+    "col": 4,
+    "row": 1,
     "cables_escena": false
   },
   {
     "id": 24,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "Si antes partíamos de la muestra de reclusos reincidentes y no reincidentes, ahora el punto de partida es el etiquetado, es decir, nos fijamos en cuántos presos de la muestra han sido <strong>etiquetados de alto riesgo</strong> y cuántos de <strong>bajo riesgo</strong>.",
+    "texto": "Por ello, es importante <strong>conocer y distinguir entre medidas como la sensibilidad, la especificidad, el accuracy o el valor predictivo</strong>.<br /><br />Si solo nos fijamos en alguna de ellas, nuestra lectura sobre la capacidad y poder predictivo de un algoritmo puede ser errónea.",
     "pregunta": "",
     "titulo": "",
-    "col": 1,
-    "row": 2,
-    "cables_escena": false
+    "col": 4,
+    "row": 1,
+    "cables_escena": 19
   },
   {
     "id": 25,
-    "tituloDestacado": "",
-    "tituloBoton": "Siguiente",
-    "texto": "Como decíamos, para predecir si un preso etiquetado de alto riesgo reincidirá, utilizamos la medida de <strong>Valor predictivo positivo</strong>, que se calcula dividiendo el número de reclusos reincidentes etiquetados de alto riesgo, entre el total de presos de alto riesgo.",
-    "pregunta": "",
-    "titulo": "",
-    "col": 1,
-    "row": 2,
-    "cables_escena": false
-  },
-  {
-    "id": 26,
-    "tituloDestacado": "",
-    "tituloBoton": "Siguiente",
-    "texto": "En RisCanvi, el valor predictivo positivo es de un <strong>18%</strong>, es decir, que casi 2 presos de cada 10 terminarían confirmando el pronóstico y reincidiendo tras haber sido etiquetados de alto riesgo.",
-    "pregunta": "",
-    "titulo": "",
-    "col": 1,
-    "row": 2,
-    "cables_escena": false
-  },
-  {
-    "id": 27,
-    "tituloDestacado": "Rebobinando",
-    "tituloBoton": "Siguiente",
-    "texto": "Revisadas algunas de las medidas de acierto de los sistemas automatizados, parece un buen momento para mencionar por última vez el caso de RisCanvi y recordar que el cumplimiento de los funcionarios con el sistema RisCanvi es del 96,8%.<br />Es decir, que <strong>en más de 9 de cada 10 casos se da or bueno con el nivel de riesgo que el sistema asigna</strong> a cada preso.",
-    "pregunta": "",
-    "titulo": "",
-    "col": 1,
-    "row": 2,
-    "cables_escena": false
-  },
-  {
-    "id": 28,
-    "tituloDestacado": "",
-    "tituloBoton": "Siguiente",
-    "texto": "Más allá del ejemplo concreto de RisCanvi, parece claro que evaluar la capacidad y el potencial predictivo de un sistema automatizado no resulta sencillo.",
-    "pregunta": "",
-    "titulo": "",
-    "col": 1,
-    "row": 2,
-    "cables_escena": false
-  },
-  {
-    "id": 29,
-    "tituloDestacado": "",
-    "tituloBoton": "Siguiente",
-    "texto": "Para ello, es importante <strong>conocer y distinguir entre medidas como la sensibilidad, la especificidad o el valor predictivo</strong>.<br />Si solo nos fijamos en alguna de ellas, nuestra lectura sobre su capacidad y poder predictivo puede ser errónea.",
-    "pregunta": "",
-    "titulo": "",
-    "col": 1,
-    "row": 2,
-    "cables_escena": false
-  },
-  {
-    "id": 30,
     "tituloDestacado": "",
     "tituloBoton": "Créditos, Datos y Agradecimientos",
     "texto": "Y sí, lo sabemos. Todos preferiríamos que estos temas resultaran más sencillos. Pero <strong>¡c'est la vie y los sistemas automatizados!</strong>",
     "pregunta": "",
     "titulo": "",
-    "col": 1,
-    "row": 2,
-    "cables_escena": false
+    "col": 4,
+    "row": 1,
+    "cables_escena": 20
   }
 ]

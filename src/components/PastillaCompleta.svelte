@@ -32,12 +32,12 @@
     on:outroend={finDesaparecer}
     class="z-20 col-span-4 md:col-span-9 lg:col-span-5 row-start-{row} sm:row-start-{row} lg:col-start-{col} self-start h-fit rounded  bg-stone-200 text-zinc-800 text-center shadow-xl mt-24 sm:-mt-24 pb-12 mb-8"
   >
-    {#if titulo != ""}
-      <Titulo {titulo} />
-    {/if}
-
     {#if tituloDestacado != ""}
       <TituloDestacado {tituloDestacado} />
+    {/if}
+
+    {#if titulo != ""}
+      <Titulo {titulo} />
     {/if}
 
     {#if texto != ""}

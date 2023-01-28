@@ -25,7 +25,7 @@
     <h1
       class="text-xl sm:text-3xl font-mono font-semibold tracking-wider mt-3 "
     >
-      Loading
+      Loading Uxue
     </h1>
     <!-- <h1
       class="lined thick  w-11/12 md:w-4/12 text-base font-mono font-bold tracking-widest text-zinc-800 bg-stone-200 hover:bg-stone-100 shadow-xl mt-12  py-4 "
