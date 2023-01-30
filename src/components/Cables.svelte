@@ -6,6 +6,8 @@
   export let patch;
   export let escena;
 
+  let timer;
+
   let init = "hidden";
   let pathPatch = `${patch}/patch.js`;
 
@@ -44,7 +46,9 @@
 
   function patchFinishedLoading() {
     init = "visible";
-    historyPosition.sumar();
+    timer = setTimeout(() => {
+      historyPosition.sumar();
+    }, 3000);
     // The patch is ready now, all assets have been loaded
   }
   const cambioEscenaCables = () => {

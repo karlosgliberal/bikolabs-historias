@@ -1,11 +1,11 @@
 [
   {
     "id": 0,
-    "tituloDestacado": "Cargando",
+    "tituloDestacado": "",
     "tituloBoton": "",
     "texto": "",
     "pregunta": "",
-    "titulo": "Cargando story",
+    "titulo": "",
     "col": 3,
     "row": 2,
     "boton": false,
