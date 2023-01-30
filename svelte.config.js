@@ -1,23 +1,15 @@
-import { mdsvex } from "mdsvex";
 import preprocess from "svelte-preprocess";
 import adapter from "@sveltejs/adapter-auto";
-//import mdsvexConfig from "./mdsvex.config.js";
-import rehypeSlug from "rehype-slug";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
     adapter: adapter(),
   },
-  extensions: [".svelte", ".md"],
+  extensions: [".svelte"],
   preprocess: [
     preprocess({
       postcss: true,
-    }),
-    mdsvex({
-      extensions: [".md"],
-      rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings],
     }),
   ],
 };

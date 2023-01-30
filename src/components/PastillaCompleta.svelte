@@ -6,7 +6,6 @@
   import Boton from "./Boton.svelte";
   import { fade, fly } from "svelte/transition";
   import { vis } from "$lib/store.js";
-  // import SvelteMarkdown from "svelte-markdown";
 
   export let visible;
   export let titulo;
@@ -42,7 +41,6 @@
 
     {#if texto != ""}
       <Texto {texto} />
-      <!-- <SvelteMarkdown {texto} /> -->
     {/if}
 
     {#if pregunta != ""}
