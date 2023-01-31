@@ -13,8 +13,8 @@
   export let tituloBoton;
   export let pregunta;
   export let texto;
-  export let row;
-  export let col;
+  // export let row;
+  // export let col;
 
   let timer;
 
@@ -23,13 +23,14 @@
       vis.verdadero();
     }, 1000);
   }
+  // class="z-20 col-span-4 md:col-span-9 lg:col-span-5 row-start-{row} sm:row-start-{row} lg:col-start-{col} self-start h-fit rounded  bg-stone-200 text-zinc-800 text-center shadow-xl mt-24 sm:-mt-24 pb-12 mb-8"
 </script>
 
 {#if visible}
   <div
     transition:fade={{ duration: 1000 }}
     on:outroend={finDesaparecer}
-    class="z-20 col-span-4 md:col-span-9 lg:col-span-5 row-start-{row} sm:row-start-{row} lg:col-start-{col} self-start h-fit rounded  bg-stone-200 text-zinc-800 text-center shadow-xl mt-24 sm:-mt-24 pb-12 mb-8"
+    class="z-20 position_pastilla h-fit rounded  bg-stone-200 text-zinc-800 text-center shadow-xl mt-24 sm:-mt-24 p-4 mb-8"
   >
     {#if tituloDestacado != ""}
       <TituloDestacado {tituloDestacado} />
@@ -58,7 +59,13 @@
 {/if}
 
 <style>
-  .bordeA {
+  .position_pastilla {
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    width: 40%;
+  }
+  /* .bordeA {
     border-top-left-radius: 255px 15px;
     border-top-right-radius: 15px 225px;
     border-bottom-right-radius: 225px 15px;
@@ -67,5 +74,5 @@
 
   .bordeA.lined.thick {
     border: solid 3px #e7e5e4;
-  }
+  } */
 </style>

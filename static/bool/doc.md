@@ -1,7 +1,14 @@
 ## Patch Variables:
 
+* __CambioTiempoAnimacionCamara__ ```Number```
+* __grupoGrandeRandomSeed__ ```Number```
 * __mute__ ```Number```
 * __numeroEscena__ ```Number```
+* __posicionPrev__ ```Number```
+* __posicionPrev__ ```Number```
+* __posicionPrev__ ```Number```
+* __posicionPrev__ ```Number```
+* __posicionPrev__ ```Number```
 * __posicionPrev__ ```Number```
 * __posicionPrev__ ```Number```
 * __posicionPrev__ ```Number```
