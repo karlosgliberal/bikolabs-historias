@@ -44,9 +44,9 @@
       <Texto {texto} />
     {/if}
 
-    {#if pregunta != ""}
+    <!-- {#if pregunta != ""}
       <Pregunta {pregunta} />
-    {/if}
+    {/if} -->
   </div>
 
   {#if tituloBoton != ""}

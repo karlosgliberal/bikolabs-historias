@@ -12,11 +12,11 @@
     "cables_escena": false
   },
   {
-    "id": 1, 
+    "id": 1,
     "tituloDestacado": "¿Cómo medir si un algoritmo acierta?",
     "tituloBoton": "Comenzar",
     "texto": "",
-    "pregunta": "Centrado",
+    "pregunta": "",
     "titulo": "Algoritmos para presos: el caso RisCanvi",
     "col": 3,
     "row": 2,
@@ -39,7 +39,7 @@
     "tituloBoton": "Siguiente",
     "texto": "Según se ha publicado<sup>1</sup>, los funcionarios que utilizan el sistema de riesgo de reincidencia RisCanvi están conformes con la decisión que toma el algoritmo en el <strong>96,8% de las ocasiones</strong>.",
     "pregunta": "",
-    "titulo": "Centrado",
+    "titulo": "",
     "col": 3,
     "row": 2,
     "cables_escena": 2
@@ -72,7 +72,7 @@
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
     "texto": "Por ello, parece necesario comprender hasta qué punto los sistemas automatizados de ayuda a la decisión aciertan o no.<br /><br />¿Parece sencillo, verdad? <strong>Pues no lo es</strong>.",
-    "pregunta": "Eliminamos la cámara 6",
+    "pregunta": "",
     "titulo": "",
     "col": 4,
     "row": 1,
@@ -83,7 +83,7 @@
     "tituloDestacado": "Medidas de acierto",
     "tituloBoton": "Siguiente",
     "texto": "¿Cómo saber si un sistema automatizado es acertado?<br />Son varias las medidas que habitualmente se usan para evaluar el acierto de este tipo de sistemas. Algunas de las más habituales son <strong>accuracy, sensibilidad, especificidad y valor predictivo</strong>.",
-    "pregunta": "Centrado",
+    "pregunta": "",
     "titulo": "",
     "col": 3,
     "row": 2,
@@ -149,7 +149,7 @@
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
     "texto": "¿Y qué pasa con los presos que no reinciden? ¿Es capaz el algoritmo de identificarlos adecuadamente?<br /><br />Para responder a esto, se utiliza la medida de <strong>Especificidad</strong>.",
-    "pregunta": "Aparece de pronto una farola que antes no estaba",
+    "pregunta": "",
     "titulo": "",
     "col": 4,
     "row": 1,
@@ -203,7 +203,18 @@
     "id": 18,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "Para predecir, por ejemplo, cuál es la probabilidad de que un recluso reincida en el futuro, no nos sirven las medidas de sensibilidad y especificidad porque el punto de partida es diferente.",
+    "texto": "Para conocer cuál es la probabilidad de que un nuevo preso, etiquetado como de alto riesgo, reincida en el futuro, necesitamos conocer la medida <strong>Valor predictivo positivo</strong>.",
+    "pregunta": "",
+    "titulo": "",
+    "col": 4,
+    "row": 1,
+    "cables_escena": false
+  },
+  {
+    "id": 19,
+    "tituloDestacado": "",
+    "tituloBoton": "Siguiente",
+    "texto": "Para hacer esta predicción de futuro, no nos sirven las medidas de sensibilidad y especificidad porque el punto de partida es diferente.",
     "pregunta": "",
     "titulo": "",
     "col": 4,
@@ -211,10 +222,10 @@
     "cables_escena": 14
   },
   {
-    "id": 19,
+    "id": 20,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "Si para las medidas anteriores partíamos de la muestra de reclusos reincidentes y no reincidentes, ahora el punto de partida es el etiquetado.",
+    "texto": "Si antes partíamos de la muestra de reclusos reincidentes y no reincidentes, ahora el punto de partida es el etiquetado, es decir, nos fijamos en cuántos presos de la muestra han sido <strong>etiquetados de alto riesgo</strong> y cuántos de <strong>bajo riesgo</strong>.",
     "pregunta": "",
     "titulo": "",
     "col": 4,
@@ -222,11 +233,11 @@
     "cables_escena": 15
   },
   {
-    "id": 20,
+    "id": 21,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "Ahora en lo que nos vamos a fijar es en cuántos presos han sido <strong>etiquetados de alto riesgo</strong> y cuántos de <strong>bajo riesgo</strong>.",
-    "pregunta": "Los que se tienen que ordenar son el grupo con menos, los 301 que son lso de alto riesgo. Los 347 son bajo riesgo. Comprobar. Si están a la derecha hay que cambiar los textos y cuidado los carteles",
+    "texto": "En RisCanvi, <strong>el valor predictivo positivo es de un 18%</strong>, es decir, que casi 2 presos de cada 10 terminarían confirmando el pronóstico y reincidiendo tras haber sido etiquetados de alto riesgo.",
+    "pregunta": "",
     "titulo": "",
     "col": 4,
     "row": 1,
@@ -236,7 +247,7 @@
     "id": 21,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
-    "texto": "Para predecir si un preso etiquetado de alto riesgo reincidirá en el futuro, necesitamos conocer la medida <strong>Valor predictivo positivo</strong>, que se calcula dividiendo el número de reclusos etiquetados de alto riesgo que terminan reincidiendo, entre el total de presos de alto riesgo.",
+    "texto": "Solo nos quedaría comentar la medida más conocida y publicitada para medir el acierto de los algoritmos: <strong>la exactitud o accuracy</strong>.<br /><br />Esta medida se calcula dividiendo los presos correctamente etiquetados entre el total de la muestra. En el caso RisCanvi, <strong>el accuracy es del 59%</strong>.",
     "pregunta": "",
     "titulo": "",
     "col": 4,
@@ -245,39 +256,17 @@
   },
   {
     "id": 22,
-    "tituloDestacado": "",
+    "tituloDestacado": "Rebobinando",
     "tituloBoton": "Siguiente",
-    "texto": "En RisCanvi, <strong>el valor predictivo positivo es de un 18%</strong>, es decir, que casi 2 presos de cada 10 terminarían confirmando el pronóstico y reincidiendo tras haber sido etiquetados de alto riesgo.",
-    "pregunta": "Los cartelones tapan las letras del suelo. O poner en siglas VPP o hacer más zoom, o ambos",
+    "texto": "Revisadas algunas de las medidas de acierto de los sistemas automatizados, recordamos que el cumplimiento en el sistema RisCanvi es del 96,8%.<br /><br />Es decir, que <strong>en más de 9 de cada 10 casos</strong> se da por bueno el nivel de riesgo asignado por el sistema.",
+    "pregunta": "",
     "titulo": "",
-    "col": 4,
-    "row": 1,
+    "col": 3,
+    "row": 2,
     "cables_escena": 18
   },
   {
     "id": 23,
-    "tituloDestacado": "",
-    "tituloBoton": "Siguiente",
-    "texto": "Solo nos quedaría comentar la medida más conocida y publicitada para medir el acierto de los algoritmos: <strong>la exactitud o accuracy</strong>.<br /><br />Esta medida se calcula dividiendo los presos correctamente etiquetados entre el total de la muestra. En el caso RisCanvi, <strong>el accuracy es del 59%</strong>.",
-    "pregunta": "",
-    "titulo": "",
-    "col": 4,
-    "row": 1,
-    "cables_escena": 19
-  },
-  {
-    "id": 24,
-    "tituloDestacado": "Rebobinando",
-    "tituloBoton": "Siguiente",
-    "texto": "Revisadas algunas de las medidas de acierto de los sistemas automatizados, recordamos que el cumplimiento en el sistema RisCanvi es del 96,8%.<br /><br />Es decir, que <strong>en más de 9 de cada 10 casos</strong> se da por bueno el nivel de riesgo asignado por el sistema.",
-    "pregunta": "Centrado",
-    "titulo": "",
-    "col": 3,
-    "row": 2,
-    "cables_escena": 20
-  },
-  {
-    "id": 25,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
     "texto": "Más allá del ejemplo concreto de RisCanvi, parece claro que evaluar la capacidad y el potencial predictivo de un algoritmo <strong>no resulta sencillo</strong>.",
@@ -288,7 +277,7 @@
     "cables_escena": false
   },
   {
-    "id": 26,
+    "id": 24,
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
     "texto": "Por ello, es importante <strong>conocer y distinguir entre medidas como la sensibilidad, la especificidad, el accuracy o el valor predictivo</strong>.<br /><br />Si solo nos fijamos en alguna de ellas, nuestra lectura sobre la capacidad y poder predictivo de un algoritmo puede ser errónea.",
@@ -296,10 +285,10 @@
     "titulo": "",
     "col": 4,
     "row": 1,
-    "cables_escena": 21
+    "cables_escena": 19
   },
   {
-    "id": 27,
+    "id": 25,
     "tituloDestacado": "",
     "tituloBoton": "Créditos, Datos y Agradecimientos",
     "texto": "Y sí, lo sabemos. Todos preferiríamos que estos temas resultaran más sencillos. Pero <strong>¡c'est la vie y los sistemas automatizados!</strong>",
@@ -307,6 +296,6 @@
     "titulo": "",
     "col": 4,
     "row": 1,
-    "cables_escena": 22
+    "cables_escena": 20
   }
 ]
