@@ -38,8 +38,8 @@
     "tituloDestacado": "El caso RisCanvi",
     "tituloBoton": "Siguiente",
     "texto": "Según se ha publicado<sup>1</sup>, los funcionarios que utilizan el sistema de riesgo de reincidencia RisCanvi están conformes con la decisión que toma el algoritmo en el <strong>96,8% de las ocasiones</strong>.",
-    "pregunta": "",
-    "titulo": "Centrado",
+    "pregunta": "Centrado",
+    "titulo": "",
     "col": 3,
     "row": 2,
     "cables_escena": 2
