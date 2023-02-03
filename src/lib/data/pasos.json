@@ -12,7 +12,7 @@
     "cables_escena": false
   },
   {
-    "id": 1, 
+    "id": 1,
     "tituloDestacado": "¿Cómo medir si un algoritmo acierta?",
     "tituloBoton": "Comenzar",
     "texto": "",
@@ -259,7 +259,7 @@
     "tituloDestacado": "",
     "tituloBoton": "Siguiente",
     "texto": "Solo nos quedaría comentar la medida más conocida y publicitada para medir el acierto de los algoritmos: <strong>la exactitud o accuracy</strong>.<br /><br />Esta medida se calcula dividiendo los presos correctamente etiquetados entre el total de la muestra. En el caso RisCanvi, <strong>el accuracy es del 59%</strong>.",
-    "pregunta": "",
+    "pregunta": "Plano recurso similara al edificio ir y volver al banco",
     "titulo": "",
     "col": 4,
     "row": 1,
@@ -270,7 +270,7 @@
     "tituloDestacado": "Rebobinando",
     "tituloBoton": "Siguiente",
     "texto": "Revisadas algunas de las medidas de acierto de los sistemas automatizados, recordamos que el cumplimiento en el sistema RisCanvi es del 96,8%.<br /><br />Es decir, que <strong>en más de 9 de cada 10 casos</strong> se da por bueno el nivel de riesgo asignado por el sistema.",
-    "pregunta": "Centrado",
+    "pregunta": "Centrado plano plaza grupo mezclado",
     "titulo": "",
     "col": 3,
     "row": 2,
