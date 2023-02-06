@@ -6,6 +6,7 @@
   import Boton from "./Boton.svelte";
   import { fade, fly } from "svelte/transition";
   import { vis } from "$lib/store.js";
+  import Decrementar from "./Decrementar.svelte";
 
   export let visible;
   export let titulo;
@@ -18,19 +19,20 @@ export let col;
 
   let timer;
 
-
   function finDesaparecer() {
     timer = setTimeout(() => {
       vis.verdadero();
     }, 1000);
   }
 
+  let showBack = tituloBoton === "Siguiente";
+  let showButton = tituloBoton.length > 1;
+
   let positionClass = col ===2 ? "position_center" : "position_right";
 
-  console.log('col', col);
+  console.log('showback', showBack);
+  console.log('showbutton', showButton);
 
-
-  // class="z-20 col-span-4 md:col-span-9 lg:col-span-5 row-start-{row} sm:row-start-{row} lg:col-start-{col} self-start h-fit rounded  bg-stone-200 text-zinc-800 text-center shadow-xl mt-24 sm:-mt-24 pb-12 mb-8"
 </script>
 
 {#if visible}
@@ -55,8 +57,13 @@ export let col;
       <Pregunta {pregunta} />
     {/if} -->
   </div>
-  {#if tituloBoton != ""}
-    <div class="z-20 absolute bottom-5 right-4">
+  {#if showButton}
+    <div class="z-20 absolute bottom-5 right-4 flex items-center gap-6">
+    {#if showBack} 
+    <div class="">
+        <Decrementar/> 
+    </div>  
+    {/if}
     <Boton on:message {tituloBoton} />
     </div>
   {/if}
