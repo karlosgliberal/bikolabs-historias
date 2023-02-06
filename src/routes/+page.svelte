@@ -4,7 +4,7 @@
   import Cables from "../components/Cables.svelte";
   import Cover from "../components/Cover.svelte";
   import pasos from "$lib/data/pasos.json";
-  import Footer from "../components/Footer.svelte";
+  import Footer from "../components/footer/Footer.svelte";
   import Loading from "../components/Loading.svelte";
   import Timeline from "../components/Timeline.svelte";
 
@@ -49,7 +49,7 @@
   <!--grid-->
   <!-- class="z-20 w-full min-h-screen grid grid-rows-3 grid-cols-4 lg:grid-cols-9 gap-3 px-3 sm:px-4" -->
   <div
-    class="z-20 w-full min-h-screen grid grid-rows-3 grid-cols-4 lg:grid-cols-9 gap-3 px-3 sm:px-4"
+    class="z-20 w-full h-screen"
   >
     <div class="w-full h-screen absolute z-10">
       <Cables

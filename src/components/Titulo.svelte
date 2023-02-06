@@ -4,7 +4,7 @@
 
 <!--título-->
 {#if titulo != ""}
-  <h1 class="text-base leading-6 tracking-widest md:px-4 pt-24">
-    {titulo}
+  <h1 class="text-xl leading-6 md:px-4 py-8">
+   {titulo}
   </h1>
 {/if}

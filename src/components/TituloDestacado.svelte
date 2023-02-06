@@ -3,7 +3,7 @@
 </script>
 
 <h1
-  class="text-xl sm:text-3xl font-mono font-semibold tracking-wider mt-3  pt-6 "
+  class="text-xl sm:text-3xl font-mono font-semibold mt-3 pt-6 pl-3 "
 >
   {tituloDestacado}
 </h1>
