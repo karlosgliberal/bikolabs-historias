@@ -46,8 +46,6 @@
 
 <!--portada-->
 <div id="cover">
-  <!--grid-->
-  <!-- class="z-20 w-full min-h-screen grid grid-rows-3 grid-cols-4 lg:grid-cols-9 gap-3 px-3 sm:px-4" -->
   <div
     class="z-20 w-full h-screen"
   >
@@ -58,9 +56,7 @@
         escena={pasos[$historyPosition].cables_escena}
       />
     </div>
-
     <!-- <Timeline {datos} visible={$vis} /> -->
-
     {#if $historyPosition == 0}
       <Loading />
       <!-- {:else if $historyPosition == 1}
