@@ -14,7 +14,7 @@
 <button
   on:click={sayHello}
   type="button"
-  class="flex justify-center items-center relative bordeA lined thick w-full lg:w-fit text-base font-mono font-bold tracking-widest text-zinc-100 hover:text-zinc-800 bg-zinc-800 hover:bg-stone-50 shadow-xl py-4 px-8 lg:mr-6 "
+  class="flex justify-center items-center relative bordeA lined thick w-full lg:w-fit text-base font-mono font-bold tracking-widest text-zinc-100 hover:text-zinc-800 bg-zinc-800 hover:bg-stone-50 shadow-xl py-4 px-8 lg:mr-6 transition duration-150 ease-out hover:ease-in"
   >
   {tituloBoton}
   <div class="slide-in-left p-2 w-10 h-10  flex items-center justify-center">

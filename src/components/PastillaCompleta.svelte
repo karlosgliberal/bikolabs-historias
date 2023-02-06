@@ -8,6 +8,7 @@
   import { vis } from "$lib/store.js";
   import Decrementar from "./Decrementar.svelte";
 
+
   export let visible;
   export let titulo;
   export let tituloDestacado;
@@ -58,16 +59,16 @@ export let col;
     {/if} -->
   </div>
   {#if showButton}
-    <div class="z-20 absolute bottom-5 right-4 flex items-center gap-6">
-    {#if showBack} 
+    <div class="z-20 absolute bottom-9 right-5 flex items-center gap-6">
+    <!-- {#if showBack} 
+  
+    {/if} -->
     <div class="">
-        <Decrementar/> 
-    </div>  
-    {/if}
+      <Decrementar/> 
+    </div>
     <Boton on:message {tituloBoton} />
     </div>
   {/if}
-
 {/if}
 
 <style>
