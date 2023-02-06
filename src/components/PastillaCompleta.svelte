@@ -72,8 +72,8 @@ export let col;
   }
   .position_center {
     position: absolute;
-    top: 50%;
-    right: 50%;
+    top: 38%;
+    left: 36%;    
     width: 30%;
   }
 </style>

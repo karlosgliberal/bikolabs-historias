@@ -1,6 +1,6 @@
 <script>
   // import Incrementar from "./Incrementar.svelte";
-  // import Decrementar from "./Decrementar.svelte";
+  import Decrementar from "../Decrementar.svelte";
   // import Reset from "./Reset.svelte";
   import LinkUnderlineDecorator from "../ui/LinkUnderline-decorator.svelte";
 </script>
@@ -13,9 +13,9 @@
     <LinkUnderlineDecorator texto="Creditos"/>
     <LinkUnderlineDecorator texto="Sobre Bikolabs y los datos"/>
   </nav>
-  <!-- <div class="text-xs">
-    <Incrementar />
-    <Decrementar />
-    <Reset />
-  </div> -->
+  <div class="text-xs">
+    <!-- <Incrementar />
+    <Reset /> -->
+      <Decrementar />
+  </div>
 </div>
