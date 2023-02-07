@@ -69,6 +69,7 @@
         this={Pastilla}
         {...pasos[$historyPosition]}
         visible={$vis}
+        position={pasos[$historyPosition].col}
       />
     {/if}
     <div class="z-20 absolute bottom-9 right-5 flex items-center gap-6">

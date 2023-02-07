@@ -9,8 +9,9 @@
   export let titulo;
   export let tituloDestacado;
   export let texto;
+  export let position;
   // export let row;
-  export let col;
+  //export let col;
 
   let timer;
 
@@ -20,7 +21,7 @@
     }, 1000);
   }
 
-  let positionClass = col === 2 ? "position_center" : "position_right";
+  let positionClass = position === 1 ? "position_center" : "position_right";
 </script>
 
 {#if visible}
