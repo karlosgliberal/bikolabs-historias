@@ -20,15 +20,13 @@
       vis.verdadero();
     }, 1000);
   }
-
-  let positionClass = position === 1 ? "position_center" : "position_right";
 </script>
 
 {#if visible}
   <div
     transition:fade={{ duration: 1000 }}
     on:outroend={finDesaparecer}
-    class="z-20 {positionClass} h-fit rounded bg-stone-200 text-zinc-800 shadow-xl mt-24 sm:-mt-24 p-4"
+    class="z-20 position_{position} h-fit rounded bg-stone-200 text-zinc-800 shadow-xl mt-24 sm:-mt-24 p-4"
   >
     {#if tituloDestacado != ""}
       <TituloDestacado {tituloDestacado} />

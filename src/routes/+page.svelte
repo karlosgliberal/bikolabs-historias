@@ -65,11 +65,12 @@
       <Cover on:message={handleMessage} visible={$vis} /> -->
     {:else}
       <!-- <Pastilla /> -->
+
       <svelte:component
         this={Pastilla}
         {...pasos[$historyPosition]}
         visible={$vis}
-        position={pasos[$historyPosition].col}
+        position={pasos[$historyPosition].position}
       />
     {/if}
     <div class="z-20 absolute bottom-9 right-5 flex items-center gap-6">
