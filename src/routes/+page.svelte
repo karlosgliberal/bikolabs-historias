@@ -6,10 +6,14 @@
   import pasos from "$lib/data/pasos.json";
   import Footer from "../components/footer/Footer.svelte";
   import Loading from "../components/Loading.svelte";
+  import Decrementar from "./Decrementar.svelte";
+  import Texto from "./Texto.svelte";
+  import Boton from "./Boton.svelte";
   import Timeline from "../components/Timeline.svelte";
 
   let Pastilla;
   let datos = [{ id: 1, titulo: "uno" }];
+  let tituloBoton;
 
   onMount(async () => {
     loadPastilla();
@@ -37,6 +41,9 @@
       (res) => (Pastilla = res.default)
     );
   }
+
+  let showButton = tituloBoton.length > 1;
+
 </script>
 
 <svelte:head>
@@ -70,6 +77,14 @@
         visible={$vis}
       />
     {/if}
+    {#if showButton}
+    <div class="z-20 absolute bottom-9 right-5 flex items-center gap-6">
+      <div class="">
+        <Decrementar/> 
+      </div>
+      <Boton on:message {tituloBoton} />
+    </div>
+  {/if}
     <Footer />
   </div>
 </div>
