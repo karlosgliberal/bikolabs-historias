@@ -2,8 +2,10 @@
   import { fade, fly } from "svelte/transition";
   import { vis } from "$lib/store.js";
   import Texto from "./Texto.svelte";
+  import Titulo from "./Titulo.svelte";
 
   export let visible;
+  export let titulo;
   export let texto;
   export let position;
   // export let row;
@@ -24,6 +26,9 @@
     on:outroend={finDesaparecer}
     class="z-20 position_{position} h-fit rounded bg-stone-200 text-zinc-800 shadow-xl mt-24 sm:-mt-24 p-4"
   >
+    {#if titulo != ""}
+      <Titulo {titulo} />
+    {/if}
     {#if texto != ""}
       <Texto {texto} />
     {/if}
