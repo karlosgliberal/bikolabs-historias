@@ -2,14 +2,12 @@
   import { vis, historyPosition } from "$lib/store.js";
   import { onMount } from "svelte";
   import Cables from "../components/Cables.svelte";
-  import Cover from "../components/Cover.svelte";
   import pasos from "$lib/data/pasos.json";
   import Footer from "../components/footer/Footer.svelte";
   import Loading from "../components/Loading.svelte";
-  import Decrementar from "./Decrementar.svelte";
-  import Texto from "./Texto.svelte";
-  import Boton from "./Boton.svelte";
-  import Timeline from "../components/Timeline.svelte";
+  import Decrementar from "../components/Decrementar.svelte";
+  // import Texto from "../components/Texto.svelte";
+  import Boton from "../components/Boton.svelte";
 
   let Pastilla;
   let datos = [{ id: 1, titulo: "uno" }];
@@ -42,8 +40,7 @@
     );
   }
 
-  let showButton = tituloBoton.length > 1;
-
+  // let showButton = tituloBoton.length > 1;
 </script>
 
 <svelte:head>
@@ -53,9 +50,7 @@
 
 <!--portada-->
 <div id="cover">
-  <div
-    class="z-20 w-full h-screen"
-  >
+  <div class="z-20 w-full h-screen">
     <div class="w-full h-screen absolute z-10">
       <Cables
         step={$historyPosition}
@@ -72,19 +67,16 @@
       <!-- <Pastilla /> -->
       <svelte:component
         this={Pastilla}
-        on:message={handleMessage}
         {...pasos[$historyPosition]}
         visible={$vis}
       />
     {/if}
-    {#if showButton}
     <div class="z-20 absolute bottom-9 right-5 flex items-center gap-6">
       <div class="">
-        <Decrementar/> 
+        <Decrementar />
       </div>
-      <Boton on:message {tituloBoton} />
+      <Boton />
     </div>
-  {/if}
     <Footer />
   </div>
 </div>

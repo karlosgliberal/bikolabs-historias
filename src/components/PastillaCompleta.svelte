@@ -1,17 +1,16 @@
 <script>
   import TituloDestacado from "./TituloDestacado.svelte";
   import Titulo from "./Titulo.svelte";
-  import Pregunta from "./Pregunta.svelte";
   import { fade, fly } from "svelte/transition";
   import { vis } from "$lib/store.js";
+  import Texto from "./Texto.svelte";
 
   export let visible;
   export let titulo;
   export let tituloDestacado;
-  export let pregunta;
   export let texto;
   // export let row;
-export let col;
+  export let col;
 
   let timer;
 
@@ -21,15 +20,14 @@ export let col;
     }, 1000);
   }
 
-  let positionClass = col ===2 ? "position_center" : "position_right";
-
+  let positionClass = col === 2 ? "position_center" : "position_right";
 </script>
 
 {#if visible}
   <div
     transition:fade={{ duration: 1000 }}
     on:outroend={finDesaparecer}
-    class="z-20 { positionClass} h-fit rounded bg-stone-200 text-zinc-800 shadow-xl mt-24 sm:-mt-24 p-4"
+    class="z-20 {positionClass} h-fit rounded bg-stone-200 text-zinc-800 shadow-xl mt-24 sm:-mt-24 p-4"
   >
     {#if tituloDestacado != ""}
       <TituloDestacado {tituloDestacado} />
@@ -42,12 +40,7 @@ export let col;
     {#if texto != ""}
       <Texto {texto} />
     {/if}
-
-    <!-- {#if pregunta != ""}
-      <Pregunta {pregunta} />
-    {/if} -->
   </div>
-
 {/if}
 
 <style>
@@ -60,9 +53,7 @@ export let col;
   .position_center {
     position: absolute;
     top: 38%;
-    left: 36%;    
+    left: 36%;
     width: 30%;
   }
 </style>
-
-
