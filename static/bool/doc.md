@@ -23,5 +23,8 @@
 * __posicionPrev__ ```Number```
 * __posicionPrev__ ```Number```
 * __posicionPrev__ ```Number```
+* __posicionPrev__ ```Number```
+* __posicionPrev__ ```Number```
+* __posicionPrev__ ```Number```
 * __valor__ ```Number```
 
