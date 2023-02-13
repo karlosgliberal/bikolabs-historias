@@ -8,8 +8,8 @@
   },
   {
     "id": 1,
-    "titulo": "Movida",
-    "texto": "¿Cómo medir si un algoritmo acierta? <br/> Algoritmos para presos: el caso RisCanvi",
+    "titulo": "¿Cómo medir si un algoritmo acierta?",
+    "texto": "Algoritmos para presos: el caso RisCanvi",
     "position": "center",
     "cables_escena": 0
   },

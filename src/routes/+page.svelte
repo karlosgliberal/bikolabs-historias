@@ -7,6 +7,7 @@
   import Loading from "../components/Loading.svelte";
   import Decrementar from "../components/Decrementar.svelte";
   import Boton from "../components/Boton.svelte";
+  import MenuAnimacion from "../components/menu/MenuAnimacion.svelte";
 
   let Pastilla;
 
@@ -53,6 +54,7 @@
       </div>
       <Boton />
     </div>
+    <MenuAnimacion />
     <Footer />
   </div>
 </div>
