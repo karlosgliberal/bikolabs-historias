@@ -1,19 +1,27 @@
 <script>
   import { onMount } from "svelte";
-  import { historyPosition } from "$lib/store.js";
+  import { historyPosition, init, vis } from "$lib/store.js";
 
   export let step;
+  export let inicio;
   export let patch;
   export let escena;
 
   let timer;
 
-  let init = "hidden";
+  let initVis = "hidden";
   let pathPatch = `${patch}/patch.js`;
 
   $: {
     if (step) {
       cambioEscenaCables($historyPosition);
+    }
+    if (inicio > 1) {
+      goInicio();
+      init.reset();
+      vis.falso();
+      historyPosition.reset();
+      console.log("movida ini", $historyPosition);
     }
   }
 
@@ -45,7 +53,7 @@
   }
 
   function patchFinishedLoading() {
-    init = "visible";
+    initVis = "visible";
     timer = setTimeout(() => {
       historyPosition.sumar();
     }, 3000);
@@ -56,6 +64,13 @@
       console.log("dentro cambiosescena", escena);
       CABLES.patch.config.patchFunctiontrigger(escena);
     }
+    //patchFunctionInicio
+  };
+
+  const goInicio = () => {
+    console.log("inicio");
+    CABLES.patch.config.patchFunctionInicio(escena);
+
     //patchFunctionInicio
   };
 
@@ -74,6 +89,6 @@
     id="cables_{patch}"
     width="100%"
     height="100%"
-    style="width: 100%; height: 100%; visibility: {init};"
+    style="width: 100%; height: 100%; visibility: {initVis};"
   />
 </div>
