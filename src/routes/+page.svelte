@@ -1,7 +1,7 @@
 <script>
   import { vis, historyPosition, init } from "$lib/store.js";
   import { onMount } from "svelte";
-  import pasos from "$lib/data/pasos.json";
+  import pasos from "$lib/data/es/pasos.json";
   import Cables from "../components/Cables.svelte";
   import Footer from "../components/footer/Footer.svelte";
   import Loading from "../components/Loading.svelte";
