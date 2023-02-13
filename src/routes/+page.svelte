@@ -54,7 +54,9 @@
       {#if $historyPosition > 1}
         <Decrementar />
       {/if}
-      <Boton />
+      {#if $historyPosition < 28}
+        <Boton />
+      {/if}
     </div>
     <MenuAnimacion />
     <Footer />
