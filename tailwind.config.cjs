@@ -27,24 +27,14 @@
 
 // module.exports = config;
 
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     extend: {
-      animation: {
-        "slide-in-left": "spin 3s linear infinite both",
-      },
-      keyframes: {
-        "slide-in-left": {
-          "0%": {
-            transform: "translateX(-1000px)",
-            opacity: "0",
-          },
-          to: {
-            transform: "translateX(0)",
-            opacity: "1",
-          },
-        },
+      fontFamily: {
+        cabin: ['"Cabin"', ...defaultTheme.fontFamily.sans],
       },
     },
   },
