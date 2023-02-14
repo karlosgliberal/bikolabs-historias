@@ -37,6 +37,20 @@ module.exports = {
         cabin: ['"Cabin"', ...defaultTheme.fontFamily.sans],
       },
     },
+    container: {
+      center: true,
+      padding: "2rem",
+    },
+    screens: {
+      mobile: "767px",
+      // => @media (min-width: 767px) { ... }
+
+      tablet: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      desktop: "1024px",
+      // => @media (min-width: 1024px) { ... }
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 };
