@@ -51,8 +51,8 @@
   },
   {
     "id": 7,
-    "titulo": "",
-    "texto": "¿Cómo saber si un sistema automatizado es acertado?<br />Son varias las medidas que habitualmente se usan para evaluar el acierto de este tipo de sistemas. Algunas de las más habituales son <strong>accuracy, sensibilidad, especificidad y valor predictivo</strong>.",
+    "titulo": "¿Cómo saber si un sistema automatizado es acertado?",
+    "texto": "Son varias las medidas que habitualmente se usan para evaluar el acierto de este tipo de sistemas. Algunas de las más habituales son <strong>accuracy, sensibilidad, especificidad y valor predictivo</strong>.",
     "position": "center",
     "cables_escena": 6
   },
