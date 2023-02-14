@@ -47,6 +47,7 @@
         {...pasos[$historyPosition]}
         visible={$vis}
         position={pasos[$historyPosition].position}
+        id={pasos[$historyPosition].id}
       />
     {/if}
     <div class="z-20 absolute bottom-9 right-5 flex items-center gap-6">
