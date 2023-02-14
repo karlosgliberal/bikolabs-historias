@@ -1,7 +1,7 @@
 <script>
-  import { vis, historyPosition } from "$lib/store.js";
+  import { vis, historyPosition, init } from "$lib/store.js";
   import { onMount } from "svelte";
-  import pasos from "$lib/data/pasos.json";
+  import pasos from "$lib/data/es/pasos.json";
   import Cables from "../components/Cables.svelte";
   import Footer from "../components/footer/Footer.svelte";
   import Loading from "../components/Loading.svelte";
@@ -33,6 +33,7 @@
     <div class="w-full h-screen absolute z-10">
       <Cables
         step={$historyPosition}
+        inicio={$init}
         patch="bool"
         escena={pasos[$historyPosition].cables_escena}
       />
@@ -49,10 +50,13 @@
       />
     {/if}
     <div class="z-20 absolute bottom-9 right-5 flex items-center gap-6">
-      <div class="">
+      <h1>{$historyPosition}</h1>
+      {#if $historyPosition > 1}
         <Decrementar />
-      </div>
-      <Boton />
+      {/if}
+      {#if $historyPosition < 28}
+        <Boton />
+      {/if}
     </div>
     <MenuAnimacion />
     <Footer />

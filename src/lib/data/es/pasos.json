@@ -166,36 +166,43 @@
   {
     "id": 23,
     "titulo": "",
-    "texto": "Solo nos quedaría comentar la medida más conocida y publicitada para medir el acierto de los algoritmos: <strong>la exactitud o accuracy</strong>.<br /><br />Esta medida se calcula dividiendo los presos correctamente etiquetados entre el total de la muestra. En el caso RisCanvi, <strong>el accuracy es del 59%</strong>.",
+    "texto": "Solo nos quedaría comentar la medida más conocida y publicitada para medir el acierto de los algoritmos: <strong>la exactitud o accuracy</strong>.<br /><br />",
     "position": "right",
     "cables_escena": 19
   },
   {
     "id": 24,
     "titulo": "",
-    "texto": "<h1>Rebobinando</h1> Revisadas algunas de las medidas de acierto de los sistemas automatizados, recordamos que el cumplimiento en el sistema RisCanvi es del 96,8%.<br /><br />Es decir, que <strong>en más de 9 de cada 10 casos</strong> se da por bueno el nivel de riesgo asignado por el sistema.",
-    "position": "center",
+    "texto": "Esta medida se calcula dividiendo los presos correctamente etiquetados entre el total de la muestra. En el caso RisCanvi, <strong>el accuracy es del 59%</strong>.",
+    "position": "right",
     "cables_escena": 20
   },
   {
     "id": 25,
+    "titulo": "",
+    "texto": "<h1>Rebobinando</h1> Revisadas algunas de las medidas de acierto de los sistemas automatizados, recordamos que el cumplimiento en el sistema RisCanvi es del 96,8%.<br /><br />Es decir, que <strong>en más de 9 de cada 10 casos</strong> se da por bueno el nivel de riesgo asignado por el sistema.",
+    "position": "center",
+    "cables_escena": 21
+  },
+  {
+    "id": 26,
     "titulo": "",
     "texto": "Más allá del ejemplo concreto de RisCanvi, parece claro que evaluar la capacidad y el potencial predictivo de un algoritmo <strong>no resulta sencillo</strong>.",
     "position": "right",
     "cables_escena": false
   },
   {
-    "id": 26,
+    "id": 27,
     "titulo": "",
     "texto": "Por ello, es importante <strong>conocer y distinguir entre medidas como la sensibilidad, la especificidad, el accuracy o el valor predictivo</strong>.<br /><br />Si solo nos fijamos en alguna de ellas, nuestra lectura sobre la capacidad y poder predictivo de un algoritmo puede ser errónea.",
     "position": "right",
-    "cables_escena": 21
+    "cables_escena": 22
   },
   {
-    "id": 27,
+    "id": 28,
     "titulo": "",
     "texto": "<h1>Créditos, Datos y Agradecimientos</h1> Y sí, lo sabemos. Todos preferiríamos que estos temas resultaran más sencillos. Pero <strong>¡c'est la vie y los sistemas automatizados!</strong>",
     "position": "right",
-    "cables_escena": 22
+    "cables_escena": 23
   }
 ]
