@@ -31,7 +31,7 @@
       {#if position == 'center'}
         {#if titulo != ""}
          {#if id == '1'}
-              <h2 class="text-6xl font-cabin font-bold pl-6 mb-3">
+              <h2 class="text-3xl tablet:text-6xl font-cabin font-bold pl-6 mb-1 tablet:mb-3">
                 <Titulo {titulo} />
               </h2>
           {/if}
@@ -62,16 +62,13 @@
 
 <style>
   .position_right {
-    width: 30%;
-    @apply desktop:mt-6 desktop:mr-10 mobile:mt-0 mobile:mr-0;
-
+    @apply desktop:mt-6 desktop:mr-10 mobile:mt-0 mobile:mr-0 py-10 w-[100%] tablet:w-[70%] desktop:w-[30%];
   }
   .position_center {
-    width: 35%;
-    @apply py-10
-  }
+    @apply py-10 w-[100%] tablet:w-[80%] desktop:w-[35%];
+  } 
   .wrapper_center {
-    @apply flex items-center justify-center ;
+    @apply flex justify-start tablet:items-center tablet:justify-center ;
   }
   .wrapper_right {
     @apply flex justify-end p-4;
