@@ -17,8 +17,6 @@
       vis.verdadero();
     }, 1000);
   }
-  // let isVisible = {id} == '1' && {position} == 'center';
-
 </script>
 {#if visible }
   <div class="w-full h-full z-20 wrapper_{position} screen_{id}">
@@ -65,7 +63,7 @@
     @apply desktop:mt-6 desktop:mr-10 mobile:mt-0 mobile:mr-0 py-10 w-[100%] tablet:w-[70%] desktop:w-[30%];
   }
   .position_center {
-    @apply py-10 w-[100%] tablet:w-[80%] desktop:w-[35%];
+    @apply py-5 mt-10 mx-4 tablet:mt-0 tablet:py-10 w-[100%] tablet:w-[80%] desktop:w-[35%];
   } 
   .wrapper_center {
     @apply flex justify-start tablet:items-center tablet:justify-center ;
