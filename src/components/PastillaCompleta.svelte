@@ -21,12 +21,12 @@
 
 </script>
 {#if visible }
-  <div class="w-full h-full z-20 wrapper_{position}">
+  <div class="w-full h-full z-20 wrapper_{position} screen_{id}">
 
     <div
-      transition:fade={{ duration: 1000 }}
+      transition:fade={{ duration: 1500 }}
       on:outroend={finDesaparecer}
-      class="z-20 position_{position} h-fit rounded text-white bg-black bg-opacity-75 shadow-xl"
+      class="z-20 position_{position} fine_{id} h-fit rounded text-white bg-black bg-opacity-75 shadow-xl"
     >
       {#if position == 'center'}
         {#if titulo != ""}
@@ -60,9 +60,6 @@
   </div>
 {/if}
 
-
-
-
 <style>
   .position_right {
     width: 30%;
@@ -70,7 +67,7 @@
 
   }
   .position_center {
-    width: 30%;
+    width: 35%;
     @apply py-10
   }
   .wrapper_center {
@@ -79,5 +76,24 @@
   .wrapper_right {
     @apply flex justify-end p-4;
   }
+/* 
+  .screen_5 {
+     @apply flex justify-end items-center;
+      transition: all ease-in-out 1s;
+  } */
+
+  .fine_4 {
+    @apply mt-20;
+    transition: all ease-in-out 500ms;
+  }
+  .fine_5  {
+    @apply mt-40;
+    transition: all ease-in-out 500ms;
+  }
+ .fine_6 {
+    @apply mt-60;
+    transition: all ease-in-out 500ms;
+  }
+ 
 
 </style>
