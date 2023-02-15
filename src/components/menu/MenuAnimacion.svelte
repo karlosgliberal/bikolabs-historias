@@ -1,5 +1,5 @@
 <script>
-  import LinkUnderlineDecoratorInicio from "../ui/LinkUnderline-decorator-inicio.svelte";
+  import LinkUnderlineDecoratorInicio from '../ui/LinkUnderline-decorator-inicio.svelte'
 </script>
 
 <!-- Menu-->

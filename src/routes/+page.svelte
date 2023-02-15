@@ -50,8 +50,7 @@
         id={pasos[$historyPosition].id}
       />
     {/if}
-    <div class="z-20 absolute bottom-9 right-5 flex items-center gap-6">
-      <h1>{$historyPosition}</h1>
+    <div class="actions_wrapper">
       {#if $historyPosition > 1}
         <Decrementar />
       {/if}
@@ -59,7 +58,18 @@
         <Boton />
       {/if}
     </div>
-    <MenuAnimacion />
+
+    <div class="z-10 w-1/4 text-sm absolute top-6 left-6 hidden tablet:inline">
+    <nav>
+     <MenuAnimacion />
+    </nav>
+</div>
     <Footer />
   </div>
 </div>
+
+<style>
+.actions_wrapper {
+    @apply z-20 absolute w-full tablet:w-auto bottom-[10%] tablet:bottom-[8%] desktop:bottom-9 right-0 tablet:right-5 p-4 tablet:p-0 flex items-center gap-6;
+}
+</style>
