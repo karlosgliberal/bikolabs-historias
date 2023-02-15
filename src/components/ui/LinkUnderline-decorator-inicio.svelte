@@ -1,9 +1,16 @@
 <script>
+  import { init } from "$lib/store.js";
   export let texto = "link";
   export let link = "/";
+
+  function increment() {
+    init.start();
+    console.log($init);
+  }
 </script>
 
 <a
+  on:click={increment}
   class="group text-white-500 transition-all duration-300 ease-in-out"
   href={link}
 >
