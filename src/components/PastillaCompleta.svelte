@@ -51,9 +51,9 @@
       {/if}
 
       {#if texto != ''}
-      <p class="text-base tablet:text-lg font-cabin sm:text-lg leading-6 py-3 px-6">
-        <Texto {texto} />
-      </p>
+        <p class="text-base tablet:text-lg font-cabin sm:text-lg leading-6 py-3 px-6">
+          <Texto {texto} />
+        </p>
       {/if}
     </div>
   </div>
@@ -78,7 +78,7 @@
       transition: all ease-in-out 1s;
   } */
 
-  .fine_4 {
+  /* .fine_4 {
     @apply desktoplarge:mt-20;
     transition: all ease-in-out 500ms;
   }
@@ -89,5 +89,5 @@
   .fine_6 {
     @apply desktoplarge:mt-40;
     transition: all ease-in-out 500ms;
-  }
+  } */
 </style>
