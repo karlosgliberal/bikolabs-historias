@@ -51,7 +51,9 @@
       {/if}
 
       {#if texto != ''}
+      <p class="text-base tablet:text-lg font-cabin sm:text-lg leading-6 py-3 px-6">
         <Texto {texto} />
+      </p>
       {/if}
     </div>
   </div>
@@ -59,10 +61,10 @@
 
 <style>
   .position_right {
-    @apply desktop:mt-6 desktop:mr-10 mobile:mt-0 mobile:mr-0 py-10 w-[100%] tablet:w-[70%] desktop:w-[30%];
+    @apply desktop:mt-5 desktop:mr-5 desktoplarge:mt-6 desktoplarge:mr-10 mobile:mt-0 mobile:mr-0 py-5 w-[100%] tablet:w-[70%] desktop:w-[60%] desktoplarge:w-[30%];
   }
   .position_center {
-    @apply py-5 mt-10 mx-4 tablet:mt-0 tablet:py-10 w-[100%] tablet:w-[80%] desktop:w-[35%];
+    @apply py-5 mt-4 mx-4 tablet:mt-0 tablet:py-10 w-[100%] tablet:w-[80%] desktop:w-[55%] desktoplarge:w-[35%];
   }
   .wrapper_center {
     @apply flex justify-start tablet:items-center tablet:justify-center;
@@ -77,15 +79,15 @@
   } */
 
   .fine_4 {
-    @apply mt-20;
+    @apply desktoplarge:mt-20;
     transition: all ease-in-out 500ms;
   }
   .fine_5 {
-    @apply mt-40;
+    @apply desktoplarge:mt-30;
     transition: all ease-in-out 500ms;
   }
   .fine_6 {
-    @apply mt-60;
+    @apply desktoplarge:mt-40;
     transition: all ease-in-out 500ms;
   }
 </style>
