@@ -72,22 +72,22 @@
   .wrapper_right {
     @apply flex justify-end p-4;
   }
-  /* 
-  .screen_5 {
+  
+  /* .screen_5 {
      @apply flex justify-end items-center;
       transition: all ease-in-out 1s;
-  } */
+  } */ 
 
-  /* .fine_4 {
+  .fine_4 {
     @apply desktoplarge:mt-20;
     transition: all ease-in-out 500ms;
   }
   .fine_5 {
-    @apply desktoplarge:mt-30;
+    @apply desktoplarge:mt-32;
     transition: all ease-in-out 500ms;
   }
   .fine_6 {
     @apply desktoplarge:mt-40;
     transition: all ease-in-out 500ms;
-  } */
+  }
 </style>
