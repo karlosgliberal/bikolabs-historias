@@ -7,7 +7,7 @@
 <nav class="flex gap-5">
   <LinkUnderlineDecorator texto="Versión interactiva" link="/" />
   {#if currentPAge == '/about'}
-    <LinkUnderlineDecorator texto="Versión no interactiva" link="/no-interactve" />
+    <LinkUnderlineDecorator texto="Versión no interactiva" link="no-interactive" />
   {/if}
   <LinkUnderlineDecorator texto="Sobre nosostros" link="/about" />
 </nav>

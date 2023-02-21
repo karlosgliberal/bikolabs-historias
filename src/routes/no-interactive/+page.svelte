@@ -7,25 +7,20 @@
 </div>
 
 <div class="container font-cabin">
-  <section class="text-white text-xl text-justify pt-8 m-8">
-    <h1 class="title-font text-base uppercase  mb-2 md:mb-4 font-mono font-semibold text-left">
+  <section class="text-base leading-6 sm:text-xl text-justify mx-24 my-10">
+    <h1 class="title-font text-base uppercase  mb-10 md:mb-4 font-mono font-semibold text-left">
       [Versión no-interactiva]
     </h1>
     <!--entradilla-->
     <div>
-      <h2 class="title-font text-4xl font font-mono text-left mt-16 mb-8 font-semibold">
-        El acierto en las decisiones de los sistemas automatizados
+      <h2 class="title-font sm:text-4xl text-3xl  font-mono font-semibold text-left">
+        El caso RisCanvi: El acierto en las decisiones de los sistemas automatizados
       </h2>
 
-      <p class="mb-16 leading-10 sm:leading-relaxed sm:text-2xl text-2xl text-left">
+      <p class="leading-10 sm:leading-relaxed sm:text-2xl text-left">
         Cada vez se <b>automatizan más procesos de decisión</b> o se usan más sistemas automatizados en decisiones.
         Algunos incluso se utilizan para decisiones de <b>calado social</b>.
       </p>
-    </div>
-
-    <!--El caso Riscanvi-->
-    <div>
-      <h3 class="title-font text-3xl  mb-8  font-semibold">El caso RisCanvi</h3>
 
       <p class="mb-8 leading-relaxed">
         Según se ha publicado<sup class="uppercase font-mono">1</sup>, los funcionarios que utilizan el sistema de
