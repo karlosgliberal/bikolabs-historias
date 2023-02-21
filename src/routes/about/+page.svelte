@@ -7,10 +7,10 @@
 </div>
 
 <div class="container font-cabin">
-  <section class="text-zinc-600 text-base leading-6 sm:text-xl min-h-screen text-justify">
+  <section class="text-base leading-6 sm:text-xl min-h-screen text-justify">
     <div class="container max-w-full flex px-5 pt-96 pb-24 flex-col items-center">
       <div class="w-full md:max-w-4xl flex flex-col  items-start">
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 md:mb-8 text-zinc-800 font-mono font-semibold text-left">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 md:mb-8  font-mono font-semibold text-left">
           Sobre Bikolabs y los Datos
         </h1>
         <p class="my-8 leading-relaxed">
