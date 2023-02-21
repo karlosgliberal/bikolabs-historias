@@ -1,24 +1,22 @@
 <script>
-  import { vis, historyPosition, init } from "$lib/store.js";
-  import { onMount } from "svelte";
-  import pasos from "$lib/data/es/pasos.json";
-  import Cables from "../components/Cables.svelte";
-  import Footer from "../components/footer/Footer.svelte";
-  import Loading from "../components/Loading.svelte";
-  import Decrementar from "../components/Decrementar.svelte";
-  import Boton from "../components/Boton.svelte";
-  import MenuAnimacion from "../components/menu/MenuAnimacion.svelte";
+  import { vis, historyPosition, init } from '$lib/store.js'
+  import { onMount } from 'svelte'
+  import pasos from '$lib/data/es/pasos.json'
+  import Cables from '../components/Cables.svelte'
+  import Footer from '../components/footer/Footer.svelte'
+  import Loading from '../components/Loading.svelte'
+  import Decrementar from '../components/Decrementar.svelte'
+  import Boton from '../components/Boton.svelte'
+  import MenuAnimacion from '../components/menu/MenuAnimacion.svelte'
 
-  let Pastilla;
+  let Pastilla
 
   onMount(async () => {
-    loadPastilla();
-  });
+    loadPastilla()
+  })
 
   function loadPastilla() {
-    import("../components/PastillaCompleta.svelte").then(
-      (res) => (Pastilla = res.default)
-    );
+    import('../components/PastillaCompleta.svelte').then(res => (Pastilla = res.default))
   }
 </script>
 
@@ -31,12 +29,7 @@
 <div id="cover">
   <div class="z-20 w-full h-screen">
     <div class="w-full h-screen absolute z-10">
-      <Cables
-        step={$historyPosition}
-        inicio={$init}
-        patch="bool"
-        escena={pasos[$historyPosition].cables_escena}
-      />
+      <Cables step={$historyPosition} inicio={$init} patch="bool" escena={pasos[$historyPosition].cables_escena} />
     </div>
     {#if $historyPosition == 0}
       <Loading />
@@ -60,16 +53,16 @@
     </div>
 
     <div class="z-10 w-1/4 text-sm absolute top-6 left-6 hidden tablet:inline">
-    <nav>
-     <MenuAnimacion />
-    </nav>
-</div>
+      <nav>
+        <MenuAnimacion />
+      </nav>
+    </div>
     <Footer />
   </div>
 </div>
 
 <style>
-.actions_wrapper {
+  .actions_wrapper {
     @apply z-20 absolute w-full tablet:w-auto bottom-[10%] tablet:bottom-[8%] desktop:bottom-9 right-0 tablet:right-5 p-4 tablet:p-0 flex items-center gap-6;
-}
+  }
 </style>

@@ -1,11 +1,8 @@
 <script>
-  import LinkUnderlineDecoratorInicio from '../ui/LinkUnderline-decorator-inicio.svelte'
+  import LinkUnderlineDecorator from '../ui/LinkUnderline-decorator.svelte'
 </script>
 
 <nav class="flex gap-5">
-  <LinkUnderlineDecoratorInicio texto="Inicio" />
-  <LinkUnderlineDecoratorInicio texto="Version no interactiva" />
-  <LinkUnderlineDecoratorInicio texto="Sobre nosostros" />
+  <LinkUnderlineDecorator texto="Version interactiva" link="/" />
+  <LinkUnderlineDecorator texto="Sobre nosostros" link="/about" />
 </nav>
-
-
