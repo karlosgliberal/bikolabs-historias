@@ -2,25 +2,24 @@
   import MenuInterior from '../../components/menu-interior/menu-interior.svelte'
 </script>
 
-<div class="container py-4 px-4">
+<div class="py-4 px-4 border-b border-black-800">
   <MenuInterior />
 </div>
 
 <div class="container font-cabin">
-  <section class="text-base leading-6 sm:text-xl text-justify mx-24 my-10">
-    <h1 class="title-font text-base uppercase  mb-10 md:mb-4 font-mono font-semibold text-left">
-      [Versión no-interactiva]
-    </h1>
+  <section class="text-base  mx-44 my-20">
+
     <!--entradilla-->
     <div>
-      <h2 class="title-font sm:text-4xl text-3xl  font-mono font-semibold text-left">
-        El caso RisCanvi: El acierto en las decisiones de los sistemas automatizados
-      </h2>
-
-      <p class="leading-10 sm:leading-relaxed sm:text-2xl text-left">
+      <h1 class="text-5xl font-bold mb-4 text-justify">
+          El acierto en las decisiones de los sistemas automatizados
+      </h1>
+    
+      <p class="text-xl mb-10">
         Cada vez se <b>automatizan más procesos de decisión</b> o se usan más sistemas automatizados en decisiones.
         Algunos incluso se utilizan para decisiones de <b>calado social</b>.
       </p>
+       <h3 class="title-font text-3xl mb-2 font-semibold">El caso RisCanvi </h3>
 
       <p class="mb-8 leading-relaxed">
         Según se ha publicado<sup class="uppercase font-mono"><a href="#a1">1</a></sup>, los funcionarios que utilizan
@@ -41,7 +40,7 @@
     </div>
     <!--Medidas de acierto-->
     <div>
-      <h3 class="title-font text-3xl mb-2  font-semibold">Medidas de acierto</h3>
+      <h3 class="title-font text-3xl mb-2 font-semibold">Medidas de acierto</h3>
       <p class="mb-8 leading-relaxed">
         ¿Cómo saber si un sistema automatizado es acertado?<br />
         Son varias las medidas que habitualmente se usan para evaluar el acierto de este tipo de sistemas. Algunas de las
@@ -52,7 +51,7 @@
 
       <!--Sensibilidad y Especificidad-->
       <div>
-        <h3 class="title-font text-2xl mb-2 font-semibold">- Sensibilidad y Especificidad</h3>
+        <h3 class="title-font text-2xl mb-2 font-semibold">Sensibilidad y Especificidad</h3>
 
         <p class="mb-8 leading-relaxed">
           Empecemos con la sensibilidad y la especificidad, que son medidas que nos hablan de la capacidad del sistema.
@@ -76,12 +75,12 @@
           </thead>
           <tbody>
             <tr>
-              <td class="border-b border-zinc-300 pb-2">Etiquetados como Alto Riesgo</td>
+              <td class="border-b border-zinc-300 pb-2 text-riscanvi-100">Etiquetados como Alto Riesgo</td>
 
-              <td class="pl-8 border-b border-zinc-300 font-bold pb-2 text-end">54</td>
+              <td class="pl-8 border-b border-zinc-300 font-bold pb-2 text-end ">54</td>
             </tr>
             <tr>
-              <td class=" border-b border-zinc-300 pb-2 text-end">Etiquetados como Bajo Riesgo</td>
+              <td class=" border-b border-zinc-300 pb-2 text-end text-riscanvi-100">Etiquetados como Bajo Riesgo</td>
 
               <td class="pl-8 border-b border-zinc-300 pb-2 text-end font-light">16</td>
             </tr>
@@ -112,12 +111,12 @@
           </thead>
           <tbody>
             <tr>
-              <td class="border-b border-zinc-300 pb-2">Etiquetados como Alto Riesgo</td>
+              <td class="border-b border-zinc-300 pb-2 text-riscanvi-100">Etiquetados como Alto Riesgo</td>
 
               <td class="pl-8 border-b border-zinc-300 font-light pb-2 text-end">247</td>
             </tr>
             <tr>
-              <td class=" border-b border-zinc-300 pb-2 text-end">Etiquetados como Bajo Riesgo</td>
+              <td class=" border-b border-zinc-300 pb-2 text-end text-riscanvi-100">Etiquetados como Bajo Riesgo</td>
 
               <td class="pl-8 border-b border-zinc-300 pb-2 text-end font-bold">331</td>
             </tr>
@@ -142,7 +141,7 @@
       </div>
       <!--Valor Predictivo Positivo y Negativo-->
       <div>
-        <h3 class="title-font text-2xl mb-2  font-semibold">- Valor Predictivo Positivo y Negativo</h3>
+        <h3 class="title-font text-2xl mb-2  font-semibold">Valor Predictivo Positivo y Negativo</h3>
         <p class="mb-8 leading-relaxed">
           El Valor predictivo positivo de un sistema nos permite responder a la siguiente pregunta: si un nuevo preso es
           etiquetado como de alto riesgo, ¿cuál es la probabilidad de que reincida?
@@ -172,7 +171,7 @@
           </thead>
           <tbody>
             <tr>
-              <td class="pb-2">Etiquetados como Alto Riesgo</td>
+              <td class="pb-2 text-riscanvi-100">Etiquetados como Alto Riesgo</td>
 
               <td class="pl-8  font-bold pb-2 text-end">54</td>
               <td class="pl-8  pb-2 text-end font-light">247</td>
@@ -202,7 +201,7 @@
           </thead>
           <tbody>
             <tr>
-              <td class="pb-2">Etiquetados como Bajo Riesgo</td>
+              <td class="pb-2 text-riscanvi-100">Etiquetados como Bajo Riesgo</td>
 
               <td class="pl-8  font-light pb-2 text-end">16</td>
               <td class="pl-8  pb-2 text-end font-bold">331</td>
@@ -218,7 +217,7 @@
       </div>
       <!--Exactitud o Accuracy-->
       <div>
-        <h3 class="title-font text-2xl mb-2  font-semibold">- Exactitud o Accuracy</h3>
+        <h3 class="title-font text-2xl mb-2  font-semibold">Exactitud o Accuracy</h3>
 
         <p class="mb-8 leading-relaxed">
           Hay otra medida muy utilizada en el sector tecnológico para hablar de la eficacia de los sistemas
@@ -243,7 +242,7 @@
           </thead>
           <tbody>
             <tr>
-              <td class="pb-2  border-b border-zinc-300">Etiquetados como Alto Riesgo</td>
+              <td class="pb-2  border-b border-zinc-300 text-riscanvi-100">Etiquetados como Alto Riesgo</td>
 
               <td class="pl-8  border-b border-zinc-300 font-bold pb-2 text-end">54</td>
               <td class="pl-8  border-b border-zinc-300 pb-2 text-end font-light">247</td>
@@ -251,7 +250,7 @@
             </tr>
 
             <tr>
-              <td class="pb-2 border-b border-zinc-300">Etiquetados como Bajo Riesgo</td>
+              <td class="pb-2 border-b border-zinc-300 text-riscanvi-100">Etiquetados como Bajo Riesgo</td>
 
               <td class="pl-8 border-b border-zinc-300 pb-2 text-end font-light">16</td>
               <td class="pl-8 border-b border-zinc-300 pb-2 text-end font-bold">331</td>

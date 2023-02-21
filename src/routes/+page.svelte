@@ -8,6 +8,8 @@
   import Decrementar from '../components/Decrementar.svelte'
   import Boton from '../components/Boton.svelte'
   import MenuAnimacion from '../components/menu/MenuAnimacion.svelte'
+  import Logos from '../components/footer/Logos.svelte'
+
 
   let Pastilla
 
@@ -26,7 +28,7 @@
 </svelte:head>
 
 <!--portada-->
-<div id="cover">
+<div id="cover" class="bg-zinc-900 text-white">
   <div class="z-20 w-full h-screen">
     <div class="w-full h-screen absolute z-10">
       <Cables step={$historyPosition} inicio={$init} patch="bool" escena={pasos[$historyPosition].cables_escena} />
@@ -52,12 +54,13 @@
       {/if}
     </div>
 
-    <div class="z-10 w-1/4 text-sm absolute top-6 left-6 hidden tablet:inline">
-      <nav>
-        <MenuAnimacion />
+    <div> <Footer /></div>
+
+    <div class="z-10 w-1/4 text font-cabin absolute top-6 left-6 hidden tablet:inline">
+      <nav class="flex gap-3 items-center ">
+         <Logos/><div class="h-[15px] border-r border-gray-100 mx-2"></div><MenuAnimacion />
       </nav>
     </div>
-    <Footer />
   </div>
 </div>
 

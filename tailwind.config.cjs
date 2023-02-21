@@ -7,6 +7,11 @@ module.exports = {
       fontFamily: {
         cabin: ['"Cabin"', ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        riscanvi: {
+          100: '#deaa00',
+        },
+      },
     },
     container: {
       center: true,
