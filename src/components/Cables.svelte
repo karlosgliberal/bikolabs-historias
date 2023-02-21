@@ -1,31 +1,31 @@
 <script>
-  import { onMount } from "svelte";
-  import { historyPosition, init, vis } from "$lib/store.js";
+  import { onMount } from 'svelte'
+  import { historyPosition, init, vis } from '$lib/store.js'
 
-  export let step;
-  export let inicio;
-  export let patch;
-  export let escena;
+  export let step
+  export let inicio
+  export let patch
+  export let escena
 
-  let timer;
+  let timer
 
-  let initVis = "hidden";
-  let pathPatch = `${patch}/patch.js`;
+  let initVis = 'hidden'
+  let pathPatch = `${patch}/patch.js`
 
   $: {
     if (step) {
-      cambioEscenaCables($historyPosition);
+      cambioEscenaCables($historyPosition)
     }
     if (inicio > 1) {
-      goInicio();
-      init.reset();
-      vis.falso();
-      historyPosition.reset();
-      console.log("movida ini", $historyPosition);
+      goInicio()
+      init.reset()
+      vis.falso()
+      historyPosition.reset()
+      console.log('movida ini', $historyPosition)
     }
   }
 
-  let canvas;
+  let canvas
   const initializeCables = () => {
     CABLES.patch = new CABLES.Patch({
       patch: CABLES.exportedPatch,
@@ -38,14 +38,14 @@
       outSidefunction: myFunction,
 
       canvas: { alpha: true, premultipliedAlpha: true },
-    });
-  };
+    })
+  }
   onMount(() => {
-    initializeCables();
-  });
+    initializeCables()
+  })
 
   function showError(errId, errMsg) {
-    alert("An error occured: " + errId + ", " + errMsg);
+    alert('An error occured: ' + errId + ', ' + errMsg)
   }
 
   function patchInitialized() {
@@ -53,29 +53,29 @@
   }
 
   function patchFinishedLoading() {
-    initVis = "visible";
+    initVis = 'visible'
     timer = setTimeout(() => {
-      historyPosition.sumar();
-    }, 3000);
+      historyPosition.sumar()
+    }, 3000)
     // The patch is ready now, all assets have been loaded
   }
   const cambioEscenaCables = () => {
     if (escena != false) {
-      console.log("dentro cambiosescena", escena);
-      CABLES.patch.config.patchFunctiontrigger(escena);
+      console.log('dentro cambiosescena', escena)
+      CABLES.patch.config.patchFunctiontrigger(escena)
     }
     //patchFunctionInicio
-  };
+  }
 
   const goInicio = () => {
-    console.log("inicio");
-    CABLES.patch.config.patchFunctionInicio(escena);
+    console.log('inicio')
+    CABLES.patch.config.patchFunctionInicio(escena)
 
     //patchFunctionInicio
-  };
+  }
 
   function myFunction() {
-    alert("function called!");
+    alert('function called!')
   }
 </script>
 
