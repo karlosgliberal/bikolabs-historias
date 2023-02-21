@@ -23,8 +23,8 @@
       </p>
 
       <p class="mb-8 leading-relaxed">
-        Según se ha publicado<sup class="uppercase font-mono">1</sup>, los funcionarios que utilizan el sistema de
-        riesgo de reincidencia RisCanvi están conformes con la decisión que toma el algoritmo en el
+        Según se ha publicado<sup class="uppercase font-mono"><a href="#a1">1</a></sup>, los funcionarios que utilizan
+        el sistema de riesgo de reincidencia RisCanvi están conformes con la decisión que toma el algoritmo en el
         <b>96,8% de las ocasiones</b>. Es decir, que en más de 9 casos de cada 10 los funcionarios confirman el nivel de
         riesgo que el sistema asigna a los presos de las cárceles de Cataluña.
       </p>
@@ -41,20 +41,18 @@
     </div>
     <!--Medidas de acierto-->
     <div>
-      <h3 class="title-font text-3xl mb-8  font-semibold">Medidas de acierto</h3>
-      <p class="mb-8 leading-relaxed">¿Cómo saber si un sistema automatizado es acertado?</p>
+      <h3 class="title-font text-3xl mb-2  font-semibold">Medidas de acierto</h3>
       <p class="mb-8 leading-relaxed">
-        Son varias las medidas que habitualmente se usan para evaluar el acierto de este tipo de sistemas. Algunas de
-        las más habituales son las medidas de <b>sensibilidad, especificidad y valor predictivo</b>.
-      </p>
-      <p class="mb-8 leading-relaxed">
-        Pero, ¿qué nos dicen cada una de ellas? Para comprenderlas, usaremos los datos del mencionado sistema RisCanvi
-        como ejemplo<sup class="uppercase font-mono">2</sup>.
+        ¿Cómo saber si un sistema automatizado es acertado?<br />
+        Son varias las medidas que habitualmente se usan para evaluar el acierto de este tipo de sistemas. Algunas de las
+        más habituales son las medidas de <b>sensibilidad, especificidad y valor predictivo</b>.<br />
+        Pero, ¿qué nos dicen cada una de ellas? Para comprenderlas, usaremos los datos del mencionado sistema RisCanvi como
+        ejemplo<sup class="uppercase font-mono"><a href="#a2">2</a></sup>.
       </p>
 
       <!--Sensibilidad y Especificidad-->
       <div>
-        <h3 class="title-font text-2xl mb-8  font-semibold">- Sensibilidad y Especificidad</h3>
+        <h3 class="title-font text-2xl mb-2 font-semibold">- Sensibilidad y Especificidad</h3>
 
         <p class="mb-8 leading-relaxed">
           Empecemos con la sensibilidad y la especificidad, que son medidas que nos hablan de la capacidad del sistema.
@@ -144,7 +142,7 @@
       </div>
       <!--Valor Predictivo Positivo y Negativo-->
       <div>
-        <h3 class="title-font text-2xl mb-8  font-semibold">- Valor Predictivo Positivo y Negativo</h3>
+        <h3 class="title-font text-2xl mb-2  font-semibold">- Valor Predictivo Positivo y Negativo</h3>
         <p class="mb-8 leading-relaxed">
           El Valor predictivo positivo de un sistema nos permite responder a la siguiente pregunta: si un nuevo preso es
           etiquetado como de alto riesgo, ¿cuál es la probabilidad de que reincida?
@@ -220,13 +218,13 @@
       </div>
       <!--Exactitud o Accuracy-->
       <div>
-        <h3 class="title-font text-2xl mb-8  font-semibold">- Exactitud o Accuracy</h3>
+        <h3 class="title-font text-2xl mb-2  font-semibold">- Exactitud o Accuracy</h3>
 
         <p class="mb-8 leading-relaxed">
           Hay otra medida muy utilizada en el sector tecnológico para hablar de la eficacia de los sistemas
           automatizados que es la <b>Exactitud o Accuracy</b>
           del sistema, también conocida como la proporción de clasificaciones correctas<sup class="uppercase font-mono"
-            >3</sup
+            ><a href="#a3">3</a></sup
           >.
         </p>
         <p class="mb-8 leading-relaxed">
@@ -297,22 +295,22 @@
 
     <!--Agradecimientos-->
     <div>
-      <ul class="list-none border-t border-t-zinc-900 text-sm">
+      <ul class="list-none c text-sm">
         <p class="mt-16">Nuestro agradecimiento:</p>
-        <li class="mt-8">
+        <li class="mt-2">
           <p class="leading-relaxed">
             Es importante señalar que este trabajo se ha inspirado en el gran artículo de Garay (2016)<sup
-              class="uppercase font-mono">4</sup
+              class="uppercase font-mono"><a name="a4">4</a></sup
             >. Nuestro total agradecimiento a la investigadora tanto por su increíble trabajo, como por su generosa
             ayuda respondiendo a todas nuestras preguntas.
           </p>
         </li>
         <li>
           <p class="leading-relaxed text-left">
-            <sup class="uppercase font-mono">1</sup>: Saura, G., & Aragó, L. (2021, December 6). Un algoritmo impreciso
-            condiciona la libertad de los presos. La Vanguardia.
+            <sup class="uppercase font-mono"><a name="a1">1</a></sup>: Saura, G., & Aragó, L. (2021, December 6). Un
+            algoritmo impreciso condiciona la libertad de los presos. La Vanguardia.
             <a
-              class="text-zinc-900 font-mono -tracking-widest text-xs"
+              class="font-mono -tracking-widest text-xs"
               href="https://www.lavanguardia.com/vida/20211206/7888727/algoritmo-sirve-denegar-permisos-presos-pese-fallos.html"
               >https://www.lavanguardia.com/vida/20211206/7888727/algoritmo-sirve-denegar-permisos-presos-pese-fallos.html
             </a>
@@ -320,10 +318,11 @@
         </li>
         <li>
           <p class="leading-relaxed text-left">
-            <sup class="uppercase font-mono">2</sup>: Capdevila, M., Ferrer, M., Blanch, M., Andrés, A., Framis, B.,
-            Comas, N., Garrigós, A. y Mora, J.(2015). Tasa de reincidencia Penitenciaria 2014. Investigaciones CEJFE.
+            <sup class="uppercase font-mono"><a name="a2">2</a></sup>: Capdevila, M., Ferrer, M., Blanch, M., Andrés,
+            A., Framis, B., Comas, N., Garrigós, A. y Mora, J.(2015). Tasa de reincidencia Penitenciaria 2014.
+            Investigaciones CEJFE.
             <a
-              class="text-zinc-900 font-mono -tracking-widest text-xs"
+              class="font-mono -tracking-widest text-xs"
               href=" http://cejfe.gencat.cat/ca/recerca/cataleg/crono/2015/reincidencia-2014/"
             >
               http://cejfe.gencat.cat/ca/recerca/cataleg/crono/2015/reincidencia-2014/
@@ -332,19 +331,12 @@
         </li>
         <li>
           <p class="leading-relaxed">
-            <sup class="uppercase font-mono">3</sup>: Briz-Redón, A. & Montes, F. (2022). Análisis de los resultados del
-            protocolo RisCanvi. Departament d'Estadística i Investigació Operativa. Universitat de València.
-            <a
-              class="text-zinc-900 font-mono -tracking-widest text-xs"
-              href="https://www.uv.es/montes/informe riscanvi/informe.pdf"
+            <sup class="uppercase font-mono"><a name="a3">3</a></sup>: Briz-Redón, A. & Montes, F. (2022). Análisis de
+            los resultados del protocolo RisCanvi. Departament d'Estadística i Investigació Operativa. Universitat de
+            València.
+            <a class=" font-mono -tracking-widest text-xs" href="https://www.uv.es/montes/informe riscanvi/informe.pdf"
               >https://www.uv.es/montes/informe riscanvi/informe.pdf
             </a>
-          </p>
-        </li>
-        <li>
-          <p class="leading-relaxed">
-            <sup class="uppercase font-mono">4</sup>: Garay, L. M. (2016). Errores conceptuales en la estimación de
-            riesgo de reincidencia. Revista Española de Investigación Criminológica, 14, 1-31.
           </p>
         </li>
       </ul>
