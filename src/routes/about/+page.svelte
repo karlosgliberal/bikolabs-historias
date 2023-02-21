@@ -6,8 +6,8 @@
   <MenuInterior />
 </div>
 
-<div class="container font-cabin">
-  <section class="text-base leading-6 sm:text-xl text-justify mx-24 my-10">
+<div class="container font-cabin px-8 border">
+  <section class="text-base leading-6 sm:text-xl text-justify  desktop:px-48 pt-22">
     <h1 class="title-font sm:text-4xl text-3xl mb-4 md:mb-4  font-mono font-semibold text-left">
       Sobre Bikolabs y los Datos
     </h1>
