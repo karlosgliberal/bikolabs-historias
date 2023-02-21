@@ -1,5 +1,13 @@
-<div class="container h-vh border-1 border-emerald-500">
-  <section class="text-zinc-600 text-xl bg-stone-200 min-h-screen text-justify">
+<script>
+  import MenuInterior from "../../components/menu-interior/menu-interior.svelte";
+</script>
+
+<div class="container py-4 px-4">
+<MenuInterior/>
+</div>
+
+<div class="container font-cabin">
+  <section class="text-white text-xl text-justify">
     <div
       class="container max-w-full flex px-5 pt-16 md:pt-96 pb-24 flex-col items-center"
     >
