@@ -1,11 +1,17 @@
 <script>
-  export let tituloBoton = "Siguiente";
+  export let tituloBoton = 'Siguiente'
 
-  import { historyPosition, vis } from "$lib/store.js";
+  import { historyPosition, vis } from '$lib/store.js'
 
   function increment() {
-    vis.falso();
-    historyPosition.sumar();
+    vis.falso()
+    historyPosition.sumar()
+  }
+
+  function onKeyDown(e) {
+    if (e.keyCode == 39) {
+      increment()
+    }
   }
 </script>
 
@@ -29,6 +35,7 @@
     </svg>
   </div>
 </button>
+<svelte:window on:keydown={onKeyDown} />
 
 <!-- <style>
   .bordeB {
