@@ -2,16 +2,16 @@
   import MenuInterior from '../../components/menu-interior/menu-interior.svelte'
 </script>
 
-<div class="py-4 px-4 border-b border-black-800">
+<div class="py-4 px-2 tablet:px-4 border-b border-black-800">
   <MenuInterior />
 </div>
 
 <div class="container font-cabin">
-  <section class="text-base  mx-44 my-20">
+  <section class="text-base px-2 py-8 desktop:px-44 desktop:py-20">
 
     <!--entradilla-->
     <div>
-      <h1 class="text-5xl font-bold mb-4 text-justify">
+      <h1 class="text-5xl font-bold mb-4 tablet:text-justify">
           El acierto en las decisiones de los sistemas automatizados
       </h1>
     
