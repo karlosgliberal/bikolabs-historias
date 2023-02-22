@@ -1,6 +1,4 @@
 <script>
-  // import Incrementar from "./Incrementar.svelte";
-  // import Reset from "./Reset.svelte";
   import LinkUnderlineDecorator from '../ui/LinkUnderline-decorator.svelte'
   import LinkUnderlineDecoratorInicio from '../ui/LinkUnderline-decorator-inicio.svelte'
   import Logos from './Logos.svelte';
