@@ -1,5 +1,6 @@
 <script>
-  import MenuInterior from '../../components/menu-interior/menu-interior.svelte'
+  import MenuInterior from '../../components/menu-interior/menu-interior.svelte';
+  import FooterInterior from '../../components/FooterInterior/FooterInterior.svelte';
 </script>
 
 <div class="py-4 px-2 tablet:px-4 border-b border-black-800">
@@ -341,4 +342,8 @@
       </ul>
     </div>
   </section>
+</div>
+
+<div>
+  <FooterInterior/>
 </div>
