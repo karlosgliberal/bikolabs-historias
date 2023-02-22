@@ -1531,6 +1531,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
+svelte-burger-menu@1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/svelte-burger-menu/-/svelte-burger-menu-1.0.5.tgz#5ae6410da31a502ae28352a963bde35ac1bf0e13"
+  integrity sha512-lP2WqzO5awqgMQ+wuIoBqFASZhtbfjJsSJ529+cW6DpBY4Xg5TZsf3zMwG6QYUD/J7wy2cLYKiUmY2qdDHQdmw==
+
 svelte-feather-icons@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/svelte-feather-icons/-/svelte-feather-icons-4.0.0.tgz#fdffcce3a81782008f7e621cb37a29d041630aef"
