@@ -26,6 +26,7 @@
     "@tailwindcss/typography": "^0.5.7",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-slug": "^5.0.1",
+    "svelte-burger-menu": "1.0.5",
     "svelte-icons": "^2.1.0",
     "svelte-prism": "^1.1.6"
   }
