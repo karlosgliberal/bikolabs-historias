@@ -1,14 +1,15 @@
 <script>
-  import MenuInterior from '../../components/menu-interior/menu-interior.svelte'
+  import MenuInterior from '../../components/menu-interior/menu-interior.svelte';
+  import FooterInterior from '../../components/FooterInterior/FooterInterior.svelte';
 </script>
 
-<div class="container py-4 px-4">
+<div class="py-4 px-2 tablet:px-4 border-b border-black-800">
   <MenuInterior />
 </div>
 
-<div class="container font-cabin px-8 border">
-  <section class="text-base leading-6 sm:text-xl text-justify  desktop:px-48 pt-22">
-    <h1 class="title-font sm:text-4xl text-3xl mb-4 md:mb-4  font-mono font-semibold text-left">
+<div class="container font-cabin">
+  <section class="text-base px-2 py-8 desktop:px-44 desktop:py-20">
+    <h1 class="text-5xl font-bold mb-4 tablet:text-justify">
       Sobre Bikolabs y los Datos
     </h1>
     <p class="my-8 leading-relaxed">
@@ -96,4 +97,8 @@
       </li>
     </ul>
   </section>
+</div>
+
+<div>
+  <FooterInterior/>
 </div>
