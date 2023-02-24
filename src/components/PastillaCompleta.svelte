@@ -25,7 +25,7 @@
     <div
       transition:fade={{ duration: 1500 }}
       on:outroend={finDesaparecer}
-      class="z-20 position_{position} fine_{id} h-fit rounded text-white bg-black bg-opacity-75 shadow-xl"
+      class="z-20 position_{position} fine_{id} h-fit rounded text-white bg-black bg-opacity-90 shadow-xl"
     >
       {#if position == 'center'}
         {#if titulo != ''}
@@ -51,7 +51,7 @@
       {/if}
 
       {#if texto != ''}
-        <p class="text-base tablet:text-lg font-cabin sm:text-lg leading-6 py-3 px-6">
+        <p class="text-base tablet:text-2xl font-cabin leading-6 py-3 px-6">
           <Texto {texto} />
         </p>
       {/if}
