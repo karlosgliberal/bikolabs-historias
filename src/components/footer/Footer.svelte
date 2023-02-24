@@ -1,7 +1,7 @@
 <script>
   import LinkUnderlineDecorator from '../ui/LinkUnderline-decorator.svelte'
   import LinkUnderlineDecoratorInicio from '../ui/LinkUnderline-decorator-inicio.svelte'
-  import Logos from './Logos.svelte';
+  import Logos from './Logos.svelte'
 </script>
 
 <!-- Footer-->
@@ -13,9 +13,9 @@
       <LinkUnderlineDecoratorInicio texto="Inicio" />
     </div>
     <div class="flex gap-4 pt-1">
-    <LinkUnderlineDecorator texto="Versión en texto" link="/no-interactive" />
-    <LinkUnderlineDecorator texto="Sobre Bikolabs y los datos" link="/about" />
+      <LinkUnderlineDecorator texto="Versión en texto" link="/no-interactive" />
+      <LinkUnderlineDecorator texto="Sobre Bikolabs y los datos" link="/about" />
     </div>
-    <div class="tablet:hidden pt-1"><Logos/></div>
+    <div class="tablet:hidden pt-1"><Logos /></div>
   </nav>
 </div>
