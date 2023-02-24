@@ -10,7 +10,6 @@
   import MenuAnimacion from '../components/menu/MenuAnimacion.svelte'
   import Logos from '../components/footer/Logos.svelte'
 
-
   let Pastilla
 
   onMount(async () => {
@@ -54,11 +53,13 @@
       {/if}
     </div>
 
-    <div> <Footer /></div>
+    <div><Footer /></div>
 
     <div class="z-10 w-1/4 text font-cabin absolute top-6 left-6 hidden tablet:inline">
       <nav class="flex gap-3 items-center ">
-         <Logos/><div class="h-[15px] border-r border-gray-100 mx-2"></div><MenuAnimacion />
+        <Logos />
+        <div class="h-[15px] border-r border-gray-100 mx-2" />
+        <MenuAnimacion />
       </nav>
     </div>
   </div>

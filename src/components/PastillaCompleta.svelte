@@ -82,7 +82,8 @@
     @apply desktoplarge:mt-20;
     transition: all ease-in-out 500ms;
   }
-  .fine_5, .fine_27 {
+  .fine_5,
+  .fine_27 {
     @apply desktoplarge:mt-32;
     transition: all ease-in-out 500ms;
   }
