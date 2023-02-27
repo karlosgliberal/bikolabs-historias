@@ -87,7 +87,7 @@
   {
     "id": 12,
     "titulo": "",
-    "texto": "Los otros <strong>2 presos</strong> serán reincidentes que el sistema no habrá detectado. Esto se conoce como <strong>falsos negativos</strong>.Es decir, presos reincidentes que el sistema no llega a identificar.",
+    "texto": "Los otros <strong>2 presos</strong> serán reincidentes que el sistema no habrá detectado. Esto se conoce como <strong>falsos negativos</strong>. Es decir, presos reincidentes que el sistema no llega a identificar.",
     "position": "right",
     "cables_escena": false
   },
