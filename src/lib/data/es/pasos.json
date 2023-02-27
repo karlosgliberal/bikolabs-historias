@@ -36,43 +36,43 @@
   },
   {
     "id": 5,
-    "titulo": "Depende… pero ¿de qué depende?",
-    "texto": "Bueno, si el algoritmo acierta mucho, y los funcionarios confirman lo que él dice, es lo que se esperaba y podemos estar tranquilos.<br /><br />Pero, si el algoritmo se está equivocando y los funcionarios dan por buena su valoración ¿Para que están los funcionarios?. Nos deveríamos preocupar, algo falla",
+    "titulo": "",
+    "texto": "Depende… pero ¿de qué depende?<br /> <br /> Bueno, si el algoritmo acierta mucho, y los funcionarios confirman lo que él sistema dice, es lo que se esperaba y podemos estar tranquilos.<br /><br />Pero, si el algoritmo se está equivocando y los funcionarios dan por buena su valoración ¿Para que están los funcionarios?.Nos deveríamos preocupar, algo falla",
     "position": "right",
     "cables_escena": 4
   },
   {
     "id": 6,
-    "titulo": "Podríamos decir que la clave está en saber si los sistemas automatizados aciertan, o no en sus respuestas.",
-    "texto": "Por ello, parece necesario comprender hasta qué punto los sistemas automatizados de ayuda a la decisión aciertan o no.<br /><br />¿Parece sencillo, verdad? <strong>Pues no lo es</strong>.",
+    "titulo": "",
+    "texto": "Por ello, parece necesario comprender hasta qué punto los sistemas automatizados de ayuda a la decisión (y sus algoritmos) aciertan o no.<br /><br /> ¿Parece sencillo, verdad? <strong>Pues no lo es</strong>.",
     "position": "right",
     "cables_escena": 5
   },
   {
     "id": 7,
-    "titulo": "¿Cómo saber si un sistema automatizado acierta?",
-    "texto": "Vamos a profundizar un poco más sobre el tema. Son varias las medidas que habitualmente se usan para evaluar el acierto de este tipo de sistemas. Algunas de las más habituales son <strong>accuracy, sensibilidad, especificidad y valor predictivo</strong>.",
+    "titulo": "¿Cómo saber si un sistema automatizado y sus algortimos aciertan?",
+    "texto": "Vamos a profundizar un poco más sobre el tema. Son varias las medidas que habitualmente se usan para evaluar el acierto de este tipo de sistemas. Algunas de las más habituales son <strong>sensibilidad, especificidad y valor predictivo, accuracy</strong>.",
     "position": "center",
     "cables_escena": 6
   },
   {
     "id": 8,
-    "titulo": "Vamos a explicar qué nos dice cada una de ellas utilizando el ejemplo de RisCanvi.",
-    "texto": "Y empezaremos con <strong>la sensibilidad y la especificidad</strong>, que son medidas que nos hablan de la capacidad del sistema.",
+    "titulo": "",
+    "texto": "Vamos a explicar qué nos dice cada una de ellas utilizando el ejemplo de RisCanvi. <br /></br /> Y empezaremos con <strong>la sensibilidad y la especificidad</strong>, que son medidas que nos hablan de la capacidad del sistema.",
     "position": "right",
     "cables_escena": false
   },
   {
     "id": 9,
-    "titulo": "Dividimos el conjunto de presos entre reincidentes y no reincidentes",
-    "texto": "Imaginemos que partimos de nuestra muestra de <strong>648 presos</strong> y entre ellos hay presos que sabemos que han reincidido al salir de la cárcel, y otros presos que no han reincidido.<br /><br />Así que los separamos en esos dos grupos: <strong>reincidentes</strong> y <strong>no reincidentes</strong>.",
+    "titulo": "",
+    "texto": "Dividimos el conjunto de presos entre reincidentes y no reincidentes.<br /> <br /> Imaginemos que partimos de nuestra muestra de <strong>648 presos</strong> y entre ellos hay presos que sabemos que han reincidido al salir de la cárcel, y otros presos que no han reincidido.<br /><br />Así que los separamos en esos dos grupos: <strong>reincidentes</strong> y <strong>no reincidentes</strong>.",
     "position": "right",
     "cables_escena": 7
   },
   {
     "id": 10,
-    "titulo": "¿Cuál es la capacidad del algoritmo para identificar a los presos reincidentes?",
-    "texto": "En primer lugar, el algoritmo etiqueta como “Alto riesgo” a los presos que considera reincidentes. <br /><br />Este dato se calcula dividiendo el número de presos etiquetados de alto riesgo, entre el total de presos reincidentes, y se conoce como <strong>Sensibilidad</strong> del sistema.",
+    "titulo": "",
+    "texto": "¿Cuál es la capacidad del algoritmo para identificar a los presos reincidentes?<br /> En primer lugar, el algoritmo etiqueta como “Alto riesgo” a los presos que considera reincidentes. <br /><br />Este dato se calcula dividiendo el número de presos etiquetados de alto riesgo, entre el total de presos reincidentes, y se conoce como <strong>Sensibilidad</strong> del sistema.",
     "position": "right",
     "cables_escena": 8
   },

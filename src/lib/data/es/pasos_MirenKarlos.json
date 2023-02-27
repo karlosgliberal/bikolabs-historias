@@ -37,7 +37,7 @@
   {
     "id": 5,
     "titulo": "Depende… pero ¿de qué depende?",
-    "texto": "Bueno,si  el algoritmo acierta mucho, y los funcionarios confirman lo que él dice, podemos estar tranquilos porque será un indicador de éxito.<br /><br />Pero, si el algoritmo se está equivocando y los funcionarios dan por buena esa valoración igual podemos empezar a preocuparnos</strong>.",
+    "texto": "Bueno, si  el algoritmo acierta mucho, y los funcionarios confirman lo que sistema dice, podemos estar tranquilos porque será un indicador de éxito.<br /><br />Pero, si el algoritmo se está equivocando y los funcionarios dan por buena esa valoración igual deveríamos empezar a preocuparnos</strong>.",
     "position": "right",
     "cables_escena": 4
   },
