@@ -133,7 +133,7 @@
     set-cookie-parser "^2.4.8"
     sirv "^2.0.2"
     tiny-glob "^0.2.9"
-    undici "^5.8.1"
+    undici "^5.19.1"
 
 "@sveltejs/svelte-scroller@^2.0.7":
   version "2.0.7"
