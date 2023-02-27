@@ -7,8 +7,12 @@
   import Loading from '../components/Loading.svelte'
   import Decrementar from '../components/Decrementar.svelte'
   import Boton from '../components/Boton.svelte'
+<<<<<<< HEAD
   import MenuAnimacion from '../components/menu/MenuAnimacion.svelte'
   import Logos from '../components/footer/Logos.svelte'
+=======
+  import MenuAccionSuperior from '../components/menu-accion-superior/MenuAccionSuperior.svelte'
+>>>>>>> ajustes-textos-espaciados
 
   let Pastilla
 
@@ -19,6 +23,7 @@
   function loadPastilla() {
     import('../components/PastillaCompleta.svelte').then(res => (Pastilla = res.default))
   }
+
 </script>
 
 <svelte:head>
@@ -55,12 +60,17 @@
 
     <div><Footer /></div>
 
+<<<<<<< HEAD
     <div class="z-10 w-1/4 text font-cabin absolute top-6 left-6 hidden tablet:inline">
       <nav class="flex gap-3 items-center ">
         <Logos />
         <div class="h-[15px] border-r border-gray-100 mx-2" />
         <MenuAnimacion />
       </nav>
+=======
+    <div class="z-10 w-1/4 absolute top-6 left-6 hidden tablet:inline">
+      <MenuAccionSuperior isInverted={$historyPosition >= 19} />
+>>>>>>> ajustes-textos-espaciados
     </div>
   </div>
 </div>

@@ -17,7 +17,6 @@
       vis.verdadero()
     }, 1000)
   }
-  // let isVisible = {id} == '1' && {position} == 'center';
 </script>
 
 {#if visible}
@@ -51,7 +50,7 @@
       {/if}
 
       {#if texto != ''}
-        <p class="text-base tablet:text-2xl font-cabin leading-6 py-3 px-6">
+        <p class="text-base tablet:text-2xl font-cabin sm:text-lg leading-6 py-3 px-8">
           <Texto {texto} />
         </p>
       {/if}
@@ -72,12 +71,6 @@
   .wrapper_right {
     @apply flex justify-end p-4;
   }
-
-  /* .screen_5 {
-     @apply flex justify-end items-center;
-      transition: all ease-in-out 1s;
-  } */
-
   .fine_4 {
     @apply desktoplarge:mt-20;
     transition: all ease-in-out 500ms;
