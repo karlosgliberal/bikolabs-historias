@@ -37,7 +37,7 @@
   {
     "id": 5,
     "titulo": "",
-    "texto": "Depende… pero ¿de qué depende?<br /> <br /> Bueno, si el algoritmo acierta mucho, y los funcionarios confirman lo que él sistema dice, es lo que se esperaba y podemos estar tranquilos.<br /><br />Pero, si el algoritmo se está equivocando y los funcionarios dan por buena su valoración ¿Para que están los funcionarios?.Nos deveríamos preocupar, algo falla",
+    "texto": "Depende… pero ¿de qué depende?<br />Bueno, si el algoritmo acierta mucho, y los funcionarios confirman lo que él sistema dice, es lo que se esperaba y podemos estar tranquilos.<br />Pero, si el algoritmo se está equivocando y los funcionarios dan por buena su valoración ¿Para que están los funcionarios?.Nos deveríamos preocupar, algo falla",
     "position": "right",
     "cables_escena": 4
   },
@@ -93,15 +93,15 @@
   },
   {
     "id": 13,
-    "titulo": "¿Y qué pasa con los presos que al salir de la cárcel no reinciden?",
-    "texto": "¿Es capaz el algoritmo de identificarlos adecuadamente?<br /><br />Para responder a esto, se utiliza la medida de <strong>Especificidad</strong>.",
+    "titulo": "",
+    "texto": "¿Y qué pasa con los presos que al salir de la cárcel no reinciden? ¿Es capaz el algoritmo de identificarlos adecuadamente?<br />Para responder a esto, se utiliza la medida de <strong>Especificidad</strong>.",
     "position": "right",
     "cables_escena": 10
   },
   {
     "id": 14,
     "titulo": "",
-    "texto": "Para saber qué presos no serán reincidentes, l algoritmo etiqueta como “Bajo riesgo” a los presos que considera que no van a reincidir. La <strong>Especificidad</strong> se calcula dividiendo el número de presos etiquetados como  bajo riesgo entre el total de los presos no reincidentes.",
+    "texto": "La <strong>Especificidad</strong> se calcula dividiendo el número de presos etiquetados como  bajo riesgo entre el total de los presos no reincidentes.",
     "position": "right",
     "cables_escena": 11
   },
@@ -121,8 +121,8 @@
   },
   {
     "id": 17,
-    "titulo": " ¿Significa esto que este sistema puede predecir el futuro?",
-    "texto": "Si bien las medidas de sensibilidad y especificidad nos hablan, como decíamos, de la capacidad del sistema, no lo hacen sobre <strong>su poder predictivo</strong>.",
+    "titulo": "",
+    "texto": " ¿Significa esto que este sistema puede predecir el futuro? <br/> Si bien las medidas de sensibilidad y especificidad nos hablan, como decíamos, de la capacidad del sistema, no lo hacen sobre <strong>su poder predictivo</strong>.",
     "position": "right",
     "cables_escena": 13
   },
@@ -157,8 +157,7 @@
   {
     "id": 22,
     "titulo": "",
-    "texto": "En RisCanvi, <strong>el valor predictivo positivo es de un 18%</strong>. Esto significa que entre las personas etiquetadas como “Alto riesgo” sólo 2 de cada 10 presos terminarían confirmando el pronóstico y  reincidiendo. Y la inmensa mayoría, 8 de cada 10 reclusos no reincidirían a pesar de haber sido etiquetados como de “Alto Riesgo”",
-    "pregunta": "Los cartelones tapan las letras del suelo. O poner en siglas VPP o hacer más zoom, o ambos",
+    "texto": "En RisCanvi, <strong>el valor predictivo positivo es de un 18%</strong>. Esto significa que entre las personas etiquetadas como “Alto riesgo” sólo 2 de cada 10 presos terminarían confirmando el pronóstico y reincidiendo. Y la inmensa mayoría, 8 de cada 10 reclusos no reincidirían a pesar de haber sido etiquetados como de “Alto Riesgo”",
     "position": "right",
     "cables_escena": 18
   },
@@ -178,8 +177,8 @@
   },
   {
     "id": 25,
-    "titulo": "Rebobinando…",
-    "texto": "<h1>Rebobinando</h1> Después de tanta medida te recuerdo que empezamos diciendo que el cumplimiento en el sistema RisCanvi es del 96,8%.<br /><br />Es decir, que a pesar de las medidas de error presentes en el sistema de RisCanvi <strong> en más de 9 de cada 10 casos</strong> se da por bueno el nivel de riesgo asignado por el sistema. ",
+    "titulo": "",
+    "texto": "Rebobinando…<br /> Después de tanta medida te recuerdo que empezamos diciendo que el cumplimiento en el sistema RisCanvi es del 96,8%.<br />Es decir, que a pesar de las medidas de error presentes en el sistema de RisCanvi <strong> en más de 9 de cada 10 casos</strong> se da por bueno el nivel de riesgo asignado por el sistema. ",
     "position": "center",
     "cables_escena": 21
   },
@@ -193,7 +192,7 @@
   {
     "id": 27,
     "titulo": "",
-    "texto": "A pesar de la dificultad, es importante <strong>conocer y distinguir entre medidas como la sensibilidad, la especificidad, el accuracy o el valor predictivo</strong>.<br /><br />Si solo nos fijamos en alguna de ellas, nuestra lectura sobre la capacidad y poder predictivo de un algoritmo puede ser errónea. Y sí, lo sabemos. Todos preferiríamos que estos temas resultaran más sencillos. Pero <strong>¡c'est la vie y los sistemas automatizados!</strong>",
+    "texto": "A pesar de la dificultad, es importante <strong>conocer y distinguir entre medidas como la sensibilidad, la especificidad, el accuracy o el valor predictivo</strong>.<br /> Si solo nos fijamos en alguna de ellas, nuestra lectura sobre la capacidad y poder predictivo de un algoritmo puede ser errónea. Y sí, lo sabemos. Todos preferiríamos que estos temas resultaran más sencillos. Pero <strong>¡c'est la vie y los sistemas automatizados!</strong>",
     "position": "right",
     "cables_escena": 22
   },
