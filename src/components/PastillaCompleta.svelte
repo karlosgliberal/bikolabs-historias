@@ -50,7 +50,6 @@
       {/if}
 
       {#if texto != ''}
-        <p class="py-3 px-8">{id}</p>
         <p class="text-base tablet:text-2xl font-cabin sm:text-lg leading-6 py-3 px-8">
           <Texto {texto} />
         </p>
