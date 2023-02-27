@@ -7,9 +7,7 @@
   import Loading from '../components/Loading.svelte'
   import Decrementar from '../components/Decrementar.svelte'
   import Boton from '../components/Boton.svelte'
-  import MenuAnimacion from '../components/menu/MenuAnimacion.svelte'
-  import Logos from '../components/footer/Logos.svelte'
-
+  import MenuAccionSuperior from '../components/menu-accion-superior/MenuAccionSuperior.svelte'
 
   let Pastilla
 
@@ -20,6 +18,7 @@
   function loadPastilla() {
     import('../components/PastillaCompleta.svelte').then(res => (Pastilla = res.default))
   }
+
 </script>
 
 <svelte:head>
@@ -54,12 +53,10 @@
       {/if}
     </div>
 
-    <div> <Footer /></div>
+    <div><Footer /></div>
 
-    <div class="z-10 w-1/4 text font-cabin absolute top-6 left-6 hidden tablet:inline">
-      <nav class="flex gap-3 items-center ">
-         <Logos/><div class="h-[15px] border-r border-gray-100 mx-2"></div><MenuAnimacion />
-      </nav>
+    <div class="z-10 w-1/4 absolute top-6 left-6 hidden tablet:inline">
+      <MenuAccionSuperior isInverted={$historyPosition >= 19} />
     </div>
   </div>
 </div>

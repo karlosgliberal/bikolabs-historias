@@ -7,7 +7,7 @@
   hr {
     @apply border-neutral-300;
   }
-  strong, {
+  strong {
     color: #deaa00;
   }
   b {
