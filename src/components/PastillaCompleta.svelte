@@ -34,7 +34,7 @@
             </h2>
           {/if}
           {#if id != '1'}
-            <h2 class="text-4xl font-cabin font-bold pl-6">
+            <h2 class="text-4xl font-cabin font-bold pl-8">
               <Titulo {titulo} />
             </h2>
           {/if}
@@ -50,6 +50,7 @@
       {/if}
 
       {#if texto != ''}
+        <p class="py-3 px-8">{id}</p>
         <p class="text-base tablet:text-2xl font-cabin sm:text-lg leading-6 py-3 px-8">
           <Texto {texto} />
         </p>

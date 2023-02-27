@@ -18,6 +18,14 @@
   function loadPastilla() {
     import('../components/PastillaCompleta.svelte').then(res => (Pastilla = res.default))
   }
+
+  export const getIsInverted = (id) => {
+    if ( id >= 19 && id < 27 ) {
+      return true;
+    }
+    return false;
+  }
+
 </script>
 
 <svelte:head>
@@ -25,7 +33,6 @@
   <meta name="description" content="Riscanvi " />
 </svelte:head>
 
-<!--portada-->
 <div id="cover" class="bg-zinc-900 text-white">
   <div class="z-20 w-full h-screen">
     <div class="w-full h-screen absolute z-10">
@@ -34,7 +41,6 @@
     {#if $historyPosition == 0}
       <Loading />
     {:else}
-      <!-- <Pastilla /> -->
       <svelte:component
         this={Pastilla}
         {...pasos[$historyPosition]}
@@ -55,7 +61,7 @@
     <div><Footer /></div>
 
     <div class="z-10 w-1/4 absolute top-6 left-6 hidden tablet:inline">
-      <MenuAccionSuperior isInverted={$historyPosition >= 19} />
+      <MenuAccionSuperior isInverted={getIsInverted($historyPosition) } />
     </div>
   </div>
 </div>
