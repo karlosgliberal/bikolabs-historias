@@ -23,27 +23,27 @@
   {
     "id": 3,
     "titulo": "Vamos a entrar en detalle. El caso RisCanvi",
-    "texto": "Según se ha publicado, los funcionarios que utilizan el sistema de riesgo de reincidencia RisCanvi están conformes con la decisión que toma el algoritmo en el <strong>96,8% de las ocasiones</strong>. En <strong>en más de 9 casos de cada 10 casos</strong> los funcionarios <strong>aceptan</strong> lo que el sistema y sus algoritmos han asignado al preso",
+    "texto": "Según se ha publicado, los funcionarios que utilizan el sistema de riesgo de reincidencia RisCanvi están conformes con la decisión que toma el algoritmo en el <strong>96,8% de las ocasiones</strong>. Es decir, que <strong>en más de 9 casos de cada 10</strong> los funcionarios <strong>aceptan</strong> el nivel de riesgo que el sistema ha asignado al preso",
     "position": "center",
     "cables_escena": 2
   },
   {
     "id": 4,
-    "titulo": "",
-    "texto": "Si los/as funcionarios están conformes con la decisión del algoritmo<br/> ¿esto es indicador de éxito o motivo de preocupación?",
+    "titulo": "Si los/as funcionarios están conformes con la decisión del algoritmo<br/> ¿esto es indicador de éxito o motivo de preocupación?",
+    "texto": ".",
     "position": "right",
     "cables_escena": 3
   },
   {
     "id": 5,
     "titulo": "Depende… pero ¿de qué depende?",
-    "texto": "Bueno, si el algoritmo acierta mucho, y los funcionarios confirman lo que él dice, es lo que se esperaba y podemos estar tranquilos.<br /><br />Pero, si el algoritmo se está equivocando y los funcionarios dan por buena su valoración ¿Para que están los funcionarios?. Nos deveríamos preocupar, algo falla",
+    "texto": "Bueno,si  el algoritmo acierta mucho, y los funcionarios confirman lo que él dice, podemos estar tranquilos porque será un indicador de éxito.<br /><br />Pero, si el algoritmo se está equivocando y los funcionarios dan por buena esa valoración igual podemos empezar a preocuparnos</strong>.",
     "position": "right",
     "cables_escena": 4
   },
   {
     "id": 6,
-    "titulo": "Podríamos decir que la clave está en saber si los sistemas automatizados aciertan, o no en sus respuestas.",
+    "titulo": "Simplificando el asunto, podríamos decir que la clave está en saber si los sistemas automatizados aciertan, o no en sus respuestas.",
     "texto": "Por ello, parece necesario comprender hasta qué punto los sistemas automatizados de ayuda a la decisión aciertan o no.<br /><br />¿Parece sencillo, verdad? <strong>Pues no lo es</strong>.",
     "position": "right",
     "cables_escena": 5
