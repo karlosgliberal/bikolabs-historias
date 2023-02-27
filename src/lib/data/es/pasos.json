@@ -37,7 +37,7 @@
   {
     "id": 5,
     "titulo": "",
-    "texto": "Depende… pero ¿de qué depende?<br />Bueno, si el algoritmo acierta mucho, y los funcionarios confirman lo que él sistema dice, es lo que se esperaba y podemos estar tranquilos.<br />Pero, si el algoritmo se está equivocando y los funcionarios dan por buena su valoración ¿Para que están los funcionarios?.Nos deveríamos preocupar, algo falla",
+    "texto": "Depende… pero ¿de qué depende?<br />Bueno, si el algoritmo acierta mucho, y los funcionarios confirman lo que él sistema dice, es lo que se esperaba y podemos estar tranquilos.<br />Pero, si el algoritmo se está equivocando y los funcionarios dan por buena su valoración. Nos deveríamos preocupar, algo falla",
     "position": "right",
     "cables_escena": 4
   },
