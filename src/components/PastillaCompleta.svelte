@@ -50,7 +50,7 @@
       {/if}
 
       {#if texto != ''}
-        <p class="text-base tablet:text-2xl font-cabin sm:text-lg leading-6 py-3 px-8">
+        <p class="text-base tablet:text-lg font-cabin leading-6 py-3 px-8">
           <Texto {texto} />
         </p>
       {/if}
