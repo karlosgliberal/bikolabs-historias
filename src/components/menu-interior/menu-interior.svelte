@@ -23,7 +23,7 @@
   <div class="flex flex-row justify-between">
     <div class="pt-3 ">
       <BurgerMenu {...burguerProps}>
-        <div class="flex flex-col gap-5 text-2xl p-4 text-black">
+        <div class="flex flex-col gap-5 text-2xl p-4 text-black font-cabin">
           <Items />
         </div>
       </BurgerMenu>
