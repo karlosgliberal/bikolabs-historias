@@ -8,6 +8,7 @@
   import Decrementar from '../components/Decrementar.svelte'
   import Boton from '../components/Boton.svelte'
   import MenuAccionSuperior from '../components/menu-accion-superior/MenuAccionSuperior.svelte'
+    import MenuAccionSuperiorMobile from '../components/menu-accion-superior/MenuAccionSuperiorMobile.svelte'
 
   let Pastilla
 
@@ -59,13 +60,11 @@
     </div>
 
     <div class="z-20"><Footer /></div>
-    {#if getIsInverted($historyPosition)}
-    <div class="actions-mobile"></div>
-    {/if}
-    
-
     <div class="z-20 w-1/4 absolute top-6 left-6 hidden tablet:inline">
       <MenuAccionSuperior isInverted={getIsInverted($historyPosition) } />
+    </div>
+      <div class="z-20 w-1/4 absolute top-3 left-3 tablet:hidden">
+      <MenuAccionSuperiorMobile isInverted={getIsInverted($historyPosition) } />
     </div>
   </div>
 </div>
@@ -73,10 +72,5 @@
 <style>
   .actions_wrapper {
     @apply z-30 absolute w-full tablet:w-auto bottom-[10%] tablet:bottom-[8%] desktop:bottom-9 right-0 tablet:right-5 p-4 tablet:p-0 flex items-center gap-6;
-  }
-  .actions-mobile {
-    height: 27%;
-    background: linear-gradient(180.6deg, #635C46 60.99%, #050505 99.48%);
-    @apply z-10 absolute bottom-0 w-full desktop:hidden;
   }
 </style>
