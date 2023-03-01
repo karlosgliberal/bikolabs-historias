@@ -330,7 +330,7 @@
               class="font-mono -tracking-widest text-xs"
               href=" http://cejfe.gencat.cat/ca/recerca/cataleg/crono/2015/reincidencia-2014/"
             >
-              http://cejfe.gencat.cat/ca/recerca/cataleg/crono/2015/reincidencia-2014/
+              http://cejfe.gencat.cat
             </a>
           </p>
         </li>
