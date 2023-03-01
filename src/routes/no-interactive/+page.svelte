@@ -11,16 +11,16 @@
   <section class="text-base px-2 py-8 desktop:px-44 desktop:py-20">
 
     <!--entradilla-->
-    <div>
-      <h1 class="text-5xl font-bold mb-4 tablet:text-justify">
-          El acierto en las decisiones de los sistemas automatizados
+    <div class="desktop:px-20 mb-16">
+      <h1 class="text-5xl mb-3">
+          El acierto en las decisiones de <br> los sistemas automatizados
       </h1>
     
-      <p class="text-xl mb-10">
+      <p class="mb-10">
         Cada vez se <b>automatizan más procesos de decisión</b> o se usan más sistemas automatizados en decisiones.
         Algunos incluso se utilizan para decisiones de <b>calado social</b>.
       </p>
-       <h3 class="title-font text-3xl mb-2 font-semibold">El caso RisCanvi </h3>
+     <h3 class="title-font text-3xl mb-4">El caso RisCanvi </h3>
 
       <p class="mb-8 leading-relaxed">
         Según se ha publicado<sup class="uppercase font-mono"><a href="#a1">1</a></sup>, los funcionarios que utilizan
@@ -39,20 +39,23 @@
         o no. Pero esto no es tan sencillo como parece.
       </p>
     </div>
-    <!--Medidas de acierto-->
-    <div>
-      <h3 class="title-font text-3xl mb-2 font-semibold">Medidas de acierto</h3>
-      <p class="mb-8 leading-relaxed">
-        ¿Cómo saber si un sistema automatizado es acertado?<br />
-        Son varias las medidas que habitualmente se usan para evaluar el acierto de este tipo de sistemas. Algunas de las
-        más habituales son las medidas de <b>sensibilidad, especificidad y valor predictivo</b>.<br />
-        Pero, ¿qué nos dicen cada una de ellas? Para comprenderlas, usaremos los datos del mencionado sistema RisCanvi como
-        ejemplo<sup class="uppercase font-mono"><a href="#a2">2</a></sup>.
-      </p>
+
+    <div class="desktop:px-20">
+         <!--Medidas de acierto-->
+      <div class="mb-16">
+        <h3 class="title-font text-xl mb-2 uppercase font-bold">Medidas de acierto</h3>
+        <p class="mb-8 leading-relaxed">
+          ¿Cómo saber si un sistema automatizado es acertado?<br />
+          Son varias las medidas que habitualmente se usan para evaluar el acierto de este tipo de sistemas. Algunas de las
+          más habituales son las medidas de <b>sensibilidad, especificidad y valor predictivo</b>.<br />
+          Pero, ¿qué nos dicen cada una de ellas? Para comprenderlas, usaremos los datos del mencionado sistema RisCanvi como
+          ejemplo<sup class="uppercase font-mono"><a href="#a2">2</a></sup>.
+        </p>
+      </div>
 
       <!--Sensibilidad y Especificidad-->
-      <div>
-        <h3 class="title-font text-2xl mb-2 font-semibold">Sensibilidad y Especificidad</h3>
+      <div class="mb-16">
+        <h3 class="title-font text-xl mb-2 uppercase font-bold">Sensibilidad y Especificidad</h3>
 
         <p class="mb-8 leading-relaxed">
           Empecemos con la sensibilidad y la especificidad, que son medidas que nos hablan de la capacidad del sistema.
@@ -141,8 +144,8 @@
         </p>
       </div>
       <!--Valor Predictivo Positivo y Negativo-->
-      <div>
-        <h3 class="title-font text-2xl mb-2  font-semibold">Valor Predictivo Positivo y Negativo</h3>
+      <div class="mb-16">
+        <h3 class="title-font text-xl mb-2 uppercase font-bold">Valor Predictivo Positivo y Negativo</h3>
         <p class="mb-8 leading-relaxed">
           El Valor predictivo positivo de un sistema nos permite responder a la siguiente pregunta: si un nuevo preso es
           etiquetado como de alto riesgo, ¿cuál es la probabilidad de que reincida?
@@ -217,8 +220,8 @@
         </p>
       </div>
       <!--Exactitud o Accuracy-->
-      <div>
-        <h3 class="title-font text-2xl mb-2  font-semibold">Exactitud o Accuracy</h3>
+      <div class="mb-16">
+        <h3 class="title-font text-xl mb-2 uppercase font-bold">Exactitud o Accuracy</h3>
 
         <p class="mb-8 leading-relaxed">
           Hay otra medida muy utilizada en el sector tecnológico para hablar de la eficacia de los sistemas
@@ -231,7 +234,7 @@
           Esta medida se calcula dividiendo los aciertos del sistema (presos etiquetados correctamente como de alto y de
           bajo riesgo; 385), entre el total de presos de la muestra (678). En RisCanvi la exactitud es del <b>57%.</b>
         </p>
-
+        <div>
         <table class="mb-8 table-auto border-separate border-spacing-y-2">
           <thead class="text-end">
             <tr>
@@ -262,16 +265,18 @@
 
               <td class="pl-8  font-semibold pb-2 text-end" />
               <td class="pl-8  pb-2 text-end" />
-              <td class="pl-8  pb-2 text-end font-bold ">648</td>
+              <td class="pl-8  pb-2 text-end font-bold">648</td>
             </tr>
           </tbody>
         </table>
+        </div>
+
       </div>
     </div>
 
     <!--Rebobinando-->
-    <div class="">
-      <h3 class="title-font text-4xl mb-8  font-semibold">Rebobinando</h3>
+    <div class="desktop:px-20">
+      <h3 class="title-font text-xl mb-2 uppercase font-bold">Rebobinando</h3>
 
       <p class="mb-8 leading-relaxed">
         Revisadas las medidas de acierto de los sistemas automatizados, parece un buen momento para mencionar por última
@@ -296,7 +301,7 @@
     <!--Agradecimientos-->
     <div>
       <ul class="list-none c text-sm">
-        <p class="mt-16">Nuestro agradecimiento:</p>
+        <p class="mt-20 font-bold">Nuestro agradecimiento:</p>
         <li class="mt-2">
           <p class="leading-relaxed">
             Es importante señalar que este trabajo se ha inspirado en el gran artículo de Garay (2016)<sup
