@@ -81,7 +81,7 @@
           <a
             class="font-mono -tracking-widest text-xs"
             href="http://cejfe.gencat.cat/ca/recerca/cataleg/crono/2015/reincidencia-2014/"
-            >http://cejfe.gencat.cat/ca/recerca/cataleg/crono/2015/reincidencia-2014/
+            >http://cejfe.gencat.cat
           </a>
         </p>
       </li>
@@ -102,3 +102,10 @@
 <div>
   <FooterInterior/>
 </div>
+
+<style>
+  a {
+    text-decoration: underline;
+    font-weight: 300;
+  }
+</style>
