@@ -115,7 +115,7 @@
   {
     "id": 16,
     "titulo": "",
-    "texto": "El resto, 4 de cada 10 presos, son lo que se conoce como <strong>falsos positivos,</strong> es decir, reclusos que no reincidieron pero que el sistema considera erróneamente como reincidentes.",
+    "texto": "El resto, 4 de cada 10 presos, son lo que se conoce como <strong>falsos positivos,</strong> es decir, reclusos que no reincidieron pero que el sistema considera <strong>erróneamente como reincidentes</strong>.",
     "position": "right",
     "cables_escena": false
   },
