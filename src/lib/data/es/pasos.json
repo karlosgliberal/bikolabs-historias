@@ -16,21 +16,21 @@
   {
     "id": 2,
     "titulo": "",
-    "texto": "A día de hoy encontramos algoritmos en todos los rincones de nuestras vidas. Al tiempo, cada vez se <strong>automatizan más decisiones</strong> que nos afectan. ¿Qué supone esto? Que estamos dejando a los algoritmos decidir sobre nuestras vidas.<br /><br />Por ejemplo, en España existe un algoritmo, <strong>RisCanvi</strong>, que es utilizado por los funcionarios en las cárceles de Cataluña para predecir el riesgo de reincidencia de sus presos.",
+    "texto": "A día de hoy encontramos algoritmos en todos los rincones de nuestras vidas. Al tiempo, cada vez se <strong>automatizan más decisiones</strong> que nos afectan. ¿Qué supone esto? Que estamos dejando a los algoritmos decidir sobre nuestras vidas.<br /><br />Por ejemplo, en España existe un algoritmo, <strong>RisCanvi,</strong> que es utilizado por los funcionarios en las cárceles de Cataluña para predecir el riesgo de reincidencia de sus presos.",
     "position": "right",
     "cables_escena": 1
   },
   {
     "id": 3,
     "titulo": "El caso RisCanvi",
-    "texto": "Según se ha publicado, los funcionarios que utilizan RisCanvi están de acuerdo con la predicción de reincidencia que hace el algoritmo en el <strong>96,8% de las ocasiones</strong>.<br />Es decir, que en <strong> más de 9 casos de cada 10 </strong> los funcionarios <strong>aceptan</strong> la predicción que el algoritmo ha hecho sobre la posible reincidencia futura de un preso.",
+    "texto": "Según se ha publicado, los funcionarios que utilizan RisCanvi están de acuerdo con la predicción de reincidencia que hace el algoritmo en el <strong>96,8% de las ocasiones.</strong><br />Es decir, que en <strong> más de 9 casos de cada 10 </strong> los funcionarios <strong>aceptan</strong> la predicción que el algoritmo ha hecho sobre la posible reincidencia futura de un preso.",
     "position": "center",
     "cables_escena": 2
   },
   {
     "id": 4,
     "titulo": "",
-    "texto": "Que los funcionarios estén conformes con la decisión del algoritmo en un porcentaje tan alto de los casos, ¿es un <strong>indicador de éxito o un motivo de preocupación</strong>?",
+    "texto": "Que los funcionarios estén conformes con la decisión del algoritmo en un porcentaje tan alto de los casos, ¿es un <strong>indicador de éxito o un motivo de preocupación?</strong>",
     "position": "right",
     "cables_escena": 3
   },
@@ -51,14 +51,14 @@
   {
     "id": 7,
     "titulo": "¿Cómo saber si un algoritmo acierta?",
-    "texto": "Para medir el acierto de un algoritmo se utilizan varios tipos de medidas: medidas generales y muy conocidas, como <strong>la exactitud o accuracy</strong>; medidas que hablan de la capacidad del algoritmo, como las medidas de <strong>sensibilidad y especificidad</strong>; o medidas que indican su poder predictivo, como la medida del <strong>valor predictivo.</strong>",
+    "texto": "Para medir el acierto de un algoritmo se utilizan varios tipos de medidas: medidas generales y muy conocidas, como <strong>la exactitud o accuracy;</strong> medidas que hablan de la capacidad del algoritmo, como las medidas de <strong>sensibilidad y especificidad;</strong> o medidas que indican su poder predictivo, como la medida del <strong>valor predictivo.</strong>",
     "position": "center",
     "cables_escena": 6
   },
   {
     "id": 8,
     "titulo": "",
-    "texto": "Vamos a explicar qué nos indican estas medidas utilizando el ejemplo de RisCanvi. <br /></br /> Y empezaremos con <strong>la sensibilidad y la especificidad</strong>, que como decíamos son medidas que nos hablan de la capacidad del sistema.",
+    "texto": "Vamos a explicar qué nos indican estas medidas utilizando el ejemplo de RisCanvi. <br /></br /> Y empezaremos con <strong>la sensibilidad y la especificidad,</strong> que como decíamos son medidas que nos hablan de la capacidad del sistema.",
     "position": "right",
     "cables_escena": false
   },
@@ -79,7 +79,7 @@
   {
     "id": 11,
     "titulo": "",
-    "texto": "En el caso de RisCanvi, <strong>la sensibilidad del algoritmo es de un 77%</strong>, es decir, que el sistema es capaz de detectar a casi 8 presos reincidentes de cada 10.",
+    "texto": "En el caso de RisCanvi, <strong>la sensibilidad del algoritmo es de un 77%,</strong> es decir, que el sistema es capaz de detectar a casi 8 presos reincidentes de cada 10.",
     "pregunta": "",
     "position": "right",
     "cables_escena": 9
@@ -87,35 +87,35 @@
   {
     "id": 12,
     "titulo": "",
-    "texto": "Los otros <strong>2 presos reincidentes no detectados</strong> por el sistema son <strong>falsos negativos</strong>, es decir, presos reincidentes que el algoritmo no es capaz de detectar.",
+    "texto": "Los otros <strong>2 presos reincidentes no detectados</strong> por el sistema son <strong>falsos negativos,</strong> es decir, presos reincidentes que el algoritmo no es capaz de detectar.",
     "position": "right",
     "cables_escena": false
   },
   {
     "id": 13,
     "titulo": "",
-    "texto": "¿Y qué pasa con los presos que al salir de la cárcel no reinciden? ¿Es capaz el algoritmo de detectarlos adecuadamente?",
+    "texto": "¿Y qué pasa con <strong>los presos que al salir de la cárcel no reinciden?</strong> ¿Es capaz el algoritmo de detectarlos adecuadamente?",
     "position": "right",
     "cables_escena": 10
   },
   {
     "id": 14,
     "titulo": "",
-    "texto": "Para responder a esto, se utiliza la medida de <strong>Especificidad.</strong>.",
+    "texto": "Para responder a esto, se utiliza la medida de <strong>Especificidad.</strong>",
     "position": "right",
     "cables_escena": 11
   },
   {
     "id": 15,
     "titulo": "",
-    "texto": "En RisCanvi, <strong>la especificidad es de un 57%</strong>, es decir, que el sistema es capaz de detectar a casi 6 presos de cada 10 que no reincidieron.",
+    "texto": "En RisCanvi, <strong>la especificidad es de un 57%,</strong> es decir, que el sistema es capaz de detectar a casi 6 presos de cada 10 que no reincidieron.",
     "position": "right",
     "cables_escena": 12
   },
   {
     "id": 16,
     "titulo": "",
-    "texto": "El resto, 4 de cada 10 presos, son lo que se conoce como <strong>falsos positivos</strong>, es decir, reclusos que no reincidieron pero que el sistema considera erróneamente como reincidentes.",
+    "texto": "El resto, 4 de cada 10 presos, son lo que se conoce como <strong>falsos positivos,</strong> es decir, reclusos que no reincidieron pero que el sistema considera erróneamente como reincidentes.",
     "position": "right",
     "cables_escena": false
   },
@@ -157,14 +157,14 @@
   {
     "id": 22,
     "titulo": "",
-    "texto": "En RisCanvi, <strong>el valor predictivo positivo es de un 18%</strong>. Esto significa que solo 2 de cada 10 presos etiquetados de alto riesgo terminarán reincidiento y confirmando así la predicción del algoritmo.<br /><br />Mientras que 8 de cada 10 reclusos no reincidirán a pesar de haber sido etiquetados como de alto riesgo.",
+    "texto": "En RisCanvi, <strong>el valor predictivo positivo es de un 18%.</strong> Esto significa que solo 2 de cada 10 presos etiquetados de alto riesgo terminarán reincidiento y confirmando así la predicción del algoritmo.<br /><br />Mientras que 8 de cada 10 reclusos no reincidirán a pesar de haber sido etiquetados como de alto riesgo.",
     "position": "right",
     "cables_escena": 18
   },
   {
     "id": 23,
     "titulo": "",
-    "texto": "Solo nos queda comentar la medida más conocida y publicitada para medir el acierto de los algoritmos: <strong>la exactitud o accuracy</strong>.",
+    "texto": "Solo nos queda comentar la medida más conocida y publicitada para medir el acierto de los algoritmos: <strong>la exactitud o accuracy.</strong>",
     "position": "right",
     "cables_escena": 19
   },
