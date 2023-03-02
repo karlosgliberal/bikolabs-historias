@@ -72,7 +72,7 @@
   {
     "id": 10,
     "titulo": "",
-    "texto": "¿Qué capacidad tiene el algoritmo para <strong>detectar a los presos reincidentes</strong> entre toda la muestra?<br /><br />Esta capacidad del algoritmo se conoce como <strong>Sensibilidad</strong> del sistema y se calcula dividiendo el número de presos que fueron etiquetados de alto riesgo, entre el total de presos que sabemos que finalmente reincidieron.",
+    "texto": "¿Qué capacidad tiene el algoritmo para <strong>detectar a los presos reincidentes</strong> entre toda la muestra?<br /><br />Esta capacidad del algoritmo se conoce como <strong>Sensibilidad</strong> del sistema.",
     "position": "right",
     "cables_escena": 8
   },
@@ -94,14 +94,14 @@
   {
     "id": 13,
     "titulo": "",
-    "texto": "¿Y qué pasa con los presos que al salir de la cárcel no reinciden? ¿Es capaz el algoritmo de detectarlos adecuadamente?<br />Para responder a esto, se utiliza la medida de <strong>Especificidad.</strong>",
+    "texto": "¿Y qué pasa con los presos que al salir de la cárcel no reinciden? ¿Es capaz el algoritmo de detectarlos adecuadamente?",
     "position": "right",
     "cables_escena": 10
   },
   {
     "id": 14,
     "titulo": "",
-    "texto": "La <strong>Especificidad</strong> se calcula dividiendo el número de presos etiquetados como de bajo riesgo entre el total de presos que no reincidieron.",
+    "texto": "Para responder a esto, se utiliza la medida de <strong>Especificidad.</strong>.",
     "position": "right",
     "cables_escena": 11
   },
@@ -150,7 +150,7 @@
   {
     "id": 21,
     "titulo": "",
-    "texto": "Para conocer el poder predictivo del algoritmo, vamos utilizar la medida de <strong>Valor predictivo positivo</strong>. Esta medida nos muestra la probabilidad de que un nuevo preso etiquetado como de alto riesgo reincida en el futuro.<br /><br />Para calcularla, se divide el número de reclusos reincidentes de la muestra etiquetados de alto riesgo, entre el total de presos de alto riesgo.",
+    "texto": "Para conocer el poder predictivo del algoritmo, vamos utilizar la medida de <strong>Valor predictivo positivo</strong>. Esta medida nos muestra la probabilidad de que un nuevo preso etiquetado como de alto riesgo reincida en el futuro.",
     "position": "right",
     "cables_escena": 17
   },
@@ -164,14 +164,14 @@
   {
     "id": 23,
     "titulo": "",
-    "texto": "Solo nos queda comentar la medida más conocida y publicitada para medir el acierto de los algoritmos: <strong>la exactitud o accuracy.</strong>",
+    "texto": "Solo nos queda comentar la medida más conocida y publicitada para medir el acierto de los algoritmos: <strong>la exactitud o accuracy</strong>.",
     "position": "right",
     "cables_escena": 19
   },
   {
     "id": 24,
     "titulo": "",
-    "texto": "Esta medida se calcula dividiendo los presos correctamente etiquetados por el algoritmo entre el total de la muestra. En el caso RisCanvi, <strong>el accuracy del sistema es del 59%</strong>, lo que significa que el algoritmo acierta de forma general en 6 de cada 10 reclusos.",
+    "texto": "Esta medida tiene en cuenta la muestra de presos entera. En el caso RisCanvi, <strong>el accuracy del sistema es del 59%</strong>, lo que significa que el algoritmo acierta de forma general en 6 de cada 10 reclusos.",
     "position": "right",
     "cables_escena": 20
   },
