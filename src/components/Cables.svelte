@@ -57,21 +57,15 @@
     timer = setTimeout(() => {
       historyPosition.sumar()
     }, 3000)
-    // The patch is ready now, all assets have been loaded
   }
   const cambioEscenaCables = () => {
     if (escena != false) {
-      console.log('dentro cambiosescena', escena)
       CABLES.patch.config.patchFunctiontrigger(escena)
     }
-    //patchFunctionInicio
   }
 
   const goInicio = () => {
-    console.log('inicio')
     CABLES.patch.config.patchFunctionInicio(escena)
-
-    //patchFunctionInicio
   }
 
   function myFunction() {

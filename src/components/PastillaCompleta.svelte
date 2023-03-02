@@ -9,6 +9,9 @@
   export let texto
   export let position
   export let id
+  export let cables_escena
+
+  cables_escena = position
 
   let timer
 

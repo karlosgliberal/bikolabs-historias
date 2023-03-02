@@ -1,6 +1,6 @@
 <script>
-  import MenuInterior from '../../components/menu-interior/menu-interior.svelte';
-  import FooterInterior from '../../components/FooterInterior/FooterInterior.svelte';
+  import MenuInterior from '../../components/menu-interior/menu-interior.svelte'
+  import FooterInterior from '../../components/FooterInterior/FooterInterior.svelte'
 </script>
 
 <div class="py-4 px-2 tablet:px-4 border-b border-black-800">
@@ -9,9 +9,7 @@
 
 <div class="container font-cabin">
   <section class="text-base px-2 py-8 desktop:px-44 desktop:py-20">
-    <h1 class="text-5xl font-bold mb-4 tablet:text-justify">
-      Sobre Bikolabs y los Datos
-    </h1>
+    <h1 class="text-5xl font-bold mb-4 tablet:text-justify">Sobre Bikolabs y los Datos</h1>
     <p class="my-8 leading-relaxed">
       Esta historia ha sido creada por Bikolabs, el Estudio (de intervención) de <a href="http://www.biko2.com"
         >Biko2.com</a
@@ -32,6 +30,9 @@
       </li>
       <li>
         <a href="/"> Silvia Martínez </a>
+      </li>
+      <li>
+        <a href="/"> Aitor Resano </a>
       </li>
     </ul>
 
@@ -100,7 +101,7 @@
 </div>
 
 <div>
-  <FooterInterior/>
+  <FooterInterior />
 </div>
 
 <style>
