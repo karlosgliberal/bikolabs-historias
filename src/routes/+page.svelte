@@ -8,7 +8,7 @@
   import Decrementar from '../components/Decrementar.svelte'
   import Boton from '../components/Boton.svelte'
   import MenuAccionSuperior from '../components/menu-accion-superior/MenuAccionSuperior.svelte'
-    import MenuAccionSuperiorMobile from '../components/menu-accion-superior/MenuAccionSuperiorMobile.svelte'
+  import MenuAccionSuperiorMobile from '../components/menu-accion-superior/MenuAccionSuperiorMobile.svelte'
 
   let Pastilla
 
@@ -20,13 +20,12 @@
     import('../components/PastillaCompleta.svelte').then(res => (Pastilla = res.default))
   }
 
-  export const getIsInverted = (id) => {
-    if ( id >= 19 && id < 27 ) {
-      return true;
+  export const getIsInverted = id => {
+    if (id >= 19 && id < 27) {
+      return true
     }
-    return false;
+    return false
   }
-
 </script>
 
 <svelte:head>
@@ -55,16 +54,18 @@
         <Decrementar />
       {/if}
       {#if $historyPosition < 28}
-        <Boton />
+        {#if $historyPosition != 0}
+          <Boton />
+        {/if}
       {/if}
     </div>
 
     <div class="z-20"><Footer /></div>
     <div class="z-20 w-1/4 absolute top-6 left-6 hidden tablet:inline">
-      <MenuAccionSuperior isInverted={getIsInverted($historyPosition) } />
+      <MenuAccionSuperior isInverted={getIsInverted($historyPosition)} />
     </div>
-      <div class="z-20 w-1/4 absolute top-3 left-3 tablet:hidden">
-      <MenuAccionSuperiorMobile isInverted={getIsInverted($historyPosition) } />
+    <div class="z-20 w-1/4 absolute top-3 left-3 tablet:hidden">
+      <MenuAccionSuperiorMobile isInverted={getIsInverted($historyPosition)} />
     </div>
   </div>
 </div>
