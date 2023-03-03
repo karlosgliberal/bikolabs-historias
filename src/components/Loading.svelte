@@ -1,21 +1,33 @@
 <script>
-  import { fade, fly } from 'svelte/transition'
-
   export let visible = true
-  let row = 2
-  let col = 3
-  let classRow = `row-start-${row} sm:row-start-${row}`
-  let classCol = `lg:col-start-${col}`
 </script>
 
 {#if visible}
   <!--card container-->
-  <div in:fly={{ y: 200, duration: 2000 }} out:fly={{ y: -200, duration: 1000 }} class="bg-opacity-100">
-    <!--título-->
-    <!-- <h1
-      class="lined thick  w-11/12 md:w-4/12 text-base font-mono font-bold tracking-widest text-zinc-800 bg-stone-200 hover:bg-stone-100 shadow-xl mt-12  py-4 "
-    >
-      LOADING
-    </h1> -->
+  <div class="bg z-40 bg-opacity-100 w-full h-screen">
+    <div class="bg w-full h-full flex justify-center items-center">
+      <div class="spinner"></div>
+    </div>
   </div>
 {/if}
+
+<style>
+  .bg {
+    background-color: #2F2D2C;
+  }
+.spinner {
+  opacity: 0.3;
+   width: 46px;
+   height: 46px;
+   border-radius: 50%;
+   background: conic-gradient(#0000 10%,#ffffff);
+   -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 5px),#000 0);
+   animation: spinner 1s infinite linear;
+}
+
+@keyframes spinner {
+   to {
+      transform: rotate(1turn);
+   }
+}
+</style>

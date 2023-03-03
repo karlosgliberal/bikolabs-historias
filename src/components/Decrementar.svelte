@@ -16,7 +16,7 @@
 <button
   type="button"
   on:click={decrement}
-  class="flex justify-center items-center relative bordeA lined thick w-full lg:w-fit text-base font-mono hover:font-bold  tracking-widest text-zinc-100 hover:text-zinc-800 bg-zinc-800 hover:bg-stone-50 shadow-xl py-3 px-5 tablet:py-4 tablet:px-8 "
+  class="flex justify-center items-center relative bordeA lined thick w-full lg:w-fit text-sm tablet:text-base font-mono hover:font-bold  tracking-widest text-zinc-100 hover:text-zinc-800 bg-zinc-800 hover:bg-stone-50 shadow-xl py-1 px-2 tablet:py-4 tablet:px-8 "
 >
   <div class="py-2 px-4">Atrás</div>
 </button>

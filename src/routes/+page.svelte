@@ -30,7 +30,7 @@
 
 <svelte:head>
   <title>Riscanvi</title>
-  <meta name="description" content="Riscanvi " />
+  <meta name="description" content="Riscanvi" />
 </svelte:head>
 
 <div id="cover" class="bg-zinc-900 text-white">
@@ -72,6 +72,6 @@
 
 <style>
   .actions_wrapper {
-    @apply z-30 absolute w-full tablet:w-auto bottom-[10%] tablet:bottom-[8%] desktop:bottom-9 right-0 tablet:right-5 p-4 tablet:p-0 flex items-center gap-6;
+    @apply z-30 absolute w-full tablet:w-auto bottom-[40px] tablet:bottom-[8%] desktop:bottom-9 right-0 tablet:right-5 p-4 tablet:p-0 flex items-center gap-6;
   }
 </style>

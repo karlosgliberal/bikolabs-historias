@@ -32,12 +32,12 @@
       {#if position == 'center'}
         {#if titulo != ''}
           {#if id == '1'}
-            <h2 class="text-3xl tablet:text-6xl font-cabin font-bold pl-6 mb-1 tablet:mb-3">
+            <h2 class="text-2xl tablet:text-6xl font-cabin font-bold pl-4 mb-1 tablet:mb-3">
               <Titulo {titulo} />
             </h2>
           {/if}
           {#if id != '1'}
-            <h2 class="text-4xl font-cabin font-bold pl-8">
+            <h2 class="text-2xl tablet:text-4xl font-cabin font-bold pl-4">
               <Titulo {titulo} />
             </h2>
           {/if}
@@ -53,7 +53,7 @@
       {/if}
 
       {#if texto != ''}
-        <p class="text-base tablet:text-lg font-cabin leading-6 py-3 px-8">
+        <p class="text-sm tablet:text-lg font-cabin leading-6 py-2 px-4 tablet:py-3 tablet:px-8">
           <Texto {texto} />
         </p>
       {/if}
@@ -66,7 +66,7 @@
     @apply mt-8 tablet:mt-5 desktop:mt-5 desktop:mr-5 desktoplarge:mt-6 desktoplarge:mr-10 mobile:mr-0 py-5 w-[100%] tablet:w-[70%] desktop:w-[60%] desktoplarge:w-[30%];
   }
   .position_center {
-    @apply py-5 mt-11 mx-4 tablet:mt-0 tablet:py-10 w-[100%] tablet:w-[80%] desktop:w-[55%] desktoplarge:w-[35%];
+    @apply py-5 tablet:px-4 mt-12 mx-4 tablet:mt-0 tablet:py-10 w-[100%] tablet:w-[80%] desktop:w-[55%] desktoplarge:w-[35%];
   }
   .wrapper_center {
     @apply flex justify-start tablet:items-center tablet:justify-center;

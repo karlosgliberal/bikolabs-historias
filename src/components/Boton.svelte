@@ -18,12 +18,12 @@
 <button
   on:click={increment}
   type="button"
-  class="flex justify-center items-center relative bordeA lined thick w-full lg:w-fit text-base font-mono font-bold tracking-widest text-zinc-100 hover:text-zinc-800 bg-zinc-800 hover:bg-stone-50 shadow-xl py-3 px-6 tablet:py-4 tablet:px-8 lg:mr-6 transition duration-150 ease-out hover:ease-in"
+  class="flex justify-center items-center relative bordeA lined thick w-full lg:w-fit text-sm tablet:text-base font-mono font-bold tracking-widest text-zinc-100 hover:text-zinc-800 bg-zinc-800 hover:bg-stone-50 shadow-xl py-1 px-2 tablet:py-4 tablet:px-8 lg:mr-6 transition duration-150 ease-out hover:ease-in"
 >
   {tituloBoton}
-  <div class="slide-in-left p-2 w-10 h-10 flex items-center justify-center">
+  <div class="p-2 w-10 h-10 flex items-center justify-center">
     <svg
-      class="slide-in-left -rotate-90 w-4 h-4 text-yellow-500"
+      class="-rotate-90 w-4 h-4 text-yellow-500"
       fill="none"
       stroke-linecap="round"
       stroke-linejoin="round"
@@ -37,18 +37,6 @@
 </button>
 <svelte:window on:keydown={onKeyDown} />
 
-<!-- <style>
-  .bordeB {
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
-    border-bottom-right-radius: 225px 15px;
-    border-bottom-left-radius: 15px 255px;
-  }
-
-  .bordeB.lined.thick {
-    border: solid 3px #27272a;
-  }
-</style> -->
 <style>
   .bordeA {
     border-top-left-radius: 255px 15px;
@@ -58,6 +46,6 @@
   }
 
   .bordeA.lined.thick {
-    border: solid 3px #e7e5e4;
+    border: solid 2px #e7e5e4;
   }
 </style>
