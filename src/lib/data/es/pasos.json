@@ -16,7 +16,7 @@
   {
     "id": 2,
     "titulo": "",
-    "texto": "A día de hoy encontramos algoritmos por todas partes. Al tiempo, cada vez se <strong>automatizan más decisiones</strong> que nos afectan. ¿Qué supone esto? Que estamos dejando a los algoritmos decidir sobre nuestras vidas.<br /><br />Por ejemplo, en España existe un algoritmo, <strong>RisCanvi,</strong> que es utilizado por los funcionarios en las cárceles de Cataluña para predecir el riesgo de reincidencia de sus presos.",
+    "texto": "A día de hoy encontramos algoritmos en todos los rincones de nuestras vidas. Al tiempo, cada vez se <strong>automatizan más decisiones</strong> que nos afectan. ¿Qué supone esto? Que estamos dejando a los algoritmos decidir sobre nuestras vidas.<br /><br />Por ejemplo, en España existe un algoritmo, <strong>RisCanvi,</strong> que es utilizado por los funcionarios en las cárceles de Cataluña para predecir el riesgo de reincidencia de sus presos.",
     "position": "right",
     "cables_escena": 1
   },
@@ -65,14 +65,14 @@
   {
     "id": 9,
     "titulo": "",
-    "texto": "Imaginemos que partimos de una muestra de <strong>648 presos</strong> que fueron etiquetados en su día con RisCanvi como de alto o bajo riesgo y a los que luego hemos hecho seguimiento para comprobar si realmente reincidieron o no cuando salieron de la cárcel. <br /><br />Separamos esta muestra entre los que realmente <strong>reincidieron</strong> y los que <strong>no reincidieron.</strong>",
+    "texto": "Imaginemos que partimos de una <strong>muestra de presos que fueron etiquetados en su día con RisCanvi</strong> como de alto o bajo riesgo y a los que luego hemos hecho seguimiento para comprobar si realmente reincidieron o no cuando salieron de la cárcel. <br /><br />Separamos esta muestra entre los que realmente <strong>reincidieron</strong> y los que <strong>no reincidieron.</strong>",
     "position": "right",
     "cables_escena": 7
   },
   {
     "id": 10,
     "titulo": "",
-    "texto": "¿Qué capacidad tiene el algoritmo para <strong>detectar a los presos reincidentes</strong> entre toda la muestra?<br /><br />Esta capacidad del algoritmo se conoce como <strong>Sensibilidad</strong> del sistema.",
+    "texto": "¿Qué capacidad tiene el algoritmo para <strong>detectar a los presos reincidentes</strong>?<br /><br />Esta capacidad del algoritmo se conoce como <strong>Sensibilidad</strong> del sistema.",
     "position": "right",
     "cables_escena": 8
   },
@@ -87,7 +87,7 @@
   {
     "id": 12,
     "titulo": "",
-    "texto": "Los otros <strong>2 presos reincidentes no detectados</strong> por el sistema son <strong>falsos negativos,</strong> es decir, presos reincidentes que el algoritmo no es capaz de detectar.",
+    "texto": "Los otros <strong>2 presos de cada 10 </strong> no detectados por el sistema son <strong>falsos negativos,</strong> es decir, presos reincidentes que el algoritmo no es capaz de detectar.",
     "position": "right",
     "cables_escena": false
   },
@@ -115,7 +115,7 @@
   {
     "id": 16,
     "titulo": "",
-    "texto": "El resto, 4 de cada 10 presos, son lo que se conoce como <strong>falsos positivos,</strong> es decir, reclusos que no reincidieron pero que el sistema considera <strong>erróneamente como reincidentes</strong>.",
+    "texto": "El resto, 4 de cada 10 presos, son lo que se conoce como <strong>falsos positivos,</strong> es decir, reclusos que no reincidieron pero que el sistema considera erróneamente como reincidentes.",
     "position": "right",
     "cables_escena": false
   },
@@ -129,7 +129,7 @@
   {
     "id": 18,
     "titulo": "",
-    "texto": "Para predecir, por ejemplo en el caso de RisCanvi, <strong>cuál es la probabilidad de que un nuevo recluso reincida en el futuro</strong>, las medidas de sensibilidad y especificidad no nos son útiles.",
+    "texto": "Para predecir, por ejemplo, <strong>cuál es la probabilidad de que un nuevo recluso reincida en el futuro</strong>, las medidas de sensibilidad y especificidad no nos son útiles.",
     "position": "right",
     "cables_escena": 14
   },
@@ -150,7 +150,7 @@
   {
     "id": 21,
     "titulo": "",
-    "texto": "Para conocer el poder predictivo del algoritmo, vamos utilizar la medida de <strong>Valor predictivo positivo</strong>. Esta medida nos muestra la probabilidad de que un nuevo preso etiquetado como de alto riesgo reincida en el futuro.",
+    "texto": "Para conocer la probabilidad de que un nuevo preso etiquetado como de alto riesgo reincida en el futuro, vamos utilizar la medida de <strong>Valor predictivo positivo</strong>.",
     "position": "right",
     "cables_escena": 17
   },
@@ -171,14 +171,14 @@
   {
     "id": 24,
     "titulo": "",
-    "texto": "Esta medida tiene en cuenta la muestra de presos entera. En el caso RisCanvi, <strong>el accuracy del sistema es del 59%</strong>, lo que significa que el algoritmo acierta de forma general en 6 de cada 10 reclusos.",
+    "texto": "Esta medida nos dice cuantos presos, del total, han sido etiquetados correctamente (como reincidentes o como no reincidentes). En el caso RisCanvi, <strong>el accuracy del sistema es del 57%</strong>, lo que significa que el algoritmo acierta de forma general en 6 de cada 10 reclusos.",
     "position": "right",
     "cables_escena": 20
   },
   {
     "id": 25,
     "titulo": "",
-    "texto": "Rebobinando…<br /><br />Después de revisar las diferentes medida de acierto de los algoritmos, te recordamos que los funcionarios que usan el sistema RisCanvi están de acuerdo con él en el 96,8% de los casos.<br /><br />Es decir, que a pesar de todo lo que hemos visto, <strong> en más de 9 de cada 10 casos</strong> se da por bueno el nivel de riesgo que el algoritmo asigna a cada preso.",
+    "texto": "Rebobinando…<br /><br />Después de revisar las diferentes medidas de acierto de los algoritmos, te recordamos que los funcionarios que usan el sistema RisCanvi están de acuerdo con él en el 96,8% de los casos.<br /><br />Es decir, que, a pesar de todo lo que hemos visto, en casi todos los casos <strong>se da por bueno el nivel de riesgo que el algoritmo asigna</strong> a los presos.",
     "position": "center",
     "cables_escena": 21
   },
