@@ -1,6 +1,6 @@
 <script>
   import { fade } from 'svelte/transition'
-  import { vis } from '$lib/store.js'
+  import { vis, init } from '$lib/store.js'
   import Texto from './Texto.svelte'
   import Titulo from './Titulo.svelte'
 
@@ -14,6 +14,9 @@
   cables_escena = position
 
   let timer
+  function increment() {
+    init.start()
+  }
 
   function finDesaparecer() {
     timer = setTimeout(() => {
@@ -55,29 +58,30 @@
       {#if texto != ''}
         <p class="text-sm tablet:text-lg font-cabin leading-6 py-2 px-4 tablet:py-3 tablet:px-8">
           <Texto {texto} />
-        {#if id == '28'}
-        <div class="mt-6 flex justify-center">
-            <a data-sveltekit-reload href="/" class="text-sm border uppercase py-3 px-3 mr-3 flex items-center gap-3 hover:bg-white hover:text-black
-            ">¿Volver a ver?
-            <svg
-              class="-rotate-90 w-4 h-4 text-yellow-500"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </a>
-
-  </div>
-       
-        {/if}
+          {#if id == '28'}
+            <div class="mt-6 flex justify-center">
+              <a
+                on:click={increment}
+                href="/"
+                class="text-sm border uppercase py-3 px-3 mr-3 flex items-center gap-3 hover:bg-white hover:text-black
+            "
+                >¿Volver a ver?
+                <svg
+                  class="-rotate-90 w-4 h-4 text-yellow-500"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </a>
+            </div>
+          {/if}
         </p>
       {/if}
-
     </div>
   </div>
 {/if}

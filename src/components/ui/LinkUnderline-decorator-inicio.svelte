@@ -6,7 +6,6 @@
 
   function increment() {
     init.start()
-    console.log($init)
   }
 </script>
 
