@@ -37,10 +37,10 @@
     </ul>
 
     <p class="mb-8 leading-relaxed">
-<strong>Agradecimientos.<strong> Es importante señalar que este trabajo se ha inspirado en el gran artículo de Garay (2016)<sup
+<strong>Agradecimientos.</strong> Es importante señalar que este trabajo se ha inspirado en el gran artículo de Garay (2016)<sup
         class="uppercase font-mono"><a href="#a1">1</a></sup
       >. Nuestro total agradecimiento a la investigadora tanto por su increíble trabajo como por su generosa ayuda
-      respondiendo a todas nuestras preguntas.
+      respondiendo a todas nuestras preguntas.<br /><br />Muchas gracias también a la estadística y matemática Anabel Forte <a href="https://twitter.com/AnaBayes">(@AnaBayes)</a>, por su afinada revisión de los textos y las medidas de esta story. <br /><br />
     </p>
     <p class="mb-8 leading-relaxed">
   <strong>Sobre los datos.</strong> Los utilizados para ilustrar el caso de RisCanvi han sido extraídos del único informe general
@@ -56,7 +56,7 @@
       >, un entorno de programación visual que nos ofrece esta singularidad tanto en el resultado como en la creación.
     </p>
     <p class="mb-8 leading-relaxed ">
-      <strong>Más sobre Bikolabs.</strong>Puedes pasarte por nuestras <a href="https://bikolabs.biko2.com/collections/">colecciones</a> para ver otros proyectos
+      <strong>Más sobre Bikolabs.</strong> Puedes pasarte por nuestras <a href="https://bikolabs.biko2.com/collections/">colecciones</a> para ver otros proyectos
       de Bikolabs.
      </p>
 
