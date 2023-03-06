@@ -16,7 +16,7 @@
   {
     "id": 2,
     "titulo": "",
-    "texto": "A día de hoy encontramos algoritmos en todos los rincones de nuestras vidas. Al tiempo, cada vez se <strong>automatizan más decisiones</strong> que nos afectan. ¿Qué supone esto? Que estamos dejando a los algoritmos decidir sobre nuestras vidas.<br /><br />Por ejemplo, en España existe un algoritmo, <strong>RisCanvi,</strong> que es utilizado por los funcionarios en las cárceles de Cataluña para predecir el riesgo de reincidencia de sus presos.",
+    "texto": "Hoy usamos algoritmos a diario. Al tiempo, cada vez se <strong>automatizan más decisiones</strong> que nos afectan. ¿Qué supone esto? Que estamos dejando a los algoritmos decidir sobre nuestras vidas.<br /><br />Por ejemplo, en España existe un algoritmo, <strong>RisCanvi,</strong> que es utilizado por los funcionarios en las cárceles de Cataluña para predecir el riesgo de reincidencia de sus presos.",
     "position": "right",
     "cables_escena": 1
   },

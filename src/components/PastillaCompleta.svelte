@@ -57,6 +57,11 @@
           <Texto {texto} />
         </p>
       {/if}
+      {#if id == '28'}
+        <p>
+          <a data-sveltekit-reload href="/">¿Volver a ver?</a>
+        </p>
+      {/if}
     </div>
   </div>
 {/if}

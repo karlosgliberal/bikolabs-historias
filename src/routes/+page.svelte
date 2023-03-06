@@ -51,7 +51,9 @@
     {/if}
     <div class="actions_wrapper">
       {#if $historyPosition > 1}
-        <Decrementar />
+        {#if $historyPosition < 28}
+          <Decrementar />
+        {/if}
       {/if}
       {#if $historyPosition < 28}
         {#if $historyPosition != 0}
