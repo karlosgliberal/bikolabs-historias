@@ -32,12 +32,12 @@
       {#if position == 'center'}
         {#if titulo != ''}
           {#if id == '1'}
-            <h2 class="text-2xl tablet:text-5xl font-cabin font-bold pl-4 mb-1 tablet:mb-3">
+            <h2 class="text-2xl tablet:text-5xl font-cabin font-bold pl-4 tablet:pl-7 mb-1 tablet:mb-3">
               <Titulo {titulo} />
             </h2>
           {/if}
           {#if id != '1'}
-            <h2 class="text-2xl tablet:text-4xl font-cabin font-bold pl-4">
+            <h2 class="text-2xl tablet:text-4xl font-cabin font-bold pl-4 tablet:pl-7">
               <Titulo {titulo} />
             </h2>
           {/if}
