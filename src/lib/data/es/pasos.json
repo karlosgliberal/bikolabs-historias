@@ -23,7 +23,7 @@
   {
     "id": 3,
     "titulo": "El caso RisCanvi",
-    "texto": "Según se ha publicado, los funcionarios que utilizan RisCanvi están de acuerdo con la predicción de reincidencia que hace el algoritmo en el <strong>96,8% de las ocasiones.</strong><br />Es decir, que en <strong> más de 9 casos de cada 10 </strong> los funcionarios <strong>aceptan</strong> la predicción que el algoritmo ha hecho sobre la posible reincidencia futura de un preso.",
+    "texto": "Según se ha publicado, los funcionarios que utilizan RisCanvi están de acuerdo con la predicción de reincidencia que hace el algoritmo en el <strong>96,8% de las ocasiones.</strong><br />Es decir, que en <strong> más de 9 casos de cada 10 </strong> los funcionarios <strong>aceptan</strong> la predicción que el algoritmo ha hecho sobre la posible reincidencia de un preso que podría ser excarcelado en el futuro.",
     "position": "center",
     "cables_escena": 2
   },
