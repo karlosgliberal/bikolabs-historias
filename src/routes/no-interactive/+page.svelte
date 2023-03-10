@@ -228,8 +228,8 @@
           >.
         </p>
         <p class="mb-8 leading-relaxed">
-        Esta medida nos dice cuantos presos, del total, han sido etiquetados correctamente (como reincidentes o como no reincidentes). Se calcula dividiendo los aciertos del sistema (presos etiquetados correctamente como de alto y de
-          bajo riesgo; 385), entre el total de presos de la muestra (678). En RisCanvi la exactitud es del <b>57%</b>. Esto significa que el algoritmo acierta de forma general en 6 de cada 10 reclusos (8 de cada 10 positivos, y 4 de cada 10 negativos).
+        Esta medida nos dice cuántos presos, del total, han sido etiquetados correctamente (como reincidentes o como no reincidentes). Se calcula dividiendo los aciertos del sistema (presos etiquetados correctamente como de alto y de
+          bajo riesgo; 385), entre el total de presos de la muestra (678). En RisCanvi la exactitud es del <b>57%</b>. Esto significa que el algoritmo acierta de forma general en 6 de cada 10 reclusos (2 de cada 10 positivos, y casi 10 de cada 10 negativos).
         </p>
         <div>
         <table class="mb-8 table-auto border-separate border-spacing-y-2">
